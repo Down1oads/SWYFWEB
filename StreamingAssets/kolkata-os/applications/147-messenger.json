@@ -1,0 +1,24 @@
+{
+  "id": "messenger",
+  "title": "Disscord",
+  "iconPath": "icons/Disscord.png",
+  "iconSvg": "svg/chat.svg",
+  "iconResource": "KolkataOS/SVG/chat",
+  "contentType": "messenger",
+  "pinned": false,
+  "pinnedOrder": 5,
+  "showOnDesktop": true,
+  "desktopHiddenByDefault": false,
+  "desktopOrder": 18,
+  "windowLeft": 220,
+  "windowTop": 78,
+  "windowWidth": 980,
+  "windowHeight": 650,
+  "accentColor": "#fe474b",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "messenger-business-license"
+  },
+  "content": {}
+}

@@ -1,0 +1,11 @@
+{
+  "id": "book_publishing",
+  "displayName": "Book Publishing",
+  "iconName": "notebook",
+  "appId": "scam-book-publishing",
+  "displayOrder": 52,
+  "relevantSentinels": [
+    "FICTIONAL_BOOK_PUBLISHING_CARD_NUMBER"
+  ],
+  "appCompletionSource": "conversation_book_publishing"
+}

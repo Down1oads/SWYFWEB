@@ -1,0 +1,17 @@
+{
+  "id": "notepad",
+  "title": "Notepad",
+  "iconSvg": "svg/notebook.svg",
+  "iconResource": "KolkataOS/SVG/notebook",
+  "contentType": "rdpNotepad",
+  "pinned": false,
+  "showOnDesktop": false,
+  "desktopOrder": 1,
+  "windowLeft": 190,
+  "windowTop": 80,
+  "windowWidth": 690,
+  "windowHeight": 520,
+  "accentColor": "#0078D7",
+  "initialState": "closed",
+  "content": {}
+}

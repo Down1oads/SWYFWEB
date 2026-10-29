@@ -1,0 +1,53 @@
+{
+  "type": "json_schema",
+  "json_schema": {
+    "name": "gameplay_caller_turn",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "dialogue": {
+          "type": "string",
+          "description": "You answer in character, in the current language, in one spoken sentence."
+        },
+        "trust_percent": {
+          "type": "integer",
+          "description": "You give your current absolute trust, 0-100, reflecting this exchange.",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "emotion": {
+          "type": "string",
+          "description": "You choose the feeling you express.",
+          "enum": [
+            "TRUSTING",
+            "SUSPICIOUS",
+            "ANGRY",
+            "NEUTRAL"
+          ]
+        },
+        "completed_objectives": {
+          "type": "array",
+          "description": "You list the exact progress_ids earned by the player's words and your reply, each once. Check all supplied criteria; prerequisites must already be met. Use the one matching ID for an agreed amount, or [] when nothing is earned.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "comedy": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "You rate only the latest player_dialogue and your current reply as one comedic exchange from 0 (not funny) to 1 (exceptionally funny for an Adult Swim show). Judge absurdity, timing, surprise and banter, not profanity alone; use 0 for openings and game events without player speech. Put comedy last."
+        }
+      },
+      "required": [
+        "dialogue",
+        "trust_percent",
+        "emotion",
+        "completed_objectives",
+        "comedy"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

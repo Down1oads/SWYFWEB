@@ -1,0 +1,42 @@
+{
+  "id": "anyviewer",
+  "unlockLines": [
+    "AnyViewer unlocked. A second desktop to stare at while avoiding work. Truly, technology has doubled your potential for disappointment.",
+    "You can now visit another computer without leaving your chair. The future is here, beta, and it smells like yesterday's lunch.",
+    "Remote desktop! Be everywhere, accomplish nothing! Wait, that is my description of middle management. Please show some fucking initiative.",
+    "Two screens, one employee, zero excuses. I have checked the mathematics and somehow you are still the bottleneck.",
+    "Welcome to remote support. Your body stays here, your cursor travels abroad, and your productivity remains a missing-person case."
+  ],
+  "title": "AnyViewer",
+  "iconSvg": "svg/remote-desktop.svg",
+  "iconResource": "KolkataOS/SVG/remote-desktop",
+  "contentType": "anyViewer",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 14,
+  "windowLeft": 210,
+  "windowTop": 72,
+  "windowWidth": 940,
+  "windowHeight": 700,
+  "accentColor": "#c92222",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-remote-desktop"
+  },
+  "content": {
+    "title": "AnyViewer",
+    "subtitle": "Connect to the caller's computer.",
+    "binding": {
+      "kind": "rdpConnection",
+      "completionSource": "remote_desktop_connect",
+      "itemId": "FICTIONAL_REMOTE_DESKTOP_CODE",
+      "codeFieldId": "code",
+      "submitLabel": "Connect"
+    }
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): Sharing the code requires agreement to remote control for an explained purpose. Previously granted permission still applies, and device activity is known only when reported by the game.\n\nCaller (available information): Your remote access code is [[FICTIONAL_REMOTE_DESKTOP_CODE]]."
+  }
+}

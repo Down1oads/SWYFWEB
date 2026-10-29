@@ -1,0 +1,22 @@
+{
+  "id": "scamazon",
+  "title": "Scamazon",
+  "iconSvg": "svg/shopping-bag.svg",
+  "iconResource": "KolkataOS/SVG/shopping-bag",
+  "contentType": "scamazon",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 15,
+  "windowLeft": 230,
+  "windowTop": 68,
+  "windowWidth": 1080,
+  "windowHeight": 720,
+  "accentColor": "#FF9900",
+  "initialState": "closed",
+  "content": {},
+  "access": {
+    "mode": "catalog",
+    "productId": "scamazon-included"
+  }
+}

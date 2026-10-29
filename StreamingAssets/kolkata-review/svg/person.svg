@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Person</title>
+  <rect width="128" height="128" rx="18" fill="#334155"/>
+  <circle cx="64" cy="43" r="22" fill="#FFFFFF"/>
+  <path d="M26 112c6-29 19-43 38-43s32 14 38 43" fill="#FFFFFF"/>
+</svg>

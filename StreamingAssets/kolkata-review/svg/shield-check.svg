@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Shield</title>
+  <rect width="128" height="128" rx="18" fill="#248F4A"/>
+  <path d="M64 16l42 16v29c0 28-16 46-42 55-26-9-42-27-42-55V32z" fill="#FFFFFF"/>
+  <path d="M42 64l16 16 30-34" stroke="#248F4A" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

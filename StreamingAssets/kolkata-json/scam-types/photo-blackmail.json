@@ -1,0 +1,10 @@
+{
+  "id": "photo_blackmail",
+  "displayName": "Blackmail Scam",
+  "iconName": "heart-broken",
+  "appId": "scam-photo-blackmail",
+  "displayOrder": 25,
+  "relevantSentinels": ["FICTIONAL_PRIVATE_CARD_NUMBER"],
+  "appCompletionSource": "photo_blackmail_submit",
+  "testOpeningPlayerLine": "Hey, you have a really cute voice. Are you always this charming?"
+}

@@ -1,0 +1,158 @@
+{
+  "languages": [
+    {
+      "code": "en",
+      "nativeName": "English",
+      "englishName": "English",
+      "hasPocket": true,
+      "pocketFolder": "english"
+    },
+    {
+      "code": "zh",
+      "nativeName": "中文",
+      "englishName": "Chinese",
+      "hasPocket": false,
+      "pocketFolder": ""
+    },
+    {
+      "code": "ru",
+      "nativeName": "Русский",
+      "englishName": "Russian",
+      "hasPocket": false,
+      "pocketFolder": "russian"
+    },
+    {
+      "code": "es",
+      "nativeName": "Español",
+      "englishName": "Spanish",
+      "hasPocket": true,
+      "pocketFolder": "spanish"
+    },
+    {
+      "code": "pt",
+      "nativeName": "Português",
+      "englishName": "Portuguese",
+      "hasPocket": true,
+      "pocketFolder": "portuguese"
+    },
+    {
+      "code": "de",
+      "nativeName": "Deutsch",
+      "englishName": "German",
+      "hasPocket": true,
+      "pocketFolder": "german"
+    },
+    {
+      "code": "ja",
+      "nativeName": "日本語",
+      "englishName": "Japanese",
+      "hasPocket": false,
+      "pocketFolder": ""
+    },
+    {
+      "code": "fr",
+      "nativeName": "Français",
+      "englishName": "French",
+      "hasPocket": true,
+      "pocketFolder": "french"
+    },
+    {
+      "code": "pl",
+      "nativeName": "Polski",
+      "englishName": "Polish",
+      "hasPocket": false,
+      "pocketFolder": ""
+    },
+    {
+      "code": "ko",
+      "nativeName": "한국어",
+      "englishName": "Korean",
+      "hasPocket": true,
+      "pocketFolder": "korean"
+    },
+    {
+      "code": "tr",
+      "nativeName": "Türkçe",
+      "englishName": "Turkish",
+      "hasPocket": false,
+      "pocketFolder": ""
+    },
+    {
+      "code": "it",
+      "nativeName": "Italiano",
+      "englishName": "Italian",
+      "hasPocket": true,
+      "pocketFolder": "italian"
+    },
+    {
+      "code": "cs",
+      "nativeName": "Čeština",
+      "englishName": "Czech",
+      "hasPocket": true,
+      "pocketFolder": "czech"
+    },
+    {
+      "code": "hu",
+      "nativeName": "Magyar",
+      "englishName": "Hungarian",
+      "hasPocket": false,
+      "pocketFolder": ""
+    },
+    {
+      "code": "sv",
+      "nativeName": "Svenska",
+      "englishName": "Swedish",
+      "hasPocket": false,
+      "pocketFolder": ""
+    },
+    {
+      "code": "da",
+      "nativeName": "Dansk",
+      "englishName": "Danish",
+      "hasPocket": false,
+      "pocketFolder": ""
+    },
+    {
+      "code": "id",
+      "nativeName": "Bahasa Indonesia",
+      "englishName": "Indonesian",
+      "hasPocket": true,
+      "pocketFolder": "indonesian"
+    },
+    {
+      "code": "el",
+      "nativeName": "Ελληνικά",
+      "englishName": "Greek",
+      "hasPocket": false,
+      "pocketFolder": ""
+    },
+    {
+      "code": "ar",
+      "nativeName": "العربية",
+      "englishName": "Arabic",
+      "hasPocket": false,
+      "pocketFolder": ""
+    },
+    {
+      "code": "hi",
+      "nativeName": "हिन्दी",
+      "englishName": "Hindi",
+      "hasPocket": true,
+      "pocketFolder": "hindi"
+    },
+    {
+      "code": "fa",
+      "nativeName": "فارسی",
+      "englishName": "Persian",
+      "hasPocket": false,
+      "pocketFolder": ""
+    },
+    {
+      "code": "et",
+      "nativeName": "Eesti",
+      "englishName": "Estonian",
+      "hasPocket": true,
+      "pocketFolder": "estonian"
+    }
+  ]
+}

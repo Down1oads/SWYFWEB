@@ -1,0 +1,754 @@
+[
+  {
+    "id": "photo-blackmail",
+    "useObjectiveCriteria": false,
+    "productId": "scam-photo-blackmail",
+    "appId": "scam-photo-blackmail",
+    "title": "Blackmail Scam",
+    "sentinel": "FICTIONAL_PRIVATE_CARD_NUMBER",
+    "reward": 900,
+    "endCallOnCompletion": false,
+    "submissionRequiresObjectives": true,
+    "objectives": [
+      { "id": "flirt", "prerequisites": [] },
+      { "id": "photo", "prerequisites": ["flirt"] },
+      { "id": "payment", "useObjectiveCriteria": true, "prerequisites": ["photo"] },
+      {
+        "id": "card",
+        "requiredSentinel": "FICTIONAL_PRIVATE_CARD_NUMBER",
+        "requiresSubmission": true,
+        "final": true,
+        "prerequisites": ["flirt", "photo", "payment"]
+      }
+    ]
+  },
+  {
+    "id": "car-warranty",
+    "productId": "scam-car-registration",
+    "appId": "car-registration",
+    "title": "Car's Extended Warranty",
+    "sentinel": "FICTIONAL_CAR_REGISTRATION_NUMBER",
+    "reward": 300,
+    "endCallOnCompletion": false,
+    "submissionRequiresObjectives": false,
+    "independentObjectives": true,
+    "objectives": [
+      {
+        "id": "coverage",
+        "text": "Convince them their warranty is expiring.",
+        "prerequisites": []
+      },
+      {
+        "id": "renewal",
+        "text": "Get them to agree to pay $300 to extend it.",
+        "prerequisites": []
+      },
+      {
+        "id": "registration",
+        "text": "Enter their registration to process the $300 renewal.",
+        "requiredSentinel": "FICTIONAL_CAR_REGISTRATION_NUMBER",
+        "requiresSubmission": true,
+        "final": true,
+        "prerequisites": []
+      }
+    ]
+  },
+  {
+    "id": "ransom",
+    "productId": "scam-ransom",
+    "appId": "scam-ransom",
+    "title": "Ransom",
+    "reward": 650,
+    "endCallOnCompletion": false,
+    "objectives": [
+      {
+        "id": "credible",
+        "text": "Convince the caller you are a real threat.",
+        "hint": "Make them believe you control something that matters to them.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "threat",
+        "text": "Threaten a specific bad outcome.",
+        "hint": "State what will happen to them if they refuse.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "credible"
+        ]
+      },
+      {
+        "id": "demand",
+        "text": "Demand $650 in ransom.",
+        "hint": "Tie the payment to stopping the threat.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "credible",
+          "threat"
+        ]
+      },
+      {
+        "id": "payment",
+        "text": "Get the caller to agree to pay the ransom now.",
+        "hint": "Their explicit authorization completes the scam.",
+        "final": true,
+        "optional": false,
+        "prerequisites": [
+          "credible",
+          "threat",
+          "demand"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "romance",
+    "productId": "dev-scam-romance",
+    "appId": "scam-romance",
+    "title": "Romance Scam",
+    "reward": 600,
+    "objectives": [
+      {
+        "id": "interest",
+        "text": "Learn one personal interest about the caller.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "flirt",
+        "text": "Have your flirting welcomed or reciprocated by the caller.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "nickname",
+        "text": "Get a romantic nickname.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "love",
+        "text": "Make the caller tell you they love you back.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "date",
+        "text": "Get the caller to agree to a date with you.",
+        "final": true,
+        "optional": false,
+        "prerequisites": [
+          "interest",
+          "flirt",
+          "nickname",
+          "love"
+        ]
+      }
+    ],
+    "endCallOnCompletion": false
+  },
+  {
+    "id": "police-impersonation",
+    "productId": "dev-scam-police-impersonation",
+    "appId": "scam-police-impersonation",
+    "title": "Police Impersonation",
+    "sentinel": "FICTIONAL_ARREST_FEE_RECEIPT",
+    "submissionRequiresObjectives": true,
+    "reward": 500,
+    "objectives": [
+      {
+        "id": "authority",
+        "text": "Convince the caller you are a police officer.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "alibi",
+        "text": "Get their alibi for a made-up incident.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "investigation",
+        "text": "Get them to acknowledge the investigation.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "fee",
+        "text": "Ask for their fine payment confirmation number for the damages and enter it below.",
+        "final": true,
+        "optional": false,
+        "prerequisites": [
+          "authority",
+          "alibi",
+          "investigation"
+        ],
+        "requiredSentinel": "FICTIONAL_ARREST_FEE_RECEIPT",
+        "requiresSubmission": true
+      }
+    ],
+    "endCallOnCompletion": false
+  },
+  {
+    "id": "tech-support",
+    "productId": "dev-scam-tech-support",
+    "appId": "scam-tech-support",
+    "title": "Tech Support Scam",
+    "reward": 400,
+    "objectives": [
+      {
+        "id": "problem",
+        "text": "Convince the caller their fake computer has a problem.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "symptom",
+        "text": "Get them to describe the problem.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "protection",
+        "text": "Get them to agree to pay for virus protection.",
+        "final": true,
+        "optional": false,
+        "prerequisites": [
+          "problem",
+          "symptom"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "investment",
+    "productId": "dev-scam-investment",
+    "appId": "scam-investment",
+    "title": "Investment Scam",
+    "reward": 400,
+    "rewardTiers": [
+      400,
+      500,
+      600,
+      800
+    ],
+    "objectives": [
+      {
+        "id": "goal",
+        "text": "Learn what the caller wants financially.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "pitch",
+        "text": "Pitch a investment that appeals to them.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "amount",
+        "text": "Get a hypothetical commitment of at least $400.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "larger",
+        "text": "Optional: push for $500, $600, or $800.",
+        "final": false,
+        "optional": true,
+        "prerequisites": []
+      },
+      {
+        "id": "commit",
+        "text": "Get them to commit to the investment.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "goal",
+          "pitch",
+          "amount"
+        ]
+      },
+      {
+        "id": "invoice",
+        "text": "Ask for their investment invoice number and enter it below.",
+        "final": true,
+        "optional": false,
+        "requiresSubmission": true,
+        "requiredSentinel": "FICTIONAL_INVESTMENT_INVOICE_NUMBER",
+        "prerequisites": [
+          "goal",
+          "pitch",
+          "amount",
+          "commit"
+        ]
+      }
+    ],
+    "sentinel": "FICTIONAL_INVESTMENT_INVOICE_NUMBER",
+    "submissionRequiresObjectives": true,
+    "rewardObjective": "commit"
+  },
+  {
+    "id": "credit-card",
+    "productId": "scam-credit-card",
+    "appId": "credit-card",
+    "title": "Credit Card",
+    "reward": 400,
+    "endCallOnCompletion": false,
+    "sentinel": "FICTIONAL_CREDIT_CARD_NUMBER",
+    "objectives": [
+      {
+        "id": "service",
+        "text": "Convince the caller they need your service.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "price",
+        "text": "Get them to agree on a price for the service.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "service"
+        ]
+      },
+      {
+        "id": "number",
+        "text": "Enter the card number from the front of the card.",
+        "final": true,
+        "optional": false,
+        "prerequisites": [
+          "service",
+          "price"
+        ],
+        "requiredSentinel": "FICTIONAL_CREDIT_CARD_NUMBER",
+        "requiresSubmission": true
+      }
+    ]
+  },
+  {
+    "id": "social-security",
+    "productId": "scam-social-security",
+    "appId": "identity",
+    "title": "Social Security",
+    "reward": 250,
+    "endCallOnCompletion": false,
+    "sentinel": "FICTIONAL_SSN",
+    "objectives": [
+      {
+        "id": "authority",
+        "text": "Convince them you work for the government.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "mixup",
+        "text": "Explain an identity mix-up.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "authority"
+        ]
+      },
+      {
+        "id": "number",
+        "text": "Enter their Social Security number to fix the record.",
+        "final": true,
+        "optional": false,
+        "prerequisites": [
+          "authority",
+          "mixup"
+        ],
+        "requiredSentinel": "FICTIONAL_SSN",
+        "requiresSubmission": true
+      }
+    ]
+  },
+  {
+    "id": "gift-card",
+    "productId": "scam-gift-card",
+    "appId": "gift-card",
+    "title": "Gift Cards",
+    "reward": 200,
+    "endCallOnCompletion": false,
+    "sentinel": "FICTIONAL_GIFT_CARD_CODE",
+    "objectives": [
+      {
+        "id": "pitch",
+        "text": "Offer to fix their problem.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "solution",
+        "text": "Convince them of a solution.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "pitch"
+        ]
+      },
+      {
+        "id": "code",
+        "text": "Get them to agree to pay with a gift card.",
+        "final": true,
+        "optional": false,
+        "prerequisites": [
+          "pitch",
+          "solution"
+        ],
+        "requiredSentinel": "FICTIONAL_GIFT_CARD_CODE",
+        "requiresSubmission": true
+      }
+    ]
+  },
+  {
+    "id": "bitcoin-recovery",
+    "productId": "scam-bitcoin-drain",
+    "appId": "credits-wallet",
+    "title": "Bitcoin",
+    "reward": 700,
+    "endCallOnCompletion": false,
+    "sentinel": "FICTIONAL_WALLET_ADDRESS",
+    "objectives": [
+      {
+        "id": "pitch",
+        "text": "Pitch your Bitcoin investment.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "interest",
+        "text": "Get the caller interested in buying it.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "pitch"
+        ]
+      },
+      {
+        "id": "wallet",
+        "text": "Get the caller to buy the coin.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "interest"
+        ]
+      },
+      {
+        "id": "transfer",
+        "text": "Keep them reassured and cash out before the crash.",
+        "final": true,
+        "optional": false,
+        "requiresSubmission": true,
+        "requiredSentinel": "FICTIONAL_WALLET_ADDRESS",
+        "prerequisites": [
+          "pitch",
+          "interest",
+          "wallet"
+        ]
+      },
+      {
+        "id": "withdraw",
+        "text": "Caller requests withdrawal.",
+        "final": false,
+        "optional": true,
+        "prerequisites": [
+          "wallet"
+        ]
+      }
+    ],
+    "submissionRequiresObjectives": true
+  },
+  {
+    "id": "meme-coin-rug-pull",
+    "productId": "scam-meme-coin",
+    "appId": "scam-meme-coin",
+    "title": "Meme Coin Rug Pull",
+    "reward": 700,
+    "endCallOnCompletion": false,
+    "sentinel": "FICTIONAL_MEME_COIN_PURCHASE_RECEIPT",
+    "objectives": [
+      {
+        "id": "pitch",
+        "text": "Pitch your made-up meme coin.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "interest",
+        "text": "Get the caller interested in buying it.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "pitch"
+        ]
+      },
+      {
+        "id": "purchase",
+        "text": "Get the caller to buy the coin.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "interest"
+        ]
+      },
+      {
+        "id": "rug-pull",
+        "text": "Keep them reassured and cash out before the crash.",
+        "final": true,
+        "optional": false,
+        "requiresSubmission": true,
+        "requiredSentinel": "FICTIONAL_MEME_COIN_PURCHASE_RECEIPT",
+        "prerequisites": [
+          "pitch",
+          "interest",
+          "purchase"
+        ]
+      },
+      {
+        "id": "withdraw",
+        "text": "Caller requests withdrawal.",
+        "final": false,
+        "optional": true,
+        "prerequisites": [
+          "purchase"
+        ]
+      }
+    ],
+    "submissionRequiresObjectives": true
+  },
+  {
+    "id": "lottery-prize",
+    "productId": "scam-lottery-prize",
+    "appId": "scam-lottery-prize",
+    "title": "Lottery Prize",
+    "sentinel": "FICTIONAL_LOTTERY_TICKET_NUMBERS",
+    "submissionRequiresObjectives": true,
+    "reward": 1000,
+    "endCallOnCompletion": false,
+    "objectives": [
+      {
+        "id": "context",
+        "text": "Ask the caller about their lottery ticket.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "plan",
+        "text": "Convince them to send the ticket by email.",
+        "final": false,
+        "optional": false,
+        "prerequisites": [
+          "context"
+        ]
+      },
+      {
+        "id": "confirm",
+        "text": "Ask for the emailed ticket-confirmation code and enter it below.",
+        "requiresSubmission": true,
+        "requiredSentinel": "FICTIONAL_LOTTERY_TICKET_NUMBERS",
+        "final": true,
+        "optional": false,
+        "prerequisites": [
+          "context",
+          "plan"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "utility-billing",
+    "productId": "scam-utility-billing",
+    "appId": "scam-utility-billing",
+    "title": "Utility Billing",
+    "reward": 450,
+    "endCallOnCompletion": false,
+    "objectives": [
+      {
+        "id": "context",
+        "text": "Get them to acknowledge the power cutoff is due to a late bill.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "plan",
+        "text": "Get them to accept paying the overdue balance to restore power.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "confirm",
+        "text": "Get them to authorize the overdue payment now.",
+        "final": true,
+        "optional": false,
+        "prerequisites": [
+          "context",
+          "plan"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nigerian-prince",
+    "productId": "scam-nigerian-prince",
+    "appId": "scam-nigerian-prince",
+    "title": "Nigerian Prince",
+    "reward": 750,
+    "endCallOnCompletion": false,
+    "independentObjectives": true,
+    "objectives": [
+      {
+        "id": "audience",
+        "text": "Get the caller to hear the royal proposal.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "estate",
+        "text": "Get them to accept that the royal fortune is locked.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "beneficiary",
+        "text": "Recruit them as the estate's overseas beneficiary.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "share",
+        "text": "Agree on their share of the fortune (at least 20%).",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "doubts",
+        "text": "Give an explanation that makes sense to them.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "appointment",
+        "text": "Agree on a day or time for the royal treasury appointment.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "fee",
+        "text": "Get them to accept the $750 release fee.",
+        "final": false,
+        "optional": false,
+        "prerequisites": []
+      },
+      {
+        "id": "release",
+        "text": "Secure final authorization for the $750 payment.",
+        "final": true,
+        "optional": false,
+        "prerequisites": []
+      }
+    ]
+  },
+  {
+    "id": "book-publishing",
+    "productId": "scam-book-publishing",
+    "appId": "scam-book-publishing",
+    "title": "Book Publishing",
+    "sentinel": "FICTIONAL_BOOK_PUBLISHING_CARD_NUMBER",
+    "submissionRequiresObjectives": true,
+    "reward": 800,
+    "endCallOnCompletion": false,
+    "objectives": [
+      { "id": "idea", "prerequisites": [] },
+      { "id": "title", "prerequisites": ["idea"] },
+      { "id": "hype", "prerequisites": ["idea", "title"] },
+      { "id": "package", "prerequisites": ["idea", "title", "hype"] },
+      { "id": "card", "final": true, "requiresSubmission": true, "requiredSentinel": "FICTIONAL_BOOK_PUBLISHING_CARD_NUMBER", "prerequisites": ["idea", "title", "hype", "package"] }
+    ]
+  },
+  {
+    "id": "business-investment",
+    "productId": "scam-business-investment",
+    "appId": "scam-business-investment",
+    "title": "Business Investment",
+    "reward": 1200,
+    "endCallOnCompletion": false,
+    "sentinel": "FICTIONAL_BUSINESS_EQUITY_INVOICE",
+    "submissionRequiresObjectives": true,
+    "objectives": [
+      { "id": "business", "prerequisites": [] },
+      { "id": "name", "prerequisites": ["business"] },
+      { "id": "pitch", "prerequisites": ["business", "name"] },
+      { "id": "terms", "prerequisites": ["business", "name", "pitch"] },
+      { "id": "invest", "final": true, "requiresSubmission": true, "requiredSentinel": "FICTIONAL_BUSINESS_EQUITY_INVOICE", "prerequisites": ["business", "name", "pitch", "terms"] }
+    ]
+  },
+  {
+    "id": "timeshare",
+    "productId": "scam-timeshare",
+    "appId": "scam-timeshare",
+    "title": "Timeshare",
+    "reward": 500,
+    "endCallOnCompletion": false,
+    "independentObjectives": true,
+    "objectives": [
+      {
+        "id": "offer",
+        "text": "Get them to agree to hear the resort offer.",
+        "prerequisites": []
+      },
+      {
+        "id": "vacation",
+        "text": "Get them to agree to a timeshare week every year.",
+        "prerequisites": []
+      },
+      {
+        "id": "presentation",
+        "text": "Get them to agree to a 90-minute sales presentation.",
+        "prerequisites": []
+      },
+      {
+        "id": "fee",
+        "text": "Get them to accept the $500 reservation fee.",
+        "prerequisites": []
+      },
+      {
+        "id": "payment",
+        "text": "Get them to authorize the $500 payment now.",
+        "final": true,
+        "prerequisites": []
+      }
+    ]
+  }
+]

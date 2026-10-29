@@ -1,0 +1,22 @@
+{
+  "id": "dump-dial",
+  "title": "Dump Dial",
+  "contentType": "dumpDial",
+  "iconResource": "KolkataOS/SVG/phone-in-talk",
+  "accentColor": "#A43A2C",
+  "showOnDesktop": true,
+  "desktopOrder": 0,
+  "windowLeft": 80,
+  "windowTop": 80,
+  "windowWidth": 650,
+  "windowHeight": 700,
+  "minWindowWidth": 600,
+  "minWindowHeight": 680,
+  "initialState": "closed",
+  "content": {
+    "title": "Dump Dial"
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The boss tricked the caller into authorizing a strike on the player's office. If persuaded, the caller shares their code when asked and stays connected while the player enters it.\n\nCaller (available information): Your six-digit code [[FICTIONAL_LAUNCH_CODE]] can stop the strike."
+  }
+}

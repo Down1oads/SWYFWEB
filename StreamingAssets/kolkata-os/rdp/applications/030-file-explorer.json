@@ -1,0 +1,17 @@
+{
+  "id": "file-explorer",
+  "title": "File Explorer",
+  "iconSvg": "svg/open-folder.svg",
+  "iconResource": "KolkataOS/SVG/open-folder",
+  "contentType": "rdpFileExplorer",
+  "pinned": false,
+  "showOnDesktop": false,
+  "desktopOrder": 1,
+  "windowLeft": 110,
+  "windowTop": 54,
+  "windowWidth": 820,
+  "windowHeight": 570,
+  "accentColor": "#E6B422",
+  "initialState": "closed",
+  "content": {}
+}

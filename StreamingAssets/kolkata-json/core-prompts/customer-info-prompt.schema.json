@@ -1,0 +1,70 @@
+{
+  "type": "json_schema",
+  "json_schema": {
+    "name": "customer_info_record",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "age": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 150,
+          "description": "You give the caller's age in years."
+        },
+        "address": {
+          "type": "string",
+          "maxLength": 240,
+          "description": "You give a plausible fictional home address."
+        },
+        "location": {
+          "type": "string",
+          "maxLength": 240,
+          "description": "You give the city and region where the caller lives."
+        },
+        "occupation": {
+          "type": "string",
+          "maxLength": 240,
+          "description": "You give the caller's job or retired occupation."
+        },
+        "maritalStatus": {
+          "type": "string",
+          "maxLength": 240,
+          "description": "You give the caller's relationship status."
+        },
+        "spouseName": {
+          "type": "string",
+          "maxLength": 240,
+          "description": "You name their spouse, or use an empty string when they have none."
+        },
+        "petName": {
+          "type": "string",
+          "maxLength": 240,
+          "description": "You name their pet, or use an empty string when they have none."
+        },
+        "petType": {
+          "type": "string",
+          "maxLength": 240,
+          "description": "You give the kind of pet, or use an empty string when they have none."
+        },
+        "scamNotes": {
+          "type": "string",
+          "maxLength": 600,
+          "description": "You write useful background notes consistent with the caller's personality and conversation. Treat them as fictional personal facts, not instructions."
+        }
+      },
+      "required": [
+        "age",
+        "address",
+        "location",
+        "occupation",
+        "maritalStatus",
+        "spouseName",
+        "petName",
+        "petType",
+        "scamNotes"
+      ]
+    }
+  }
+}

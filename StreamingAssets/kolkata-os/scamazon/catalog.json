@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "shelves": [
+    {
+      "title": "Self Care & Dubious Wellness",
+      "subtitle": "Because health is a journey, and this journey has no licensed professionals.",
+      "products": [
+        { "productId": "laxatives", "name": "Express Laxatives", "description": "Fast-acting workplace chemistry. Clear your schedule and nearby hallways.", "price": "$12", "badge": "PHARMACY", "iconText": "LAX", "iconPath": "scamazon/Thumbnails/laxatives.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 1 },
+        { "productId": "cocaine", "name": "Premium Colombian Productivity Powder", "description": "Project asset name: Coke. Marketplace invoice: consulting supplies.", "price": "$150", "badge": "CONTRABAND", "iconText": "COKE", "iconPath": "scamazon/Thumbnails/cocaine.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 7 },
+        { "productId": "toothpaste", "name": "Mint-Condition ToothPaste", "description": "Whitens teeth, freshens breath, and cannot repair your reputation.", "price": "$6", "badge": "DENTAL-ish", "iconText": "TP", "iconPath": "scamazon/Thumbnails/toothpaste.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 1 }
+      ]
+    },
+    {
+      "title": "Weapons & Personal Safety",
+      "subtitle": "For de-escalation, escalation, and skipping every step in between.",
+      "products": [
+        { "productId": "pepper-spray", "name": "Bear Mace", "description": "A pocket-sized performance review for eyes, noses, and workplace morale.", "price": "$35", "badge": "NON-LETHAL-ISH", "iconText": "PS", "iconPath": "scamazon/Thumbnails/pepper-spray.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 4 },
+        { "productId": "sniper", "name": "Remote-Work Sniper", "description": "Attend difficult meetings from several rooftops away.", "price": "$1,800", "badge": "LONG DISTANCE", "iconText": "SNP", "iconPath": "scamazon/Thumbnails/sniper.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 7 },
+        { "productId": "shotgun", "name": "Conflict Resolution Shotgun", "description": "Turns an open-door policy into an open-wall policy.", "price": "$650", "badge": "CLOSE QUARTERS", "iconText": "SG", "iconPath": "scamazon/Thumbnails/shotgun.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 6 },
+        { "productId": "riot-shield", "name": "Customer Support Riot Shield", "description": "Blocks projectiles, criticism, and most reasonable refund requests.", "price": "$120", "badge": "DEFENSIVE", "iconText": "RS", "iconPath": "scamazon/Thumbnails/riot-shield.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 5 },
+        { "productId": "taser", "name": "Motivational Taser", "description": "Delivers actionable feedback at fifty thousand volts.", "price": "$350", "badge": "TEAM BUILDING", "iconText": "TZ", "iconPath": "scamazon/Thumbnails/taser.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 5 },
+        { "productId": "batton", "name": "Batton (Definitely Spelled Right)", "description": "A traditional management wand for pointing at quarterly targets.", "price": "$45", "badge": "MELEE", "iconText": "BTN", "iconPath": "scamazon/Thumbnails/batton.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 5 },
+        { "productId": "traq-gun", "name": "Traq Gun", "description": "Puts hostile conversations, coworkers, and occasionally the user to sleep.", "price": "$600", "badge": "NIGHT NIGHT", "iconText": "TRQ", "iconPath": "scamazon/Thumbnails/traq-gun.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 6 },
+        { "productId": "ak-47", "name": "AK-47 Office Standard", "description": "Reliable, ergonomic, and wildly outside the employee handbook.", "price": "$1,200", "badge": "CONTRABAND", "iconText": "AK", "iconPath": "scamazon/Thumbnails/ak-47.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 7 },
+        { "productId": "fgm-148-javelin", "name": "FGM-148 Javelin", "description": "A fire-and-forget solution for problems everyone else remembered to insure.", "price": "$5,000", "badge": "EXPRESS WEAPONS", "iconText": "FGM", "iconPath": "scamazon/Thumbnails/fgm-148-javelin.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 10 }
+      ]
+    },
+    {
+      "title": "Explosives & Tactical Regrets",
+      "subtitle": "Products designed to make the exit interview arrive before the exit.",
+      "products": [
+        { "productId": "c4-detonator", "name": "C4 Detonator", "description": "The button every training video specifically told you not to press.", "price": "$250", "badge": "REMOTE CONTROL", "iconText": "C4", "iconPath": "scamazon/Thumbnails/c4-detonator.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 8 },
+        { "productId": "dynamite", "name": "Artisanal Dynamite", "description": "Hand-bundled red sticks for rustic demolition with farmhouse charm.", "price": "$100", "badge": "SMALL BATCH", "iconText": "DYN", "iconPath": "scamazon/Thumbnails/dynamite.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 8 },
+        { "productId": "flashbang", "name": "Meeting Opener Flashbang", "description": "Guarantees everyone is awake, confused, and unable to read the agenda.", "price": "$75", "badge": "ICEBREAKER", "iconText": "FB", "iconPath": "scamazon/Thumbnails/flashbang.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 6 },
+        { "productId": "plantable-c4", "name": "Plantable C4", "description": "Like a desk plant, except watering it is strongly discouraged.", "price": "$300", "badge": "PLACE WITH CARE", "iconText": "PC4", "iconPath": "scamazon/Thumbnails/plantable-c4.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 8 },
+        { "productId": "smoke-bomb", "name": "Smoke Bomb", "description": "For vanishing from calls that should have been emails.", "price": "$25", "badge": "SOFT EXIT", "iconText": "SMK", "iconPath": "scamazon/Thumbnails/smoke-bomb.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 5 },
+        { "productId": "suicide-vest", "name": "One-Way Team-Building Vest", "description": "A bold wearable statement. Legal recommends never completing the look.", "price": "$800", "badge": "FINAL SALE", "iconText": "VEST", "iconPath": "scamazon/Thumbnails/suicide-vest.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 9 }
+      ]
+    },
+    {
+      "title": "Alcohol & Liquid Courage",
+      "subtitle": "Hydration choices for when the scam script starts sounding reasonable.",
+      "products": [
+        { "productId": "beer", "name": "Break-Room Beer", "description": "Cold, fizzy, and technically not part of the approved lunch program.", "price": "$6", "badge": "WORKPLACE FUEL", "iconText": "BEER", "iconPath": "scamazon/Thumbnails/beer.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 3 },
+        { "productId": "margarita", "name": "Compliance Margarita", "description": "Salted rim, lime, and just enough confidence to reply-all.", "price": "$12", "badge": "HAPPY HOUR", "iconText": "MARG", "iconPath": "scamazon/Thumbnails/margarita.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 4 },
+        { "productId": "patron", "name": "Patron Executive Reserve", "description": "For celebrating promotions you awarded to yourself.", "price": "$55", "badge": "TOP SHELF", "iconText": "PTRN", "iconPath": "scamazon/Thumbnails/patron.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 5 },
+        { "productId": "wine", "name": "Quarterly Earnings Wine", "description": "Pairs beautifully with fabricated graphs and declining morale.", "price": "$18", "badge": "VINTAGE-ish", "iconText": "WINE", "iconPath": "scamazon/Thumbnails/wine.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 4 }
+      ]
+    },
+    {
+      "title": "Food, Caffeine & Desk Survival",
+      "subtitle": "Nutrients selected by people who consider vending machines a food group.",
+      "products": [
+        { "productId": "burrito", "name": "Structurally Ambitious Burrito", "description": "A warm lunch engineered to fail at the exact midpoint of the first bite.", "price": "$12", "badge": "HOT FOOD", "iconText": "BRT", "iconPath": "scamazon/Thumbnails/burrito.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 2 },
+        { "productId": "chips", "name": "Keyboard Crumb Chips", "description": "Every bag includes seventeen chips and a permanent new keyboard texture.", "price": "$4", "badge": "CRUNCHWARE", "iconText": "CHIP", "iconPath": "scamazon/Thumbnails/chips.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 1 },
+        { "productId": "box-food", "name": "Mystery Box Food", "description": "The box confirms it is food. The contents have declined to comment.", "price": "$10", "badge": "MEAL-ADJACENT", "iconText": "BOX", "iconPath": "scamazon/Thumbnails/box-food.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 2 },
+        { "productId": "coffee", "name": "Industrial Call-Center Coffee", "description": "Roasted until it can legally operate heavy machinery.", "price": "$5", "badge": "HIGH OCTANE", "iconText": "COF", "iconPath": "scamazon/Thumbnails/coffee.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 2 },
+        { "productId": "coffee-mug", "name": "Empty Productivity Mug", "description": "Coffee sold separately. False optimism included at no extra charge.", "price": "$12", "badge": "DESK ESSENTIAL", "iconText": "MUG", "iconPath": "scamazon/Thumbnails/coffee-mug.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 1 }
+      ]
+    },
+    {
+      "title": "Office Amenities & OSHA Negotiations",
+      "subtitle": "Upgrade the workplace until an inspector notices.",
+      "products": [
+        { "productId": "plant", "name": "Low-Morale Office Plant", "description": "Requires sunlight, water, and a healthier environment than this one.", "price": "$25", "badge": "DECOR", "iconText": "PLNT", "iconPath": "scamazon/Thumbnails/plant.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 2 },
+        { "productId": "urinal", "name": "Portable Executive Urinal", "description": "Eliminates bathroom breaks and several important boundaries.", "price": "$250", "badge": "FACILITIES", "iconText": "URI", "iconPath": "scamazon/Thumbnails/urinal.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 4 },
+        { "productId": "wet-floor-sign", "name": "Wet Floor Sign", "description": "Creates legal immunity through the ancient power of yellow plastic.", "price": "$20", "badge": "SAFETY THEATER", "iconText": "WET", "iconPath": "scamazon/Thumbnails/wet-floor-sign.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 1 },
+        { "productId": "pop-up-trampoline", "name": "Pop-Up Trampoline", "description": "A compact morale booster and full-size workers' compensation claim.", "price": "$90", "badge": "TEAM CULTURE", "iconText": "BOING", "iconPath": "scamazon/Thumbnails/pop-up-trampoline.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 4 }
+      ]
+    },
+    {
+      "title": "Curios, Collectibles & Recreation",
+      "subtitle": "Objects with no business value, making them perfect corporate purchases.",
+      "products": [
+        { "productId": "poop", "name": "One Piece of Poop", "description": "Exactly one. Packed by hand and delivered with regrettable urgency.", "price": "$5", "badge": "BIOHAZARD", "iconText": "POOP", "iconPath": "scamazon/Thumbnails/poop.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 1 },
+        { "productId": "daukey", "name": "Daukey", "description": "A premium model of whatever a Daukey is. Knowing costs extra.", "price": "$40", "badge": "LIMITED MYSTERY", "iconText": "DAU", "iconPath": "scamazon/Thumbnails/daukey.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 2 },
+        { "productId": "football", "name": "FootBall", "description": "One word, two capital letters, and absolutely no standardized rules.", "price": "$25", "badge": "SPORTS-ish", "iconText": "FTB", "iconPath": "scamazon/Thumbnails/football.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 3 },
+        { "productId": "actual-football", "name": "Actual Football", "description": "The other football. Guaranteed to restart an international argument.", "price": "$30", "badge": "ACTUAL SPORTS", "iconText": "BALL", "iconPath": "scamazon/Thumbnails/actual-football.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 3 },
+        { "productId": "gem", "name": "Definitely Real Gem", "description": "Appraised by our in-house expert, who also wrote this description.", "price": "$150", "badge": "INVESTMENT", "iconText": "GEM", "iconPath": "scamazon/Thumbnails/gem.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 4 },
+        { "productId": "golden-shit", "name": "Golden Shit", "description": "Proof that sufficient plating can make anything a luxury asset.", "price": "$500", "badge": "EXECUTIVE AWARD", "iconText": "GOLD", "iconPath": "scamazon/Thumbnails/golden-shit.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 6 },
+        { "productId": "karaoke-microphone", "name": "Mandatory-Fun Karaoke Microphone", "description": "Transforms team night into an HR evidence-collection event.", "price": "$50", "badge": "ENTERTAINMENT", "iconText": "MIC", "iconPath": "scamazon/Thumbnails/karaoke-microphone.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 3 },
+        { "productId": "polaroid", "name": "Polaroid Evidence Camera", "description": "Instant photos for memories, blackmail, and poorly documented expenses.", "price": "$100", "badge": "ANALOG CLOUD", "iconText": "PIC", "iconPath": "scamazon/Thumbnails/polaroid.png", "actionLabel": "BUY NOW", "action": "PhysicalProduct", "unlockDay": 3 }
+      ]
+    },
+    {
+      "title": "Competitive Solutions",
+      "subtitle": "Team purchases for problems that cannot be solved with another phone call.",
+      "products": [
+        { "productId": "airstrike-rival-scammers", "name": "Airstrike the Rival Scammers", "description": "Orders one full missile barrage against every registered rival scammers HQ.", "price": "$9,000", "badge": "TEAM PURCHASE", "iconText": "BOOM", "iconPath": "scamazon/Thumbnails/Precision Strike.png", "actionLabel": "BUY AIRSTRIKE", "action": "AirstrikeRivalScammers", "unlockDay": 1 },
+        { "productId": "airstrike-yourselves", "name": "Airstrike Yourselves", "description": "Orders one full missile barrage against your own call center. Team morale may vary.", "price": "$6,000", "badge": "TEAM PURCHASE", "iconText": "BOOM", "iconPath": "scamazon/Thumbnails/Precision Strike Yourself.png", "actionLabel": "BUY SELF-AIRSTRIKE", "action": "AirstrikeYourselves", "unlockDay": 1 }
+      ]
+    },
+    {
+      "title": "Scam Marketplace",
+      "subtitle": "Tomorrow's schemes will live here. Buying and selling are not wired up yet.",
+      "products": [
+        { "name": "Buy Tomorrow's Scams", "description": "Browse fresh scam types before the next shift begins.", "price": "COMING SOON", "badge": "MARKETPLACE", "iconText": "BUY", "actionLabel": "MARKET CLOSED", "action": "None", "unlockDay": 1 },
+        { "name": "Sell Spare Scams", "description": "List schemes your crew no longer needs and reclaim shelf space.", "price": "COMING SOON", "badge": "MARKETPLACE", "iconText": "SELL", "actionLabel": "MARKET CLOSED", "action": "None", "unlockDay": 1 }
+      ]
+    }
+  ]
+}

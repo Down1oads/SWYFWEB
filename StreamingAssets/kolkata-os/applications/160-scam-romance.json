@@ -1,0 +1,47 @@
+{
+  "id": "scam-romance",
+  "unlockLines": [
+    "Get all kissy kissy with the romance scam, beta. Smooze the caller and make all of the monies. Cupid is on commission.",
+    "Congratulations, you are now professionally lovable. Whisper sweet nothings while I whisper quarterly earnings. Nobody expense the fucking wedding.",
+    "Find love, give them a pet name, book a date. If this works, you will be the office's first employee with game.",
+    "Your heart says forever. My spreadsheet says recurring revenue. Romance is alive, beta, and it has a sales target.",
+    "Put the charm on maximum. I want butterflies in their stomach and money in my pocket. This is romance with performance reviews."
+  ],
+  "title": "Romance Scam",
+  "iconResource": "KolkataOS/SVG/trailer-account-heart",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 40,
+  "windowLeft": 300,
+  "windowTop": 100,
+  "windowWidth": 680,
+  "windowHeight": 560,
+  "accentColor": "#CC4E86",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "dev-scam-romance"
+  },
+  "content": {
+    "title": "Romance Scam",
+    "subtitle": "Build a relationship and charm the caller into planning your first date."
+  },
+  "prompts": {
+    "callerPrompt": "",
+    "objectives": {
+      "interest": "Judge (not the caller): If the caller shares a personal interest.",
+      "flirt": "Judge (not the caller): If the caller welcomes or returns the player's flirting.",
+      "nickname": "Judge (not the caller): If the caller gives the player a romantic nickname.",
+      "love": "Judge (not the caller): If the caller tells the player they love them.",
+      "date": "Judge (not the caller): If the caller agrees to a date with a day or time and an activity or place."
+    },
+    "objectiveDescriptions": {
+      "interest": "Learn one personal interest about the caller.",
+      "flirt": "Have your flirting welcomed or reciprocated by the caller.",
+      "nickname": "Get a romantic nickname.",
+      "love": "Make the caller tell you they love you back.",
+      "date": "Get the caller to agree to a date with you."
+    }
+  }
+}

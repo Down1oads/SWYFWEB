@@ -1,0 +1,17 @@
+{
+  "id": "discord",
+  "title": "Discord",
+  "iconPath": "icons/Discord-Symbol-White.png",
+  "contentType": "discordInvite",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopHiddenByDefault": false,
+  "desktopOrder": 19,
+  "accentColor": "#5865f2",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "discord-included"
+  },
+  "content": {}
+}

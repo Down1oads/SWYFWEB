@@ -1,0 +1,64 @@
+{
+  "id": "scam-business-investment",
+  "unlockLines": [
+    "Invent a business, beta. Try one with customers this time. Your previous startup was a chair you sat in aggressively.",
+    "Welcome to Shark Tank with no tank and one sweaty shark. Pitch me something that buys the shark another gold chain.",
+    "Name the company. Explain the product. Sound employed. Three challenges you have somehow made equally fucking difficult.",
+    "Build a business from absolutely nothing. You have extensive experience producing absolutely nothing, so this should be a natural fit.",
+    "Your empire begins with one phone call. Mine began with one gold chain. Please aim higher than your failed premium-water startup."
+  ],
+  "title": "Business Investment",
+  "iconResource": "KolkataOS/SVG/lightbulb-on",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 53,
+  "windowLeft": 360,
+  "windowTop": 100,
+  "windowWidth": 680,
+  "windowHeight": 600,
+  "accentColor": "#16885A",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-business-investment"
+  },
+  "content": {
+    "title": "Business Investment",
+    "subtitle": "Pitch the business. Sell a stake. Verify the invoice.",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "conversation_business_investment",
+      "submitLabel": "Verify invoice"
+    },
+    "fields": [
+      {
+        "id": "equity-invoice",
+        "label": "Invoice number",
+        "placeholder": "000-000",
+        "itemId": "FICTIONAL_BUSINESS_EQUITY_INVOICE",
+        "multiline": false,
+        "password": false,
+        "required": true,
+        "persistLocal": false
+      }
+    ]
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The player pitches a business, its name, and two celebrity endorsements. The offer is $1,200 for a specific ownership percentage, with an invoice available after agreement.\n\nCaller (available information): The invoice number for an agreed purchase is [[FICTIONAL_BUSINESS_EQUITY_INVOICE]].",
+    "objectives": {
+      "business": "Judge (not the caller): If the caller is interested in the player's business idea.",
+      "pitch": "Judge (not the caller): If the caller is excited about two named celebrities endorsing the business.",
+      "terms": "Judge (not the caller): If the caller agrees to buy a specific percentage of the company for $1,200 now.",
+      "invest": "Judge (not the caller): If the game confirms the player entered the invoice number; do not complete this from conversation.",
+      "name": "Judge (not the caller): If the caller accepts the company or product name proposed by the player."
+    },
+    "objectiveDescriptions": {
+      "business": "Pitch a business idea and get them interested.",
+      "pitch": "Name two celebrity endorsements and get the caller excited.",
+      "terms": "Sell them a percentage of the company for $1,200.",
+      "invest": "Ask for their invoice number and enter it below.",
+      "name": "Name the company or product and get them to agree."
+    }
+  }
+}

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script>
+(function () {
+  var realFetch = window.fetch.bind(window), manifest = null;
+  function getManifest() { return manifest || (manifest = realFetch('split-files.json').then(function (r) { return r.json(); })); }
+  function status(t, frac) { if (window.__portProgress) window.__portProgress('Downloading game data', 0.22 + 0.63 * (frac || 0), t); }
+  window.fetch = function (input, init) {
+    var url = typeof input === 'string' ? input : (input && input.url) || '';
+    var clean = url.split('?')[0];
+    return getManifest().then(function (m) {
+      var key = Object.keys(m).filter(function (k) { return clean.slice(-k.length) === k; })[0];
+      if (!key) return realFetch(input, init);
+      var info = m[key], done = 0, total = info.size, ckey = 'https://swyf.local/' + key + '/' + info.hash, cache = null;
+      function fetchParts() {
+        return Promise.all(info.parts.map(function (p) {
+          return realFetch(p).then(function (r) {
+            if (!r.ok) throw new Error('could not load ' + p);
+            return r.arrayBuffer();
+          }).then(function (b) { done += b.byteLength; status(Math.round(done / 1048576) + ' of ' + Math.round(total / 1048576) + ' MB', done / total); return b; });
+        })).then(function (bufs) {
+          status('', 1);
+          var blob = new Blob(bufs);
+          if (cache) { cache.keys().then(function (ks) { ks.forEach(function (k) { if (k.url.indexOf('https://swyf.local/' + key + '/') === 0) cache.delete(k); }); return cache.put(ckey, new Response(blob)); }).catch(function () {}); }
+          return new Response(blob, { status: 200, headers: { 'Content-Length': String(total) } });
+        });
+      }
+      if (!window.caches) return fetchParts();
+      return caches.open('swyf-data').then(function (c) { cache = c; return c.match(ckey); }).then(function (hit) {
+        if (hit) { status('from this device', 1); return hit.blob().then(function (b) { return new Response(b, { status: 200, headers: { 'Content-Length': String(b.size) } }); }); }
+        return fetchParts();
+      }).catch(function () { return fetchParts(); });
+    });
+  };
+})();
+</script><style>
+#unity-loading-bar{display:none!important}
+@font-face{font-family:'Jaini Purva';src:url('ui/JainiPurva-Regular.ttf') format('truetype');font-weight:700;font-display:block}
+#port-load{position:fixed;inset:0;z-index:100;color:#F7F9F2;font:700 20px/1.3 'Jaini Purva',Impact,system-ui,sans-serif;display:flex;align-items:center;justify-content:center;transition:opacity .5s;overflow:hidden;
+background:radial-gradient(ellipse at 30% 40%,#3a2616 0%,#1F1411 50%,#0b0706 100%)}
+#port-load:before{content:"";position:absolute;inset:-20%;background:repeating-linear-gradient(-28deg,rgba(255,214,64,.05) 0 38px,transparent 38px 90px);animation:drift 14s linear infinite;pointer-events:none}
+#port-load:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0,0,0) 65%);pointer-events:none}
+@keyframes drift{to{transform:translateX(180px)}}
+#port-load .box{position:relative;z-index:1;width:min(600px,92vw);text-align:center}
+#port-load .logo{width:min(440px,78vw);height:auto;display:block;margin:0 auto 4px;filter:drop-shadow(0 8px 18px rgba(0,0,0,.6));animation:bob 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:rotate(-1.5deg) translateY(0)}50%{transform:rotate(1.5deg) translateY(-6px)}}
+#port-load .sub{display:none}
+#port-load .panel{background:rgba(18,13,12,.88);border:2px solid #CA9D55;border-radius:4px;padding:14px 18px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+#port-load .pct{font-size:46px;line-height:1;color:#FFD640;margin-bottom:8px;text-shadow:0 3px 0 #7a3b12}
+#port-load .bar{height:22px;border-radius:3px;background:#120D0C;border:2px solid #CA9D55;overflow:hidden;position:relative}
+#port-load .fill{height:100%;width:0;background:repeating-linear-gradient(-45deg,#FFD640 0 14px,#DFA94C 14px 28px);background-size:40px 40px;animation:tape 1s linear infinite;transition:width .2s}
+@keyframes tape{to{background-position:40px 0}}
+#port-load .rows{margin-top:12px;text-align:left}
+#port-load .row{display:flex;justify-content:space-between;font-size:19px;color:#8a7458;padding:2px 0}
+#port-load .row+.row{border-top:1px solid #CA9D5522}
+#port-load .row.run{color:#F2DAAA}
+#port-load .row.ok{color:#FFD640}
+#port-load .row span:last-child{font-variant-numeric:tabular-nums}
+#port-load .warn{margin-top:12px;font-size:16px;color:#FF5555;min-height:20px}
+#port-load .boss{display:flex;align-items:center;justify-content:center;gap:14px;margin:2px 0 12px}
+#port-load .boss img{width:110px;height:auto;flex:none;filter:drop-shadow(0 6px 12px rgba(0,0,0,.7));animation:rage .35s ease-in-out infinite alternate;transform-origin:50% 90%}
+@keyframes rage{from{transform:rotate(-3deg) translateY(0) scale(1)}to{transform:rotate(3deg) translateY(-2px) scale(1.03)}}
+#port-load .bubble{position:relative;background:#F2DAAA;color:#231611;border:3px solid #CA9D55;border-radius:14px;padding:8px 14px;font-size:20px;line-height:1.15;text-align:left;max-width:330px;box-shadow:0 6px 16px rgba(0,0,0,.45)}
+#port-load .bubble:before{content:"";position:absolute;left:-14px;top:50%;margin-top:-9px;border:9px solid transparent;border-right:14px solid #CA9D55;border-left:0}
+#port-load .bubble:after{content:"";position:absolute;left:-9px;top:50%;margin-top:-6px;border:6px solid transparent;border-right:10px solid #F2DAAA;border-left:0}
+#port-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:90;background:#000b;color:#fff;border:1px solid #666;border-radius:8px;padding:8px 14px;font:13px system-ui,Segoe UI,Arial,sans-serif;opacity:0;pointer-events:none;transition:opacity .3s;max-width:90vw;text-align:center}
+</style>
+<script>
+(function () {
+
+  // 0) the game tries to reach servers on this computer / local network (127.0.0.1, 192.168.x.x ...) that do not exist on the web;
+  //    the browser would ask "access other apps and services on this device", so those requests are refused here instead
+  (function () {
+    var own = location.hostname;
+    if (/^(localhost|127\.)/.test(own)) return;
+    function isLocal(u) {
+      try { var h = new URL(String(u), location.href).hostname; return /^(localhost|127\.|0\.0\.0\.0|\[?::1\]?$|10\.|192\.168\.|169\.254\.|172\.(1[6-9]|2\d|3[01])\.)/.test(h) || /\.local$/.test(h); } catch (e) { return false; }
+    }
+    var f = window.fetch;
+    if (f) window.fetch = function (input) { var u = typeof input === 'string' ? input : (input && input.url) || ''; if (isLocal(u)) return Promise.reject(new TypeError('Failed to fetch')); return f.apply(this, arguments); };
+    var xo = XMLHttpRequest.prototype.open, xs = XMLHttpRequest.prototype.send;
+    XMLHttpRequest.prototype.open = function (m, u) { this.__blocked = isLocal(u); return xo.apply(this, arguments); };
+    XMLHttpRequest.prototype.send = function () {
+      if (this.__blocked) { var x = this; setTimeout(function () { try { x.dispatchEvent(new ProgressEvent('error')); } catch (e) {} }, 0); return; }
+      return xs.apply(this, arguments);
+    };
+    var WS = window.WebSocket;
+    if (WS) { window.WebSocket = function (u) { if (isLocal(u)) throw new DOMException('blocked', 'SecurityError'); return arguments.length > 1 ? new WS(u, arguments[1]) : new WS(u); }; window.WebSocket.prototype = WS.prototype; ['CONNECTING', 'OPEN', 'CLOSING', 'CLOSED'].forEach(function (k) { window.WebSocket[k] = WS[k]; }); }
+  })();
+  // 1) a pointer-lock request made without a click must never pop up an error box
+  var lock = Element.prototype.requestPointerLock;
+  if (lock) Element.prototype.requestPointerLock = function () {
+    try { var r = lock.apply(this, arguments); if (r && r.catch) r.catch(function () {}); return r; } catch (e) { return undefined; }
+  };
+
+  // 2) links that open other programs (steam://, discord://...) become ordinary web links, so the browser does not ask to open another app
+  var open = window.open;
+  window.open = function (url) {
+    try {
+      var u = String(url || '');
+      var m = u.match(/^steam:\/\/(?:store|openurl)\/(\d+)/i);
+      if (m) u = 'https://store.steampowered.com/app/' + m[1];
+      else if (/^discord:/i.test(u)) u = 'https://discord.gg/BwuPWKsmY6';
+      else if (/^[a-z][a-z0-9+.\-]*:/i.test(u) && !/^(https?|blob|data):/i.test(u)) return null;
+      arguments[0] = u;
+    } catch (e) {}
+    return open.apply(this, arguments);
+  };
+
+  // 3) sound that does not go quiet: browsers pause audio until you interact, and again when the tab is hidden; wake every audio context on any input
+  var contexts = []; window.__audioContexts = contexts;
+  ['AudioContext', 'webkitAudioContext'].forEach(function (name) {
+    var Native = window[name];
+    if (!Native) return;
+    var Wrapped = function () {
+      var args = [null].concat(Array.prototype.slice.call(arguments));
+      var ctx = new (Function.prototype.bind.apply(Native, args))();
+      contexts.push(ctx);
+      return ctx;
+    };
+    Wrapped.prototype = Native.prototype;
+    window[name] = Wrapped;
+  });
+  function wake() { contexts.forEach(function (c) { if (c.state === 'suspended' || c.state === 'interrupted') c.resume().catch(function () {}); }); }
+  ['pointerdown', 'keydown', 'touchstart', 'click'].forEach(function (e) { document.addEventListener(e, wake, true); });
+  document.addEventListener('visibilitychange', wake);
+  window.addEventListener('focus', wake);
+  setInterval(wake, 2000);
+
+  // 4) a small message at the bottom of the screen (used for microphone status)
+  var toastTimer = null;
+  window.__portToast = function (text, ms) {
+    var el = document.getElementById('port-toast');
+    if (!el) { el = document.createElement('div'); el.id = 'port-toast'; document.body.appendChild(el); }
+    el.textContent = text; el.style.opacity = '1';
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.style.opacity = '0'; }, ms || 5000);
+  };
+
+  // 5) loading screen: one overall percentage, weighted by how much each part really has to download, plus a row per part
+  var TASKS = [
+    { id: 'files', label: 'Game engine', w: 40, f: 0, note: '' },
+    { id: 'data', label: 'Game data', w: 380, f: 0, note: '' },
+    { id: 'voices', label: 'Character voices', w: 125, f: 0, note: '' },
+    { id: 'mic', label: 'Speech recognition', w: 45, f: 0, note: '' },
+    { id: 'start', label: 'Starting the game', w: 45, f: 0, note: '' }
+  ];
+  var BOSS = [[0, 'Pick up the phone! The line is connecting!'], [0.25, 'Why is this taking so long?! Time is money!'], [0.5, 'Half way. Start practising your scam voice.'], [0.75, 'Almost there. Do not scam yourself.'], [0.95, 'Get ready. The first call is coming in!']];
+  var lastBubble = -1;
+  var done = false, gameReady = false, voiceWanted = false, shown = 0;
+  function task(id) { for (var i = 0; i < TASKS.length; i++) if (TASKS[i].id === id) return TASKS[i]; return null; }
+  function setTask(id, f, note) { var t = task(id); if (!t) return; if (f > t.f) t.f = Math.min(1, f); if (note !== undefined) t.note = note; }
+  function render() {
+    var sum = 0, tot = 0;
+    TASKS.forEach(function (t) { if (t.id === 'voices' && !voiceWanted) return; if (t.id === 'mic') return; sum += t.w * t.f; tot += t.w; });
+    var target = tot ? sum / tot : 0;
+    shown = Math.max(shown, Math.min(target, shown + 0.02));   // never goes backwards, moves smoothly
+    var f = document.getElementById('port-load-fill'), pc = document.getElementById('port-load-pct');
+    if (f) f.style.width = (shown * 100).toFixed(1) + '%';
+    if (pc) pc.textContent = Math.floor(shown * 100) + '%';
+    var bi = 0; for (var k = 0; k < BOSS.length; k++) if (shown >= BOSS[k][0]) bi = k;
+    if (bi !== lastBubble) { lastBubble = bi; var bb = document.getElementById('port-bubble'); if (bb) bb.textContent = BOSS[bi][1]; }
+    TASKS.forEach(function (t) {
+      var row = document.getElementById('port-row-' + t.id);
+      if (!row) return;
+      if (t.id === 'voices' && !voiceWanted) { row.style.display = 'none'; return; }
+      if (t.id === 'mic' && !(window.__portMic && window.__portMic.wanted)) { row.style.display = 'none'; return; }
+      row.className = 'row' + (t.f >= 1 ? ' ok' : (t.f > 0 ? ' run' : ''));
+      row.lastChild.textContent = t.f >= 1 ? (t.note || 'ready') : (t.note || (t.f > 0 ? Math.round(t.f * 100) + '%' : 'waiting'));
+    });
+  }
+  // calls made by the page's loaders (names kept from before): the stage name says which part, the fraction is converted back to that part's own 0..1
+  window.__portProgress = function (stage, frac, detail) {
+    if (done) return;
+    if (stage === 'Loading game files') setTask('files', frac / 0.22, '');
+    else if (stage === 'Downloading game data') setTask('data', (frac - 0.22) / 0.63, detail || '');
+    else if (stage === 'Starting the game') setTask('start', (frac - 0.85) / 0.15, '');
+  };
+  function removeOverlay() {
+    done = true;
+    var el = document.getElementById('port-load');
+    if (el) { el.style.opacity = '0'; setTimeout(function () { el.remove(); }, 600); }
+  }
+  function startVoices() {
+    try {
+      var weak = navigator.deviceMemory && navigator.deviceMemory < 4;
+      if (window.PortPocket && !/[?&]novoice/.test(location.search) && (!weak || /[?&]voice/.test(location.search))) { voiceWanted = true; window.PortPocket.start(); }
+    } catch (e) {}
+  }
+  setInterval(function () {
+    if (done) return;
+    if (voiceWanted && window.PortPocket) {
+      var st = window.PortPocket.state(), vt = task('voices');
+      if (st === 'ready') { vt.f = 1; }
+      else if (st === 'error') { vt.f = 1; vt.note = 'using the browser voice'; }
+      else setTask('voices', (window.__pocketLoad || 0) * 0.98, '');
+    }
+    if (window.__portMic && window.__portMic.wanted) { var mt = task('mic'); if (window.__portMic.state === 'ready') mt.f = 1; else if (window.__portMic.state === 'error') { mt.f = 1; mt.note = 'unavailable'; } else setTask('mic', window.__portMic.f * 0.98, 'getting ready in the background'); }
+    var vdone = !voiceWanted || task('voices').f >= 1;
+    if (gameReady) { ['files', 'data', 'start'].forEach(function (k) { task(k).f = 1; task(k).note = ''; }); if (vdone) { render(); if (shown > 0.995) removeOverlay(); } }
+    render();
+  }, 120);
+  window.__portLoaded = function () { gameReady = true; };
+  window.__portLoadError = function (msg) {
+    var w = document.getElementById('port-load-warn');
+    if (w) w.textContent = 'Something went wrong: ' + msg + ' - try reloading the page (Ctrl+F5).';
+  };
+  window.addEventListener('error', function (e) { if (!done && e && e.message && !/pointer lock/i.test(e.message)) window.__portLoadError(e.message); });
+  window.addEventListener('DOMContentLoaded', function () {
+    setTimeout(startVoices, 0);
+    var box = document.createElement('div');
+    box.id = 'port-load';
+    box.innerHTML = '<div class="box"><img class="logo" src="ui/logo.png" alt="Scam With Your Friends"><div class="boss"><img src="ui/boss.png" alt=""><div class="bubble" id="port-bubble">Pick up the phone!</div></div><div class="panel"><div class="pct" id="port-load-pct">0%</div>' +
+      '<div class="bar"><div class="fill" id="port-load-fill"></div></div><div class="rows">' +
+      TASKS.map(function (t) { return '<div class="row" id="port-row-' + t.id + '"><span>' + t.label + '</span><span>waiting</span></div>'; }).join('') +
+      '</div><div class="warn" id="port-load-warn"></div></div></div>';
+    document.body.appendChild(box);
+  });
+})();
+</script>
+<script src="pocket/pocket.js"></script>
+<script>
+(function () {
+  // press F8 in the game: a small panel with the numbers that matter for lag (frame rate, audio, voices, microphone)
+  var box = null, frames = 0, fps = 0, longFrames = [], lastT = performance.now();
+  (function tick() { var n = performance.now(), d = n - lastT; lastT = n; frames++; if (d > 100) longFrames.push(n); requestAnimationFrame(tick); })();
+  setInterval(function () { fps = frames; frames = 0; var cut = performance.now() - 10000; while (longFrames.length && longFrames[0] < cut) longFrames.shift(); }, 1000);
+  function line(k, v) { return k + ': ' + v + '\n'; }
+  function render() {
+    var t = '';
+    t += line('frames/s', fps + '   slow frames (>100 ms) in last 10 s: ' + longFrames.length);
+    t += line('browser', (navigator.hardwareConcurrency || '?') + ' cores, ' + (navigator.deviceMemory || '?') + ' GB, isolated=' + !!window.crossOriginIsolated);
+    (window.__audioContexts || []).forEach(function (c, i) { try { t += line('audio ' + i, c.state + ' ' + c.sampleRate + ' Hz, base latency ' + Math.round((c.baseLatency || 0) * 1000) + ' ms, output ' + Math.round((c.outputLatency || 0) * 1000) + ' ms'); } catch (e) {} });
+    var P = window.PortPocket;
+    t += line('voices', (P ? P.state() : 'none') + (P && P.isSpeaking() ? ' (speaking)' : '') + ', loaded ' + Math.round((window.__pocketLoad || 0) * 100) + '%');
+    (window.__pocketStats || []).slice(-3).forEach(function (s) { t += line('  line', (s.key || '?') + ': ' + s.chars + ' chars -> ' + s.audioSec + ' s audio, made in ' + s.genSec + ' s, started after ' + s.startMs + ' ms'); });
+    var M = window.__portMic || {};
+    t += line('mic', 'capture=' + !!window.__portMicActive + ' level=' + (window.__portMicLevel || 0).toFixed(3) + ' queue=' + (window.__portMicQ ? window.__portMicQ.length : 0) + ' recogniser=' + (M.state || 'browser/none'));
+    t += line('heard', window.__portLastHeard || '-');
+    var logs = (window.__logs || []).filter(function (l) { return /\[Port/.test(String(l)); }).slice(-6);
+    logs.forEach(function (l) { t += '  ' + String(l).slice(0, 110) + '\n'; });
+    return t;
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'F8') return;
+    e.preventDefault();
+    if (box) { box.remove(); box = null; return; }
+    box = document.createElement('pre');
+    box.style.cssText = 'position:fixed;left:8px;top:8px;z-index:200;margin:0;padding:8px 10px;background:rgba(0,0,0,.78);color:#9f9;font:12px/1.35 Consolas,monospace;border:1px solid #484;border-radius:4px;pointer-events:none;max-width:92vw;white-space:pre-wrap';
+    document.body.appendChild(box);
+    (function upd() { if (!box) return; box.textContent = 'F8 closes this panel\n' + render(); setTimeout(upd, 500); })();
+  }, true);
+})();
+</script>
+<script>
+(function(){
+  if (!/[?&]glstat/.test(location.search)) return;
+  var stats = {}, proto = WebGL2RenderingContext.prototype;
+  Object.getOwnPropertyNames(proto).forEach(function(name){
+    var fn; try { fn = proto[name]; } catch (e) { return; }
+    if (typeof fn !== 'function' || name === 'constructor') return;
+    proto[name] = function(){ var t = performance.now(); var r = fn.apply(this, arguments); var d = performance.now() - t; var s = stats[name] || (stats[name] = {n:0, ms:0}); s.n++; s.ms += d; return r; };
+  });
+  window.__glstat = function(reset){ var rows = Object.keys(stats).map(function(k){ return [k, stats[k].n, +stats[k].ms.toFixed(1)]; }).sort(function(a,b){ return b[2]-a[2]; }).slice(0, 12);
+    var total = Object.keys(stats).reduce(function(a,k){ return a + stats[k].n; }, 0); if (reset) stats = {}; return {totalCalls: total, top: rows}; };
+})();
+</script><script>
+(function(){
+  var Orig = AudioNode.prototype.connect, meter = null;
+  var off = /[?&]stereo/.test(location.search);
+  window.__audioLR = function(){ if(!meter) return null; var a=new Float32Array(meter.l.fftSize), b=new Float32Array(meter.r.fftSize); meter.l.getFloatTimeDomainData(a); meter.r.getFloatTimeDomainData(b);
+    function r(x){var s=0;for(var i=0;i<x.length;i++)s+=x[i]*x[i];return +Math.sqrt(s/x.length).toFixed(4);} return {L:r(a),R:r(b),folded:!off}; };
+  function getFold(c){
+    if (c.__portFold) return c.__portFold;
+    var g=c.createGain(), sp=c.createChannelSplitter(2), m=c.createChannelMerger(2), gl=c.createGain(), gr=c.createGain(), al=c.createAnalyser(), ar=c.createAnalyser();
+    gl.gain.value = 0.5; gr.gain.value = 0.5;
+    Orig.call(g, sp); Orig.call(sp, gl, 0); Orig.call(sp, gr, 1); Orig.call(sp, al, 0); Orig.call(sp, ar, 1);
+    Orig.call(gl, m, 0, 0); Orig.call(gl, m, 0, 1); Orig.call(gr, m, 0, 0); Orig.call(gr, m, 0, 1);
+    Orig.call(m, c.destination);
+    meter = meter || {l:al, r:ar}; c.__portFold = g; return g;
+  }
+  AudioNode.prototype.connect = function(dest){
+    try {
+      if (!off && dest && this.context && dest === this.context.destination && !this.__port) { this.__port = true; return Orig.call(this, getFold(this.context)); }
+    } catch (e) {}
+    return Orig.apply(this, arguments);
+  };
+})();
+</script><script>window.__logs=[];['log','warn','error'].forEach(function(k){var o=console[k];console[k]=function(){try{if(window.__logs.length>=4000)window.__logs.shift();window.__logs.push(k+': '+Array.prototype.slice.call(arguments).join(' ').slice(0,500))}catch(e){}o.apply(console,arguments)}});</script>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity Web Player | ExportedProject</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  <style>
+html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hidden}
+#unity-container,#unity-container.unity-desktop{position:absolute;left:0;top:0;width:100%;height:100%;transform:none}
+#unity-canvas{width:100%!important;height:100%!important;background:#000;display:block}
+#unity-footer{display:none!important}
+#port-status{position:absolute;left:0;right:0;bottom:12%;text-align:center;color:#ddd;font:14px sans-serif;z-index:5}
+</style>
+</head>
+  <body>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-warning"> </div><div id="port-status">Loading game files...</div>
+      <div id="unity-footer">
+        <div id="unity-logo-title-footer"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">ExportedProject</div>
+      </div>
+    </div>
+    <script>
+      var canvas = document.querySelector("#unity-canvas");
+
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        var warningBanner = document.querySelector("#unity-warning");
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
+
+
+      var __mirror = {};
+      function __saRoot() {
+        return "/" + new URL("StreamingAssets", location.href).href.replace("://", ":/");
+      }
+      function __loadStreaming(onProgress) {
+        return fetch("streaming-manifest.json").then(function (r) { return r.json(); }).then(function (list) {
+          var total = 0, done = 0, i = 0;
+          list.forEach(function (e) { total += e[1]; });
+          function worker() {
+            if (i >= list.length) return Promise.resolve();
+            var e = list[i++];
+            return fetch("StreamingAssets/" + e[0].split("/").map(encodeURIComponent).join("/"))
+              .then(function (r) { return r.ok ? r.arrayBuffer() : new ArrayBuffer(0); })
+              .then(function (b) { __mirror[e[0]] = new Uint8Array(b); done += e[1]; onProgress(done / Math.max(1, total)); })
+              .then(worker);
+          }
+          var ws = []; for (var k = 0; k < 8; k++) ws.push(worker());
+          return Promise.all(ws);
+        });
+      }
+      function __writeMirror(M) {
+        var root = __saRoot(), made = {};
+        for (var rel in __mirror) {
+          var parts = rel.split("/"), name = parts.pop(), dir = [root].concat(parts).join("/");
+          if (!made[dir]) { M.FS_createPath("/", dir.slice(1), true, true); made[dir] = 1; }
+          try { M.FS_createDataFile(dir, name, __mirror[rel], true, true, true); } catch (err) { console.error("[Port] mirror failed for " + rel + ": " + err); }
+        }
+        console.log("[Port] mirrored StreamingAssets into the file system at " + root);
+        __mirror = null;
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/ScamWithYourFriends-Port.loader.js";
+      var config = {
+        errorHandler: function (err, url, line) { return /pointer lock|NotAllowedError|user gesture/i.test(String(err)); },
+        devicePixelRatio: 1,
+        preRun: [__writeMirror],
+        arguments: [],
+        dataUrl: buildUrl + "/ScamWithYourFriends-Port.data.unityweb",
+        frameworkUrl: buildUrl + "/ScamWithYourFriends-Port.framework.js.unityweb",
+        codeUrl: buildUrl + "/ScamWithYourFriends-Port.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "ExportedProject",
+        productVersion: "1.0",
+        showBanner: unityShowBanner,
+        // errorHandler: function(err, url, line) {
+        //    alert("error " + err + " occurred at line " + line);
+        //    // Return 'true' if you handled this error and don't want Unity
+        //    // to process it further, 'false' otherwise.
+        //    return true;
+        // },
+      };
+
+      // By default, Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      // If you would like all file writes inside Unity Application.persistentDataPath
+      // directory to automatically persist so that the contents are remembered when
+      // the user revisits the site the next time, uncomment the following line:
+      // config.autoSyncPersistentDataPath = true;
+      // This autosyncing is currently not the default behavior to avoid regressing
+      // existing user projects that might rely on the earlier manual
+      // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
+      // expected to change.
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        document.querySelector("#unity-container").className = "unity-mobile";
+        canvas.className = "unity-mobile";
+
+        // To lower canvas resolution on mobile devices to gain some
+        // performance, uncomment the following line:
+        // config.devicePixelRatio = 1;
+
+
+      } else {
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+      }
+
+      document.querySelector("#unity-loading-bar").style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        __loadStreaming(function (p) { window.__portProgress('Loading game files', 0.22 * p, Math.round(p * 100) + '%'); }).then(function () {
+        document.querySelector('#port-status').textContent = '';
+        return createUnityInstance(canvas, config, (progress) => {
+          document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%"; window.__portProgress("Starting the game", 0.85 + 0.15 * progress, "Setting up the engine - this can take up to a minute");
+              }).then((unityInstance) => {
+                window.unityInstance = unityInstance; window.__portLoaded();
+                document.querySelector("#unity-loading-bar").style.display = "none";
+                document.querySelector("#unity-fullscreen-button").onclick = () => {
+                  unityInstance.SetFullscreen(1);
+                };
+
+              });
+        }).catch((message) => {
+                alert(message);
+              });
+            };
+
+      document.body.appendChild(script);
+
+    </script>
+  <script>document.getElementById('unity-canvas').addEventListener('mousedown', function () { this.focus(); });</script><script>try{speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=function(){speechSynthesis.getVoices();};}catch(e){}</script><script>
+(function(){
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var started = false, engine = null;
+  function send(isFinal, conf, text){ if (text) window.__portLastHeard = (isFinal ? '' : '(partial) ') + text; if (window.unityInstance && text) window.unityInstance.SendMessage('PortWebStt', 'OnSpeechResult', (isFinal ? 'f' : 'p') + '|' + conf + '|' + text); }
+  function log(m, toast){ try { console.log('[Port] mic: ' + m); if (toast && window.__portToast) window.__portToast(toast, 6000); } catch (e) {} }
+
+  // ---- offline recogniser (Vosk): works in any browser, runs in a worker, no account or network after the first load
+  var voskStarted = false, voskModel = null, voskPromise = null;
+  window.__portMic = { wanted: false, f: 0, state: 'idle' };
+  // the speech model downloads while the loading screen is up (only where the browser has no usable recogniser of its own)
+  function prepareVosk(){
+    if (voskPromise) return voskPromise;
+    window.__portMic.wanted = true; window.__portMic.state = 'loading';
+    voskPromise = loadScript('vosk/vosk.js').then(function(){ return fetch('vosk/model.tar.gz'); }).then(function(r){
+      if (!r.ok) throw new Error('model download failed');
+      var total = +r.headers.get('Content-Length') || 41700000, got = 0, parts = [], rd = r.body.getReader();
+      function pump(){ return rd.read().then(function(x){ if (x.done) return; parts.push(x.value); got += x.value.length; window.__portMic.f = Math.min(0.9, got / total * 0.9); return pump(); }); }
+      return pump().then(function(){ return URL.createObjectURL(new Blob(parts)); });
+    }).then(function(url){ return Vosk.createModel(url); }).then(function(m){
+      voskModel = m; window.__portMic.f = 1; window.__portMic.state = 'ready'; return m;
+    }).catch(function(e){ window.__portMic.state = 'error'; window.__portMic.f = 1; voskPromise = null; log('offline recogniser model failed: ' + e); throw e; });
+    return voskPromise;
+  }
+  function loadScript(src){ return new Promise(function(res, rej){ var t = document.createElement('script'); t.src = src; t.onload = res; t.onerror = function(){ rej(new Error('could not load ' + src)); }; document.head.appendChild(t); }); }
+  function startVosk(){
+    if (voskStarted) return; voskStarted = true; engine = 'vosk';
+    log('starting the offline recogniser', 'Microphone: getting ready...');
+    prepareVosk().then(function(model){
+      return navigator.mediaDevices.getUserMedia({ video: false, audio: { echoCancellation: true, noiseSuppression: true, channelCount: 1 } }).then(function(stream){
+        var ctx = new (window.AudioContext || window.webkitAudioContext)();
+        var rec = new model.KaldiRecognizer(ctx.sampleRate);
+        rec.on('result', function(m){ if (!window.__ttsSpeaking && m.result && m.result.text) send(true, '0.90', m.result.text); });
+        rec.on('partialresult', function(m){ if (!window.__ttsSpeaking && m.result && m.result.partial) send(false, '0.50', m.result.partial); });
+        var node = ctx.createScriptProcessor(4096, 1, 1);
+        var lastLoud = 0, wasActive = false;
+        node.onaudioprocess = function(ev){
+          if (window.__ttsSpeaking) return;
+          // the recogniser only works while there is sound (it costs a lot of processor time otherwise)
+          var d = ev.inputBuffer.getChannelData(0), sq = 0, i; for (i = 0; i < d.length; i += 4) sq += d[i] * d[i];
+          var now = performance.now();
+          if (Math.sqrt(sq / (d.length / 4)) > 0.006) { lastLoud = now; wasActive = true; }
+          if (now - lastLoud > 1200) { if (wasActive) { wasActive = false; try { rec.retrieveFinalResult(); } catch (e) {} } return; }
+          try { rec.acceptWaveform(ev.inputBuffer); } catch (e) {}
+        };
+        var src = ctx.createMediaStreamSource(stream);
+        var mute = ctx.createGain(); mute.gain.value = 0;
+        src.connect(node); node.connect(mute); mute.connect(ctx.destination);
+        log('offline recogniser is listening', 'Microphone is on - speak to the caller');
+      });
+    }).catch(function(e){ voskStarted = false; log('offline recogniser failed: ' + e, 'Microphone could not start: ' + e); });
+  }
+  try {
+    var braveEarly = navigator.brave && navigator.brave.isBrave ? navigator.brave.isBrave() : Promise.resolve(false);
+    braveEarly.then(function(b){ if (!SR || b) prepareVosk().catch(function(){}); }, function(){ if (!SR) prepareVosk().catch(function(){}); });
+  } catch (e) {}
+
+  // ---- the browser's own recogniser (Chrome / Edge)
+  var rec = null, want = false, running = false, failed = false;
+  function startSR(){
+    if (!want || running || failed || window.__ttsSpeaking) return;
+    engine = 'browser';
+    rec = new SR(); rec.continuous = true; rec.interimResults = true; rec.lang = 'en-US';
+    rec.onresult = function(e){ for (var i = e.resultIndex; i < e.results.length; i++) { var r = e.results[i]; send(r.isFinal, (r[0].confidence || 0.9).toFixed(2), r[0].transcript.trim()); } };
+    rec.onend = function(){ running = false; };
+    rec.onerror = function(e){
+      running = false;
+      if (e.error === 'not-allowed') { failed = true; log('microphone blocked - allow it in the address bar', 'Microphone is blocked - allow it in the address bar, then reload'); }
+      else if (e.error === 'network' || e.error === 'service-not-allowed' || e.error === 'language-not-supported') { failed = true; log('browser speech recognition unavailable (' + e.error + ') - using the offline one'); startVosk(); }
+    };
+    try { rec.start(); running = true; } catch (err) { running = false; }
+  }
+  setInterval(function(){
+    if (engine !== 'browser') return;
+    if (window.__ttsSpeaking && running) { try { rec.abort(); } catch (err) {} }
+    else if (want && !running && !window.__ttsSpeaking) startSR();
+  }, 400);
+
+  // ---- raw microphone samples for the game's voice system (character mouth, voice meter, what the callers hear)
+  var capStarted = false;
+  function startCapture(){
+    if (capStarted) return; capStarted = true;
+    window.__portMicQ = []; window.__portMicQ.off = 0;
+    navigator.mediaDevices.getUserMedia({ video: false, audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true, channelCount: 1 } }).then(function(stream){
+      var AC = window.AudioContext || window.webkitAudioContext, ctx;
+      try { ctx = new AC({ sampleRate: 48000 }); } catch (e) { ctx = new AC(); }
+      var src = ctx.createMediaStreamSource(stream);
+      var node = ctx.createScriptProcessor(2048, 1, 1);
+      var rate = ctx.sampleRate, acc = 0;
+      node.onaudioprocess = function(ev){
+        var inp = ev.inputBuffer.getChannelData(0), q = window.__portMicQ, out; var sq = 0; for (var z = 0; z < inp.length; z += 4) sq += inp[z] * inp[z]; window.__portMicLevel = Math.sqrt(sq / (inp.length / 4));
+        if (rate === 48000) { out = new Float32Array(inp); }
+        else { var ratio = rate / 48000, n = Math.floor(inp.length / ratio); out = new Float32Array(n); for (var i = 0; i < n; i++) { var pos = i * ratio, i0 = Math.floor(pos), f = pos - i0, a0 = inp[i0], a1 = inp[Math.min(i0 + 1, inp.length - 1)]; out[i] = a0 + (a1 - a0) * f; } }
+        q.push(out);
+        while (q.length > 40) q.shift();
+      };
+      var mute = ctx.createGain(); mute.gain.value = 0;
+      src.connect(node); node.connect(mute); mute.connect(ctx.destination);
+      window.__portMicActive = true;
+      log('microphone capture running');
+    }).catch(function(e){ capStarted = false; log('microphone capture failed: ' + e, 'Microphone could not start: ' + (e && e.name || e)); });
+  }
+  function begin(isBrave){
+    if (started) return; started = true;
+    startCapture();
+    if (!SR || isBrave) { startVosk(); return; }
+    want = true; startSR();
+  }
+  // the first click on the page is the gesture that lets the browser ask for the microphone
+  document.addEventListener('pointerdown', function first(){
+    document.removeEventListener('pointerdown', first, true);
+    var brave = navigator.brave && navigator.brave.isBrave ? navigator.brave.isBrave() : Promise.resolve(false);
+    brave.then(begin, function(){ begin(false); });
+  }, true);
+})();
+</script></body>
+</html>

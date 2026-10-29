@@ -1,0 +1,30 @@
+{
+  "id": "spoofbook",
+  "unlockLines": [
+    "SpoofBook unlocked. Today you are a teacher, tomorrow a boss, always a disappointment. Finally, your acting career has a phone extension.",
+    "Try on a new identity, beta. Make it someone with punctuality. That would be your most ambitious character yet.",
+    "The theatre department is open. Our stage is a phone, our reviews are brutal, and the director wears an unreasonable gold chain.",
+    "Be whoever the call needs. You have spent all week pretending to be employed, so the training is already complete.",
+    "New voice. New role. Same fucking chair. Method acting has never been this sweaty or this aggressively supervised."
+  ],
+  "title": "SpoofBook",
+  "iconResource": "KolkataOS/SVG/phone-classic",
+  "contentType": "spoofbook",
+  "showOnDesktop": true,
+  "desktopOrder": 16,
+  "windowLeft": 190,
+  "windowTop": 70,
+  "windowWidth": 740,
+  "windowHeight": 600,
+  "minWindowWidth": 600,
+  "minWindowHeight": 460,
+  "accentColor": "#6B8E23",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "spoofbook-day-six"
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The caller may be persuaded even if they dislike the player, and can share their card when asked.\n\nCaller (available information): scene.outgoing_identity describes who is calling and your relationship to them. Your card number is [[FICTIONAL_SPOOF_CARD_NUMBER]]."
+  }
+}

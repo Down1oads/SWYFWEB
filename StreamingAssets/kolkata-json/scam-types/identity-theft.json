@@ -1,0 +1,12 @@
+{
+  "id": "social_security",
+  "displayName": "Social Security Scam",
+  "iconName": "card-account-details",
+  "appId": "identity",
+  "displayOrder": 0,
+  "relevantSentinels": [
+    "FICTIONAL_SSN"
+  ],
+  "appCompletionSource": "identity_record_submit",
+  "testOpeningPlayerLine": "I'm calling from account verification about an issue tied to your Social Security record."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "jw-paint",
+  "title": "JW Paint",
+  "iconPath": "icons/JW Paint.png",
+  "contentType": "jwPaint",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 16,
+  "windowLeft": 250,
+  "windowTop": 74,
+  "windowWidth": 1080,
+  "windowHeight": 720,
+  "accentColor": "#F2B705",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "jw-paint-license"
+  },
+  "content": {}
+}

@@ -1,0 +1,66 @@
+{
+  "id": "scam-investment",
+  "unlockLines": [
+    "Investment scam unlocked. Talk like a finance genius who swallowed a calculator. I want returns, beta. Mainly your return to work.",
+    "The market is bullish. Your performance is bullshit. Finally, two financial terms you can use in the same meeting.",
+    "Buy low, talk high, sweat through the shirt. Congratulations, you have completed the entire business school curriculum.",
+    "Pitch the moon. Promise the stars. Remember that our actual headquarters has a bucket catching the ceiling. Ambition, beta.",
+    "Put on the investment voice. It sounds like confidence with a tie. Yours currently sounds like a man requesting a refund."
+  ],
+  "title": "Investment Scam",
+  "iconResource": "KolkataOS/SVG/stock-candles",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 43,
+  "windowLeft": 372,
+  "windowTop": 160,
+  "windowWidth": 680,
+  "windowHeight": 640,
+  "accentColor": "#16885A",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "dev-scam-investment"
+  },
+  "content": {
+    "title": "Investment Scam",
+    "subtitle": "Pitch the upside. Set the stake. Close the trade.",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "conversation_investment",
+      "submitLabel": "Verify invoice"
+    },
+    "fields": [
+      {
+        "id": "investment-invoice",
+        "label": "Investment invoice number",
+        "placeholder": "000-000",
+        "itemId": "FICTIONAL_INVESTMENT_INVOICE_NUMBER",
+        "multiline": false,
+        "password": false,
+        "required": true,
+        "persistLocal": false
+      }
+    ]
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The player pitches an investment of $400, $500, $600, or $800. Agreeing to the amount does not pay the player; they must obtain and enter the caller's investment invoice number.\n\nCaller (available information): After agreeing to invest, your investment invoice number is [[FICTIONAL_INVESTMENT_INVOICE_NUMBER]]. You may share it when asked after agreeing to the investment.",
+    "objectives": {
+      "goal": "Judge (not the caller): If the caller shares a financial goal or concern.",
+      "pitch": "Judge (not the caller): If the caller discusses the player's proposed investment.",
+      "amount": "Judge (not the caller): If the caller considers investing at least $400.",
+      "larger": "Judge (not the caller): If the caller agrees to increase the amount to at least $500.",
+      "commit": "Judge (not the caller): If the caller commits to investing now, use the progress ID for the agreed amount.",
+      "invoice": "Judge (not the caller): If the game confirms the player entered the investment invoice number; do not complete this from conversation."
+    },
+    "objectiveDescriptions": {
+      "goal": "Learn what the caller wants financially.",
+      "pitch": "Pitch a investment that appeals to them.",
+      "amount": "Get a hypothetical commitment of at least $400.",
+      "larger": "Optional: push for $500, $600, or $800.",
+      "commit": "Get them to commit to the investment.",
+      "invoice": "Ask for their investment invoice number and enter it below."
+    }
+  }
+}

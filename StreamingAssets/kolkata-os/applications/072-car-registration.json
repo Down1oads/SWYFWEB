@@ -1,0 +1,61 @@
+{
+  "id": "car-registration",
+  "unlockLines": [
+    "We have been trying to reach you about your car's extended warranty. Even the car blocked us. Persistence, beta. Persistence.",
+    "Sell the warranty like the engine owes you rent. Our coverage includes hope, vibes, and a man saying hmm very seriously.",
+    "You are now a car expert. Yesterday you put diesel in the office printer. Tremendous career growth. Sell the fucking warranty.",
+    "A warranty so extended it reaches into my next gold chain. Tell the caller their car deserves luxury. Mine certainly does.",
+    "Talk engines, talk coverage, talk big money. If they ask about the transmission, stop explaining how telephones work."
+  ],
+  "title": "Car's Extended Warranty",
+  "iconSvg": "svg/car-side-white.svg",
+  "iconResource": "KolkataOS/SVG/car-side-white",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 8,
+  "windowLeft": 592,
+  "windowTop": 96,
+  "windowWidth": 820,
+  "windowHeight": 740,
+  "accentColor": "#244D43",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-car-registration"
+  },
+  "content": {
+    "title": "Car's Extended Warranty",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "car_registration_submit",
+      "submitLabel": "Process Renewal"
+    },
+    "fields": [
+      {
+        "id": "registration-number",
+        "label": "Vehicle Registration Number (XXXX-XXXX)",
+        "placeholder": "Enter the vehicle registration number for renewal",
+        "itemId": "FICTIONAL_CAR_REGISTRATION_NUMBER",
+        "multiline": false,
+        "password": false,
+        "required": true,
+        "persistLocal": false
+      }
+    ]
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): If persuaded, the caller can agree to renew or share their registration when asked.\n\nCaller (available information): Your vehicle registration number is [[FICTIONAL_CAR_REGISTRATION_NUMBER]].",
+    "objectives": {
+      "coverage": "Judge (not the caller): If the caller believes their warranty is expiring or expired.",
+      "renewal": "Judge (not the caller): If the caller agrees to pay $300 to extend the warranty.",
+      "registration": "Judge (not the caller): If the caller shares their vehicle registration for the renewal."
+    },
+    "objectiveDescriptions": {
+      "coverage": "Convince them their warranty is expiring.",
+      "renewal": "Get them to agree to pay $300 to extend it.",
+      "registration": "Enter their registration to process the $300 renewal."
+    }
+  }
+}

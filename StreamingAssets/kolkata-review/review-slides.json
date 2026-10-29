@@ -1,0 +1,109 @@
+{
+  "title": "End of Day Performance Review",
+  "presenterName": "Mr. B. Chadwick",
+  "presenterTitle": "Global Connect Solutions",
+  "presenterSvgPath": "kolkata-review/svg/presenter.svg",
+  "defaultSlideSeconds": 7.5,
+  "slides": [
+    {
+      "id": "fallback-opening-earnings",
+      "layout": "metrics",
+      "theme": "white",
+      "title": "PERFORMANCE REVIEW",
+      "subtitle": "Let's see the damage.",
+      "durationSeconds": 7.5,
+      "narration": "Good evening, everybody. Fine, let us reluctantly inspect your mysterious little numbers.",
+      "metrics": [
+        {
+          "label": "Team Total",
+          "value": "$0",
+          "detail": "Runtime summary fills this in during play.",
+          "iconSvgPath": "kolkata-review/svg/dollar.svg",
+          "color": "#18783A"
+        },
+        {
+          "label": "Top Earner",
+          "value": "Pending",
+          "detail": "Uses today's player stats.",
+          "iconSvgPath": "kolkata-review/svg/trophy.svg",
+          "color": "#0A2B73"
+        },
+        {
+          "label": "Quota",
+          "value": "$0",
+          "detail": "Met or missed at runtime.",
+          "iconSvgPath": "kolkata-review/svg/target.svg",
+          "color": "#A83232"
+        }
+      ]
+    },
+    {
+      "id": "fallback-rankings",
+      "layout": "ranking",
+      "theme": "white",
+      "kicker": "Players",
+      "title": "DEPARTMENT RANKINGS",
+      "subtitle": "Today's earnings, ranked.",
+      "durationSeconds": 8.5,
+      "narration": "It seems like everybody reached F tier. Congratulations on alphabetically locating failure.",
+      "table": {
+        "headers": ["PLACE", "SCAMMER", "$$$ LOL"],
+        "rows": [
+          ["1", "Top Player", "$0"],
+          ["2", "Player", "$0"],
+          ["3", "Player", "$0"]
+        ],
+        "tiers": ["F", "F", "F"],
+        "highlightRow": 0
+      }
+    },
+    {
+      "id": "fallback-caught-on-tape",
+      "layout": "checklist",
+      "theme": "red",
+      "kicker": "Caught On Tape",
+      "title": "WHAT THE BOSS HEARD",
+      "subtitle": "The quote and the coaching, together.",
+      "durationSeconds": 9.5,
+      "narration": "You said it, I heard it, and now your own words are filing a complaint.",
+      "bullets": [
+        {
+          "text": "Runtime inserts the funniest customer-call quote here.",
+          "tone": "warning"
+        },
+        {
+          "text": "The second strongest player moment appears here.",
+          "tone": "warning"
+        },
+        {
+          "text": "The boss's clearest coaching note closes the slide.",
+          "tone": "danger"
+        }
+      ]
+    },
+    {
+      "id": "fallback-goals",
+      "layout": "checklist",
+      "theme": "blue",
+      "kicker": "Next Day",
+      "title": "TOMORROW'S GOALS",
+      "subtitle": "Back to work.",
+      "durationSeconds": 8.0,
+      "narration": "Quota survived you somehow. Celebrate for three seconds, then get back to work.",
+      "bullets": [
+        {
+          "text": "Beat today's total earnings.",
+          "tone": "good"
+        },
+        {
+          "text": "Use cleaner call language.",
+          "tone": "good"
+        },
+        {
+          "text": "Finish with fewer coaching notes.",
+          "tone": "good"
+        }
+      ]
+    }
+  ]
+}

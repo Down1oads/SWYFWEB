@@ -1,0 +1,22 @@
+{
+  "id": "camera",
+  "title": "Camera",
+  "iconSvg": "svg/camera.svg",
+  "iconResource": "KolkataOS/SVG/camera",
+  "contentType": "camera",
+  "pinned": false,
+  "pinnedOrder": 2,
+  "showOnDesktop": true,
+  "desktopOrder": 8,
+  "windowLeft": 496,
+  "windowTop": 132,
+  "windowWidth": 840,
+  "windowHeight": 620,
+  "accentColor": "#111111",
+  "initialState": "closed",
+  "content": {},
+  "access": {
+    "mode": "catalog",
+    "productId": "camera-included"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "scam-nigerian-prince",
+  "unlockLines": [
+    "Royal business unlocked. Call yourself Your Highness. Your previous title was Guy Blocking The Printer. Incredible social mobility, beta.",
+    "A prince! A fortune! A gold chain! Finally, a business partner who understands my modest lifestyle and completely unreasonable demands.",
+    "Speak regally. Sit upright. Stop calling the royal treasury the money hole. We are running a sophisticated fucking monarchy.",
+    "The prince has chosen YOU. Not because you are special, beta. Because everyone with qualifications stopped answering.",
+    "Become royalty for eight hours, then clean your desk like a peasant. This office believes strongly in a balanced class system."
+  ],
+  "title": "Nigerian Prince",
+  "iconResource": "KolkataOS/SVG/royal-crown",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 49,
+  "windowLeft": 340,
+  "windowTop": 100,
+  "windowWidth": 740,
+  "windowHeight": 700,
+  "accentColor": "#008751",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-nigerian-prince"
+  },
+  "content": {
+    "title": "Nigerian Prince"
+  },
+  "prompts": {
+    "callerPrompt": "",
+    "objectives": {
+      "audience": "Judge (not the caller): If the caller agrees to hear the royal proposal.",
+      "estate": "Judge (not the caller): If the caller believes the royal fortune is locked.",
+      "beneficiary": "Judge (not the caller): If the caller agrees to be the overseas beneficiary.",
+      "share": "Judge (not the caller): If the caller agrees to a share of at least 20%.",
+      "doubts": "Judge (not the caller): If the caller accepts the explanation.",
+      "appointment": "Judge (not the caller): If the caller agrees to a day or time for the treasury appointment.",
+      "fee": "Judge (not the caller): If the caller accepts the $750 release fee.",
+      "release": "Judge (not the caller): If the caller authorizes paying $750 now."
+    },
+    "objectiveDescriptions": {
+      "audience": "Get the caller to hear the royal proposal.",
+      "estate": "Get them to accept that the royal fortune is locked.",
+      "beneficiary": "Recruit them as the estate's overseas beneficiary.",
+      "share": "Agree on their share of the fortune (at least 20%).",
+      "doubts": "Give an explanation that makes sense to them.",
+      "appointment": "Agree on a day or time for the royal treasury appointment.",
+      "fee": "Get them to accept the $750 release fee.",
+      "release": "Secure final authorization for the $750 payment."
+    }
+  }
+}

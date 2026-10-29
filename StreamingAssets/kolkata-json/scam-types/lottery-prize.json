@@ -1,0 +1,11 @@
+{
+  "id": "lottery_prize",
+  "displayName": "Lottery Prize",
+  "iconName": "cash-check",
+  "appId": "scam-lottery-prize",
+  "displayOrder": 44,
+  "relevantSentinels": [
+    "FICTIONAL_LOTTERY_TICKET_NUMBERS"
+  ],
+  "appCompletionSource": "conversation_lottery_prize"
+}

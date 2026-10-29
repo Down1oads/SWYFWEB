@@ -1,0 +1,26 @@
+{
+  "id": "checklist",
+  "title": "Script",
+  "iconSvg": "svg/script-text.svg",
+  "iconResource": "KolkataOS/SVG/script-text",
+  "contentType": "scamGuide",
+  "pinned": true,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopHiddenByDefault": false,
+  "desktopOrder": 0,
+  "windowLeft": 258,
+  "windowTop": 74,
+  "windowWidth": 720,
+  "windowHeight": 610,
+  "accentColor": "#0078D7",
+  "initialState": "closed",
+  "content": {
+    "title": "Scammer Script",
+    "subtitle": "Use the apps to enter the required information for money. More scams unlock on later days or can be purchased in Scamazon."
+  },
+  "access": {
+    "mode": "catalog",
+    "productId": "script-included"
+  }
+}

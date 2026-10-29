@@ -1,0 +1,62 @@
+{
+  "id": "scam-police-impersonation",
+  "unlockLines": [
+    "Police impersonation unlocked. Big badge, bigger bullshit. You are now the law, beta. Please stop losing arguments to the hold music.",
+    "Put on your serious voice. Not the one you use ordering nuggets. The law has arrived, and apparently it wears flip-flops.",
+    "Congratulations, Officer Quota. Your jurisdiction is this phone and your pension is one stale biscuit. Go protect my profit margins.",
+    "Bad cop, worse cop. Pick whichever matches your sales record. I am the chief, and this gold chain is department equipment.",
+    "We finally have law enforcement in the office. The first unsolved crime remains whatever the fuck you did to the microwave."
+  ],
+  "title": "Police Impersonation",
+  "iconResource": "KolkataOS/SVG/police-badge",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 41,
+  "windowLeft": 324,
+  "windowTop": 120,
+  "windowWidth": 680,
+  "windowHeight": 560,
+  "accentColor": "#C6A65B",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "dev-scam-police-impersonation"
+  },
+  "content": {
+    "title": "Police Impersonation",
+    "subtitle": "Work the case. Sell the badge. Collect the fee.",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "conversation_police",
+      "submitLabel": "Verify"
+    },
+    "fields": [
+      {
+        "id": "fine-confirmation",
+        "label": "Fine payment confirmation number",
+        "placeholder": "ABC-123",
+        "itemId": "FICTIONAL_ARREST_FEE_RECEIPT",
+        "multiline": false,
+        "password": false,
+        "required": true,
+        "persistLocal": false
+      }
+    ]
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The player impersonates Kolkata Police, investigates a made-up incident and demands a $500 fine for the damages. The player must obtain and enter the caller's fine payment confirmation number to collect the payout. Agreement or speaking the number alone cannot complete the final task.\n\nCaller (available information): After paying the fine for the damages, your payment confirmation number is [[FICTIONAL_ARREST_FEE_RECEIPT]]. You may share it when asked.",
+    "objectives": {
+      "authority": "Judge (not the caller): If the caller believes the player is a police officer.",
+      "alibi": "Judge (not the caller): If the caller gives an alibi for the incident.",
+      "investigation": "Judge (not the caller): If the caller acknowledges the investigation.",
+      "fee": "Judge (not the caller): If the game confirms the player entered the caller's fine payment confirmation number for the damages; do not complete this from conversation."
+    },
+    "objectiveDescriptions": {
+      "authority": "Convince the caller you are a police officer.",
+      "alibi": "Get their alibi for a made-up incident.",
+      "investigation": "Get them to acknowledge the investigation.",
+      "fee": "Ask for their fine payment confirmation number for the damages and enter it below."
+    }
+  }
+}

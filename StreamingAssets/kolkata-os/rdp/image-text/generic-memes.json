@@ -1,0 +1,310 @@
+{
+  "memes": [
+    {
+      "id": "improvement",
+      "activityTier": "normal",
+      "fileNames": ["daily wisdom.png", "motivation FINAL.png", "success quote.png", "inspiration 2.png"],
+      "texts": [
+        "Become the person your password reset questions think you are.",
+        "Success is 10% inspiration and 90% finally finding the right folder.",
+        "Every journey begins with accepting all cookies.",
+        "You miss 100% of the emails you mark as spam.",
+        "Rise and grind... or at least rise and hit snooze like a champion.",
+        "Be the kind of person your plants wish you were... hydrated and thriving.",
+        "Dream big, but start by closing those 47 browser tabs.",
+        "You got this! And if you don't, at least your error message will be inspirational.",
+        "The only bad workout is the one you didn't screenshot for Instagram.",
+        "Level up like your phone battery at 1% — desperate but somehow legendary."
+      ]
+    },
+    {
+      "id": "family",
+      "activityTier": "personal",
+      "fileNames": ["family joke.png", "send to Gary.png", "mum meme.png", "grandkids funny.png"],
+      "texts": [
+        "Family is forever... unless someone changes the WiFi password.",
+        "My grandkids said this is a meme. Please laugh.",
+        "Gary if you see this, return my casserole dish.",
+        "Home is where everyone knows the Netflix password.",
+        "Love is telling your family the WiFi password without being asked.",
+        "Families are like fudge... mostly sweet with a few nuts.",
+        "Hug your family tight... before they ask you to fix their printer again.",
+        "My family tree must be a cactus because we're all a little prickly sometimes.",
+        "Blood is thicker than water, but WiFi is stronger than both.",
+        "Grandma's secret recipe: love, butter, and passive-aggressive comments."
+      ]
+    },
+    {
+      "id": "technology",
+      "activityTier": "normal",
+      "fileNames": ["computer wisdom.png", "internet quote.png", "tech meme.png", "IT advice.png"],
+      "texts": [
+        "I have tried turning myself off and on again.",
+        "The cloud is just someone else's very confident computer.",
+        "If the printer can smell fear, why give it ink?",
+        "My computer is fast. It finishes updates before I finish complaining.",
+        "There is no cloud. It's just someone else's hard drive with anxiety.",
+        "Tech support: Have you tried yelling at it lovingly?",
+        "My phone is smarter than me and still can't find my keys.",
+        "Error 404: Motivation not found. Rebooting life...",
+        "WiFi is like love... strongest when you're closest to the router.",
+        "I put the 'el' in helpdesk because I'm always yelling for help."
+      ]
+    },
+    {
+      "id": "money",
+      "activityTier": "personal",
+      "fileNames": ["financial advice.png", "money mindset.png", "retirement plan.png", "budget meme.png"],
+      "texts": [
+        "A budget is just a wishlist with receipts.",
+        "Passive income is money that refuses to explain itself.",
+        "Retirement plan: Check under sofa cushions.",
+        "Spend less than you earn... unless there is free shipping.",
+        "Money can't buy happiness, but it can buy snacks and that's basically the same thing.",
+        "I'm not broke, I'm pre-rich with excellent potential.",
+        "My retirement plan is to become a very lovable influencer at 70.",
+        "Adulting tip: Pretend your savings account is a Tamagotchi and never let it die.",
+        "Be so rich that your bank account gets excited when you log in.",
+        "Financial freedom is just one more 'this one weird trick' away."
+      ]
+    },
+    {
+      "id": "reminders",
+      "activityTier": "personal",
+      "fileNames": ["REMINDER.png", "note to self.png", "dont forget.png", "important reminder.png"],
+      "texts": [
+        "Remember to delete this reminder after reading.",
+        "Buy milk. Not the expensive confident milk.",
+        "Call the dentist. Do not let the dentist call first.",
+        "The password hint is not supposed to be the password.",
+        "Water the plants before they start a union.",
+        "You are enough... but maybe drink some water too.",
+        "Don't forget to be awesome today (or at least pretend).",
+        "Take your vitamins or your future self will send passive-aggressive texts.",
+        "Reply to that email before it develops feelings.",
+        "Breathe, smile, and pretend you have your life together."
+      ]
+    },
+    {
+      "id": "wellness",
+      "activityTier": "normal",
+      "fileNames": ["wellness quote.png", "mindfulness.png", "healthy living.png", "yoga maybe.png"],
+      "texts": [
+        "Breathe in courage. Breathe out the WiFi router.",
+        "Drink water. Your coffee has done enough.",
+        "Mindfulness is closing tabs one at a time.",
+        "Stretch like nobody is updating Windows.",
+        "You can't pour from an empty cup... but you can microwave it for 30 seconds.",
+        "Self-care is just procrastination with better lighting.",
+        "Namaste in bed for five more minutes.",
+        "Your vibe attracts your tribe... and also your snack cravings.",
+        "Healthy body, healthy mind, healthy delivery orders.",
+        "Be a pineapple: stand tall, wear a crown, and be sweet on the inside."
+      ]
+    },
+    {
+      "id": "work",
+      "activityTier": "normal",
+      "fileNames": ["office meme.png", "work quote.png", "meeting notes picture.png", "boss wisdom.png"],
+      "texts": [
+        "Teamwork makes the dream require another meeting.",
+        "This could have been an email... but then who would eat the biscuits?",
+        "I am not procrastinating. I am waiting for requirements.",
+        "Work smarter, then save as Final_Final_2.",
+        "My job is secure... nobody else wants to do this nonsense.",
+        "Coffee: because adulting without it is just chaos with pants.",
+        "I came. I saw. I made it an action item.",
+        "Monday called... it wants its motivation back.",
+        "Keep calm and pretend it's on the agenda.",
+        "You miss 100% of the shots you don't take... and 90% of the meetings you zone out in."
+      ]
+    },
+    {
+      "id": "pets",
+      "activityTier": "personal",
+      "fileNames": ["cat advice.png", "dog quote.png", "pet meme.png", "fluffy wisdom.png"],
+      "texts": [
+        "My cat has a five-year plan. It is all naps.",
+        "Dogs believe in you... especially near the fridge.",
+        "The cat walked on the keyboard and improved my password.",
+        "Be the person your dog thinks has snacks.",
+        "Dogs: proof that love is real and also slobbery.",
+        "Cats are liquid... and also professional judges of your life choices.",
+        "My therapist has fur and demands treats at 3am.",
+        "Live your best life... like your pet does when you're not home.",
+        "If cats could talk, they would still ignore you.",
+        "You had me at woof... and also at meow with judgment."
+      ]
+    },
+    {
+      "id": "food",
+      "activityTier": "normal",
+      "fileNames": ["kitchen wisdom.png", "recipe meme.png", "food quote.png", "cooking inspiration.png"],
+      "texts": [
+        "A balanced diet is a biscuit in each hand.",
+        "Cook with love... and a backup frozen pizza.",
+        "The secret ingredient is ignoring the timer.",
+        "Meal prep is leftovers with ambition.",
+        "Calories don't count on weekends or when nobody is watching.",
+        "Life is short. Eat the extra slice and smile.",
+        "I'm on a seafood diet. I see food and I eat it.",
+        "Cooking is love made edible... or slightly burnt.",
+        "You are what you eat... so be delicious and a little spicy.",
+        "Dieting tip: Nothing tastes as good as skinny feels... except pizza."
+      ]
+    },
+    {
+      "id": "wisdom",
+      "activityTier": "normal",
+      "fileNames": ["deep thought.png", "wisdom.png", "quote for facebook.png", "life lesson.png"],
+      "texts": [
+        "Never argue with a fool. The comments section cannot tell the difference.",
+        "Life closes a door. Check if it was a push.",
+        "The early bird gets asked to make the coffee.",
+        "Dream big... then label the file something unhelpful.",
+        "Be yourself. Everyone else is already taken... and probably exhausted.",
+        "Life is like a sandwich... the more you put in it, the better it tastes.",
+        "Stay positive... even when the WiFi isn't.",
+        "The best things in life are free... except data and good WiFi.",
+        "Shine bright like a notification at 2am.",
+        "Live laugh love... and screenshot the good moments for later."
+      ]
+    },
+    {
+      "id": "love",
+      "activityTier": "normal",
+      "fileNames": ["romance quote.png", "heart meme.png", "couple wisdom.png", "love note.png"],
+      "texts": [
+        "You are the avocado to my toast — extra and completely necessary.",
+        "Love is sharing your fries without being asked.",
+        "My heart does the happy dance every time your name pops up.",
+        "You stole my heart... but I let you because the WiFi was good.",
+        "Relationships are just two people saying 'your turn to pick the show'.",
+        "I love you more than coffee... but please don't make me prove it.",
+        "Be with someone who makes you forget to check your phone.",
+        "True love is knowing exactly how they take their coffee.",
+        "You make my heart skip a beat... and my phone battery die from texting you.",
+        "Love is blind... but marriage is a real eye-opener."
+      ]
+    },
+    {
+      "id": "fitness",
+      "activityTier": "normal",
+      "fileNames": ["gym motivation.png", "workout quote.png", "sweat meme.png", "fitness inspo.png"],
+      "texts": [
+        "Sweat now, shine later... or at least pretend you went to the gym.",
+        "The only bad workout is the one you didn't post on social media.",
+        "My fitness goal is to be able to outrun my responsibilities.",
+        "Exercise because you love your body, not because you hate it.",
+        "Sore today, strong tomorrow... or just sore with good intentions.",
+        "Run like someone just posted your embarrassing photo.",
+        "Fitness level: I can carry all the groceries in one trip.",
+        "Abs are made in the kitchen... mostly by opening snack cabinets.",
+        "Push yourself because no one else is going to do it for you.",
+        "Be stronger than your excuses... especially the 'it's too hot' one."
+      ]
+    },
+    {
+      "id": "travel",
+      "activityTier": "normal",
+      "fileNames": ["wanderlust.png", "travel quote.png", "adventure meme.png", "vacation inspo.png"],
+      "texts": [
+        "Collect moments, not things... unless it's airport snacks.",
+        "The world is a book and those who don't travel read only one page.",
+        "Adventure awaits... right after I finish this playlist.",
+        "Travel far enough to meet yourself... and try the local food.",
+        "Not all who wander are lost... some are just looking for better WiFi.",
+        "Life is short. Book the flight and eat the croissant.",
+        "Catch flights, not feelings... unless it's for the destination.",
+        "Travel is the only thing you buy that makes you richer.",
+        "My suitcase is always packed... in my dreams.",
+        "Go where the WiFi is weak and the views are strong."
+      ]
+    },
+    {
+      "id": "friendship",
+      "activityTier": "personal",
+      "fileNames": ["bestie meme.png", "friend quote.png", "buddy wisdom.png", "squad goals.png"],
+      "texts": [
+        "Friends buy you food. Best friends eat your food.",
+        "A true friend is someone who thinks you're not crazy when you are.",
+        "Good friends are like stars... you don't always see them but you know they're there.",
+        "We go together like coffee and complaining.",
+        "Real friends don't let you do stupid things... alone.",
+        "Friendship is knowing all your secrets and still liking you.",
+        "Thanks for being my unpaid therapist.",
+        "Life is better with true friends and good WiFi.",
+        "You don't have to be crazy to be my friend... but it helps.",
+        "Best friends are the siblings we choose."
+      ]
+    },
+    {
+      "id": "positivity",
+      "activityTier": "normal",
+      "fileNames": ["smile quote.png", "good vibes.png", "uplifting meme.png", "happy thought.png"],
+      "texts": [
+        "Choose joy... and also choose snacks.",
+        "Today is going to be a great day... said no one on Monday morning.",
+        "Spread kindness like confetti... or at least like free samples.",
+        "Shine bright like the notification that your package arrived.",
+        "Be the reason someone smiles today... or at least the reason they laugh.",
+        "Positive mind. Positive vibes. Positive snacks.",
+        "You are stronger than you think... especially after coffee.",
+        "Every day is a fresh start... with yesterday's leftovers.",
+        "Make today so awesome that yesterday gets jealous.",
+        "Good things come to those who hustle... and also to those who nap strategically."
+      ]
+    },
+    {
+      "id": "sleep",
+      "activityTier": "normal",
+      "fileNames": ["bedtime quote.png", "sleep meme.png", "dream wisdom.png", "nap time.png"],
+      "texts": [
+        "Sleep is my love language.",
+        "I'll sleep when I'm dead... or after this next episode.",
+        "Dream big... but first, actually go to sleep.",
+        "My bed and I are perfect for each other.",
+        "Count sheep... or just scroll until 3am.",
+        "A day without a nap is like a cupcake without frosting.",
+        "Rest up, superstar. The world can wait five more minutes.",
+        "Sleeping is the only thing I'm really good at.",
+        "Good night. Sleep tight. Don't let the notifications bite.",
+        "May your coffee be strong and your sleep be longer."
+      ]
+    },
+    {
+      "id": "coffee",
+      "activityTier": "normal",
+      "fileNames": ["coffee love.png", "latte art.png", "brew wisdom.png", "caffeine meme.png"],
+      "texts": [
+        "But first, coffee... and maybe existential dread.",
+        "Coffee: because adulting is hard.",
+        "Life begins after coffee.",
+        "I run on coffee, chaos, and questionable decisions.",
+        "Keep calm and drink coffee.",
+        "Espresso yourself!",
+        "My blood type is coffee.",
+        "Coffee makes me feel less murder-y.",
+        "Without coffee, I basically don't exist before 10am.",
+        "May your coffee be hot and your to-do list short."
+      ]
+    },
+    {
+      "id": "holidays",
+      "activityTier": "normal",
+      "fileNames": ["festive quote.png", "holiday meme.png", "celebrate.png", "seasonal wisdom.png"],
+      "texts": [
+        "Eat, drink, and be merry... for tomorrow we diet.",
+        "Holidays: the only time calories don't count.",
+        "Merry everything and a happy always.",
+        "Tis the season to pretend we have our lives together.",
+        "Keep calm and jingle on.",
+        "All I want for Christmas is WiFi and snacks.",
+        "Happiness is a warm cookie... and a long holiday.",
+        "May your days be merry and bright... and your WiFi strong.",
+        "Festive AF.",
+        "Celebrate every tiny win like it's New Year's."
+      ]
+    }
+  ]
+}

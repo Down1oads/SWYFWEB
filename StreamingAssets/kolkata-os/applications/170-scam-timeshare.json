@@ -1,0 +1,47 @@
+{
+  "id": "scam-timeshare",
+  "unlockLines": [
+    "Timeshares unlocked. Sell them paradise in instalments. You cannot even book the break room, but think tropical, beta.",
+    "Palm trees! Ocean views! A contract longer than their holiday! That is hospitality with the soul of a fucking printer jam.",
+    "Welcome to luxury travel. You have not left this chair since lunch, but please describe the sunset with authority.",
+    "Sell a slice of paradise. Mine includes a private pool. Yours includes a shared kettle and a management-approved daydream.",
+    "Make the resort sound irresistible. If you mention our office toilet as a spa facility again, I will end your travel career."
+  ],
+  "title": "Timeshare",
+  "iconResource": "KolkataOS/SVG/palm-tree",
+  "iconSvg": "svg/palm-tree.svg",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 50,
+  "windowLeft": 340,
+  "windowTop": 100,
+  "windowWidth": 640,
+  "windowHeight": 520,
+  "accentColor": "#D9B86C",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-timeshare"
+  },
+  "content": {
+    "title": "Timeshare"
+  },
+  "prompts": {
+    "callerPrompt": "",
+    "objectives": {
+      "offer": "Judge (not the caller): If the caller agrees to hear the resort offer.",
+      "vacation": "Judge (not the caller): If the caller agrees to a timeshare week every year.",
+      "presentation": "Judge (not the caller): If the caller agrees to a 90-minute sales presentation.",
+      "fee": "Judge (not the caller): If the caller accepts the $500 reservation fee.",
+      "payment": "Judge (not the caller): If the caller authorizes paying $500 now."
+    },
+    "objectiveDescriptions": {
+      "offer": "Get them to agree to hear the resort offer.",
+      "vacation": "Get them to agree to a timeshare week every year.",
+      "presentation": "Get them to agree to a 90-minute sales presentation.",
+      "fee": "Get them to accept the $500 reservation fee.",
+      "payment": "Get them to authorize the $500 payment now."
+    }
+  }
+}

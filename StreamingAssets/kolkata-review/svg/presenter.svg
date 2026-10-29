@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Presenter</title>
+  <rect width="128" height="128" rx="18" fill="#0E275C"/>
+  <circle cx="64" cy="43" r="22" fill="#F3D4B7"/>
+  <path d="M23 114c5-28 20-42 41-42s36 14 41 42" fill="#1F2937"/>
+  <path d="M50 78l14 23 14-23" fill="#FFFFFF"/>
+  <path d="M57 84h14l-4 24h-6z" fill="#246FDB"/>
+</svg>

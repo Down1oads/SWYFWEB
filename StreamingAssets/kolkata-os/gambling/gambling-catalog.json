@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "requiredProductId": "slots-business-license",
+  "wagers": {
+    "minimum": 10,
+    "maximum": 250,
+    "step": 10,
+    "defaultValue": 10,
+    "chips": [10, 20, 50, 100, 250],
+    "minimumRoundIntervalMilliseconds": 500
+  },
+  "slots": {
+    "id": "slots",
+    "title": "Slots",
+    "pairReturnBasisPoints": 17500,
+    "symbols": [
+      {
+        "id": "duck-mallard",
+        "title": "Mallard Duck",
+        "glyph": "MALLARD",
+        "imagePath": "gambling/art/duck-mallard.png",
+        "weight": 30,
+        "tripleReturnBasisPoints": 20000
+      },
+      {
+        "id": "duck-yellow",
+        "title": "Yellow Duck",
+        "glyph": "DUCK",
+        "imagePath": "gambling/art/duck-yellow.png",
+        "weight": 24,
+        "tripleReturnBasisPoints": 30000
+      },
+      {
+        "id": "duck-brown",
+        "title": "Brown Duck",
+        "glyph": "BROWN DUCK",
+        "imagePath": "gambling/art/duck-brown.png",
+        "weight": 18,
+        "tripleReturnBasisPoints": 50000
+      },
+      {
+        "id": "target-blue",
+        "title": "Blue Target",
+        "glyph": "TARGET",
+        "imagePath": "gambling/art/target-blue.png",
+        "weight": 12,
+        "tripleReturnBasisPoints": 100000
+      },
+      {
+        "id": "target-orange",
+        "title": "Orange Target",
+        "glyph": "BULLSEYE",
+        "imagePath": "gambling/art/target-orange.png",
+        "weight": 8,
+        "tripleReturnBasisPoints": 200000
+      },
+      {
+        "id": "chicken",
+        "title": "Chicken",
+        "glyph": "CHICKEN",
+        "imagePath": "gambling/art/chicken.png",
+        "weight": 5,
+        "tripleReturnBasisPoints": 500000
+      },
+      {
+        "id": "chick",
+        "title": "Chick",
+        "glyph": "CHICK",
+        "imagePath": "gambling/art/chick.png",
+        "weight": 3,
+        "tripleReturnBasisPoints": 1000000
+      },
+      {
+        "id": "cow",
+        "title": "Cow",
+        "glyph": "COW",
+        "imagePath": "gambling/art/cow.png",
+        "weight": 2,
+        "tripleReturnBasisPoints": 3000000
+      }
+    ]
+  },
+  "plinko": {
+    "id": "plinko",
+    "title": "Plinko",
+    "rows": 8,
+    "returnBasisPoints": [80000, 27000, 15000, 7000, 3000, 7000, 15000, 27000, 80000]
+  },
+  "tower": {
+    "id": "tower",
+    "title": "Tower",
+    "rows": 8,
+    "columns": 4,
+    "trapsPerRow": 1,
+    "returnBasisPoints": [12800, 17067, 22756, 30341, 40454, 53939, 71919, 95892]
+  },
+  "audio": {
+    "wager": "gambling/audio/chip-lay-1.ogg",
+    "reelTick": "gambling/audio/tick_001.ogg",
+    "ballDrop": "gambling/audio/drop_001.ogg",
+    "win": "gambling/audio/confirmation_004.ogg",
+    "error": "gambling/audio/error_003.ogg",
+    "pegImpact": "gambling/audio/impactPlate_light_000.ogg",
+    "jackpot": "gambling/audio/jingles-retro_08.ogg",
+    "cardShuffle": "gambling/audio/card-shuffle.ogg",
+    "cardDeal": "gambling/audio/card-slide-4.ogg",
+    "diceShake": "gambling/audio/dice-shake-2.ogg",
+    "diceThrow": "gambling/audio/dice-throw-2.ogg",
+    "wheelTick": "gambling/audio/wheel-tick.ogg",
+    "coinFlip": "gambling/audio/coin-flip.ogg",
+    "loss": "gambling/audio/error_003.ogg"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "slots",
+  "title": "Rainbit",
+  "iconSvg": "svg/slot-machine.svg",
+  "iconResource": "KolkataOS/SVG/slot-machine",
+  "contentType": "gambling",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 7,
+  "windowLeft": 290,
+  "windowTop": 110,
+  "windowWidth": 780,
+  "windowHeight": 620,
+  "accentColor": "#6548EE",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "slots-business-license"
+  },
+  "content": {
+    "title": "Rainbit",
+    "subtitle": "Original office casino for personal-money wagers.",
+    "body": "Play thirteen server-authoritative originals with manual choices, published returns, and animated reveals.",
+    "lines": [
+      "Currency: Personal money only",
+      "Wagers: $10-$250 in $10 increments",
+      "Games: Slots, Plinko, Crash, Tower, Dice, Mines, Wheel, Coinflip, Keno, Roulette, Blackjack, Baccarat, Poker"
+    ]
+  }
+}

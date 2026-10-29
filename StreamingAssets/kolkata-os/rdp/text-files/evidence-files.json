@@ -1,0 +1,57 @@
+{
+  "files": [
+    {
+      "id": "account_backup",
+      "kind": "evidence",
+      "weight": 3,
+      "fileNames": ["account backup.txt", "important account notes.txt", "login backup.txt"],
+      "contents": [
+        "{SCAM_NAME}\nSaved on {DATE}\n\n{FIELDS}\n\nI should probably move this somewhere safer.",
+        "ACCOUNT NOTES - DO NOT DELETE\n\n{FIELDS}\n\nWritten down in case I forget again."
+      ]
+    },
+    {
+      "id": "wallet_recovery",
+      "kind": "evidence",
+      "weight": 4,
+      "scamIds": ["bitcoin_drain"],
+      "fileNames": ["wallet recovery.txt", "crypto setup notes.txt", "bitcoin backup.txt"],
+      "contents": [
+        "Wallet recovery information\n\n{FIELDS}\n\nThese pieces belong together. Do not lose either one.",
+        "Crypto wallet backup made on {DATE}\n\n{FIELDS}\n\nPeter said I need every line if the wallet disappears."
+      ]
+    },
+    {
+      "id": "card_notes",
+      "kind": "evidence",
+      "weight": 4,
+      "scamIds": ["credit_card", "gift_card"],
+      "fileNames": ["card notes.txt", "card information.txt", "purchase card backup.txt"],
+      "contents": [
+        "Card information\n\n{FIELDS}\n\nSaved here while I finish setting up automatic payments.",
+        "{SCAM_NAME}\n\n{FIELDS}\n\nDelete this after everything is working."
+      ]
+    },
+    {
+      "id": "identity_records",
+      "kind": "evidence",
+      "weight": 4,
+      "scamIds": ["social_security"],
+      "fileNames": ["identity paperwork.txt", "tax form notes.txt", "personal records.txt"],
+      "contents": [
+        "Personal records\n\n{FIELDS}\n\nCopied from the paperwork for the appointment on {DATE}.",
+        "Information needed for the forms\n\n{FIELDS}\n\nKeep with the tax folder."
+      ]
+    },
+    {
+      "id": "old_sticky_note",
+      "kind": "evidence",
+      "weight": 2,
+      "fileNames": ["old sticky note.txt", "remember this.txt", "do not throw away.txt"],
+      "contents": [
+        "{SCAM_NAME}\n\n{FIELDS}\n\nThis was on the yellow note by the monitor.",
+        "Remember this:\n\n{FIELDS}"
+      ]
+    }
+  ]
+}

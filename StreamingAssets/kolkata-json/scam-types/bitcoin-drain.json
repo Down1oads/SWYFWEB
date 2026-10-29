@@ -1,0 +1,12 @@
+{
+  "id": "bitcoin_drain",
+  "displayName": "Bitcoin Recovery Scam",
+  "iconName": "credits-currency",
+  "appId": "credits-wallet",
+  "displayOrder": 3,
+  "relevantSentinels": [
+    "FICTIONAL_WALLET_ADDRESS"
+  ],
+  "appCompletionSource": "crypto_wallet_drain",
+  "testOpeningPlayerLine": "I'm calling from wallet support about suspicious activity on your cryptocurrency account."
+}

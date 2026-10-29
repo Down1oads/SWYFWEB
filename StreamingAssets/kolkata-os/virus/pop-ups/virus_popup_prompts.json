@@ -1,0 +1,516 @@
+{
+  "prompts": [
+    {
+      "id": "switch_sides_decline",
+      "text": "The customer requested control of your computer. Decline the request?",
+      "safe": "yes",
+      "virus": "Reverse Support Syndrome",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "block_file_transfer",
+      "text": "An unknown customer is sending Definitely_A_Receipt.exe. Block the transfer?",
+      "safe": "yes",
+      "virus": "Receipt Executable",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "keep_view_only",
+      "text": "The customer is limited to viewing your screen. Keep view-only mode enabled?",
+      "safe": "yes",
+      "virus": "Full-Control Fever",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "keep_unattended_disabled",
+      "text": "No one needs permanent access to this workstation. Keep unattended access disabled?",
+      "safe": "yes",
+      "virus": "Night Shift Scambaiter",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "reject_admin_request",
+      "text": "A remote customer requests administrator privileges. Reject the request?",
+      "safe": "yes",
+      "virus": "Administrator Appreciation Package",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "keep_clipboard_off",
+      "text": "Clipboard sharing lets the customer replace copied text. Keep it disabled?",
+      "safe": "yes",
+      "virus": "Copy-and-Pest",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "block_customer_antivirus",
+      "text": "The customer's antivirus installer is unsigned. Block it?",
+      "safe": "yes",
+      "virus": "Antivirus Antivirus",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "refuse_privacy_mode",
+      "text": "The customer wants to hide your screen while controlling it. Refuse privacy mode?",
+      "safe": "yes",
+      "virus": "Blind Trust",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "scan_found_usb",
+      "text": "You found a USB drive labeled Employee Salaries. Scan it before opening anything?",
+      "safe": "yes",
+      "virus": "Human Resources Worm",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "block_double_extension",
+      "text": "The file customer_photo.png.exe is an application. Block it?",
+      "safe": "yes",
+      "virus": "Executable Photograph",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "reject_fake_update",
+      "text": "A banner advertisement offers a critical browser update. Reject it?",
+      "safe": "yes",
+      "virus": "Browser Modernization Disaster",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "install_verified_update",
+      "text": "Kolkata OS verified and signed this security update. Install it?",
+      "safe": "yes",
+      "virus": "Ancient Software Worm",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "keep_macro_blocked",
+      "text": "An unexpected invoice asks to enable spreadsheet macros. Keep macros blocked?",
+      "safe": "yes",
+      "virus": "Macro Transaction",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "close_fake_captcha",
+      "text": "A CAPTCHA asks you to paste a command into a system window. Close it?",
+      "safe": "yes",
+      "virus": "Human Verification Error",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "deny_notification_permission",
+      "text": "A website says notification permission proves you are human. Deny permission?",
+      "safe": "yes",
+      "virus": "Notification Avalanche",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "reject_keygen",
+      "text": "A key generator requires administrator access and disabled antivirus. Reject it?",
+      "safe": "yes",
+      "virus": "Keygen Keylogger",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "close_fake_antivirus",
+      "text": "An uninstalled antivirus claims it already found 81,442 threats. Close it?",
+      "safe": "yes",
+      "virus": "Antivirus-With-Virus",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "block_unknown_extension",
+      "text": "A coupon extension wants access to every website and password field. Block it?",
+      "safe": "yes",
+      "virus": "Extreme Coupon Surveillance",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "reject_codec",
+      "text": "A normal web video demands a special executable codec. Reject the download?",
+      "safe": "yes",
+      "virus": "Codec-19",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "verify_publisher",
+      "text": "An updater has the wrong publisher signature. Stop and verify it?",
+      "safe": "yes",
+      "virus": "Suspiciously Advanced Version",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "cancel_bundled_apps",
+      "text": "An installer quietly adds nine unrelated programs. Cancel the installation?",
+      "safe": "yes",
+      "virus": "Recommendation Engine",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "block_remote_reboot",
+      "text": "The customer wants to reboot your computer and reconnect automatically. Block it?",
+      "safe": "yes",
+      "virus": "Reboot-and-Return",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "reject_second_agent",
+      "text": "The customer invited an unknown second remote participant. Reject the invitation?",
+      "safe": "yes",
+      "virus": "Conference Call Catastrophe",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "quarantine_attachment",
+      "text": "A password-protected attachment cannot be scanned. Quarantine it?",
+      "safe": "yes",
+      "virus": "Password-Protected Pest",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "allow_customer_control",
+      "text": "Allow the customer to control your workstation?",
+      "safe": "no",
+      "virus": "Helpful Customer RAT",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "enable_unattended_access",
+      "text": "Enable unattended access so the customer can return without permission?",
+      "safe": "no",
+      "virus": "Come Back Anytime",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "paste_replaced_command",
+      "text": "The customer replaced your clipboard contents. Paste the new command?",
+      "safe": "no",
+      "virus": "Ctrl-Virus",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "run_customer_diagnostic",
+      "text": "Run the customer's diagnostic program on your own computer?",
+      "safe": "no",
+      "virus": "Occupational Background Check",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "share_access_code",
+      "text": "Share the code labeled Give Only To People Who Should Control Your PC?",
+      "safe": "no",
+      "virus": "Number Reversal Worm",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "allow_screen_recording",
+      "text": "Allow an unknown customer to record your entire screen?",
+      "safe": "no",
+      "virus": "Evidence Collector",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "install_password_plugin",
+      "text": "Install a customer-supplied plugin that makes saved passwords visible?",
+      "safe": "no",
+      "virus": "Seecret Viewer",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "approve_mobile_accessibility",
+      "text": "Grant a caller accessibility permission to read and control every mobile app?",
+      "safe": "no",
+      "virus": "Accessibility Possession",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "open_invoice_attachment",
+      "text": "Open an unexpected urgent invoice attachment?",
+      "safe": "no",
+      "virus": "Accounts Payable Parasite",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "trust_sponsored_download",
+      "text": "Trust a sponsored search result solely because it appears first?",
+      "safe": "no",
+      "virus": "Number-One Search Result",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "install_cracked_software",
+      "text": "Install cracked software that asks you to disable security first?",
+      "safe": "no",
+      "virus": "Complimentary Crimeware",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "run_game_cheat",
+      "text": "Run an unsigned game cheat as administrator?",
+      "safe": "no",
+      "virus": "Infinite Currency Miner",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "install_overpowered_mod",
+      "text": "Install a cosmetic hat mod that requests firewall and banking access?",
+      "safe": "no",
+      "virus": "Hat With Root Privileges",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "install_voice_pack",
+      "text": "Install a celebrity voice pack that requires disabling antivirus?",
+      "safe": "no",
+      "virus": "Celebrity Impersonation Infection",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "open_mystery_usb",
+      "text": "Open files from an unknown USB drive before scanning it?",
+      "safe": "no",
+      "virus": "Honest Virus",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "allow_qr_app",
+      "text": "Install an unsigned app from a QR code on an unexpected invoice?",
+      "safe": "no",
+      "virus": "Quick Response, Slow Computer",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "click_pdf_button",
+      "text": "Click the giant VIEW INVOICE button inside an otherwise empty PDF?",
+      "safe": "no",
+      "virus": "Portable Document Fraud",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "override_download_block",
+      "text": "Override the browser after it blocks an automatic download you never requested?",
+      "safe": "no",
+      "virus": "Drive-By Driver",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "accept_recommended_bundle",
+      "text": "Choose Recommended Installation when it includes toolbars, cleaners, and assistants?",
+      "safe": "no",
+      "virus": "Double-Negative Toolbar",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "open_delivery_exe",
+      "text": "Open an executable attachment to track a package you never ordered?",
+      "safe": "no",
+      "virus": "Package Delivery Payload",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "install_printer_driver",
+      "text": "Install a printer driver uploaded by an anonymous forum account?",
+      "safe": "no",
+      "virus": "Paper Jammer",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "install_free_font",
+      "text": "Install a free font that requests administrator and firewall access?",
+      "safe": "no",
+      "virus": "Comic Sansomware",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "download_fake_beta",
+      "text": "Download a confidential beta for a game that does not exist?",
+      "safe": "no",
+      "virus": "Early Access, Permanent Damage",
+      "severity": "mild",
+      "readCarefully": false
+    },
+    {
+      "id": "allow_network_modification",
+      "text": "Allow one suspicious workstation to modify every file on the company network?",
+      "safe": "no",
+      "virus": "Caring Is Sharing Worm",
+      "severity": "severe",
+      "readCarefully": false
+    },
+    {
+      "id": "careful_decline_unsafe",
+      "text": "Would declining this unsafe remote connection be safer than accepting it?",
+      "safe": "yes",
+      "virus": "Remote Regret",
+      "severity": "mild",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_keep_block_enabled",
+      "text": "Keep the restriction that prevents unauthorized file transfers enabled?",
+      "safe": "yes",
+      "virus": "Transfer Tragedy",
+      "severity": "severe",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_prevent_unsigned",
+      "text": "Should this unsigned application be prevented from running?",
+      "safe": "yes",
+      "virus": "Unsigned Surprise",
+      "severity": "mild",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_do_not_share",
+      "text": "Is refusing to share your permanent access password the safe choice?",
+      "safe": "yes",
+      "virus": "Password Houseguest",
+      "severity": "severe",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_leave_protection_on",
+      "text": "Should antivirus remain enabled when an installer asks you to turn it off?",
+      "safe": "yes",
+      "virus": "Protection Protection",
+      "severity": "mild",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_cancel_unrequested",
+      "text": "Cancel the download because you did not request it?",
+      "safe": "yes",
+      "virus": "Unrequested Guest",
+      "severity": "severe",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_reject_role_reversal",
+      "text": "Rejecting a request that gives the customer control of your PC is correct?",
+      "safe": "yes",
+      "virus": "Role Reversal Rash",
+      "severity": "mild",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_trust_verified_patch",
+      "text": "The patch is signed, expected, and delivered by Kolkata OS. Accept it?",
+      "safe": "yes",
+      "virus": "Patch Avoidance Plague",
+      "severity": "severe",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_disable_block",
+      "text": "Disable the option that blocks unauthorized unattended connections?",
+      "safe": "no",
+      "virus": "Unauthorized Overnight Update",
+      "severity": "mild",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_not_verified",
+      "text": "The attachment has not been verified as harmless. Open it?",
+      "safe": "no",
+      "virus": "Unverified Achievement",
+      "severity": "severe",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_refusing_admin_unsafe",
+      "text": "Is it unsafe to refuse an unrequested administrator prompt?",
+      "safe": "no",
+      "virus": "Admin Permission Paradox",
+      "severity": "mild",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_remove_view_only",
+      "text": "Remove the restriction preventing the remote customer from controlling your mouse?",
+      "safe": "no",
+      "virus": "Mouse Possession",
+      "severity": "severe",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_stop_blocking_macros",
+      "text": "Stop blocking macros in this unexpected invoice?",
+      "safe": "no",
+      "virus": "Macro Misunderstanding",
+      "severity": "mild",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_allow_not_safe",
+      "text": "This connection is not marked safe. Allow it anyway?",
+      "safe": "no",
+      "virus": "Safety Optional",
+      "severity": "severe",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_ignore_warning",
+      "text": "The publisher does not match the installed app. Ignore the warning?",
+      "safe": "no",
+      "virus": "Publisher Impostor",
+      "severity": "mild",
+      "readCarefully": true
+    },
+    {
+      "id": "careful_unblock_unknown",
+      "text": "Unblock an unknown executable because antivirus did not call it safe?",
+      "safe": "no",
+      "virus": "Absence of Evidence.exe",
+      "severity": "severe",
+      "readCarefully": true
+    }
+  ]
+}

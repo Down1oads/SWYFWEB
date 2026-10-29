@@ -1,0 +1,38 @@
+{
+  "id": "phone",
+  "title": "Phone",
+  "iconSvg": "svg/phone-in-talk.svg",
+  "iconResource": "KolkataOS/SVG/phone-in-talk",
+  "contentType": "phone",
+  "pinned": true,
+  "pinnedOrder": 1,
+  "showOnDesktop": true,
+  "desktopOrder": 1,
+  "windowLeft": 260,
+  "windowTop": 40,
+  "windowWidth": 360,
+  "windowHeight": 820,
+  "minWindowWidth": 360,
+  "minWindowHeight": 480,
+  "accentColor": "#107C10",
+  "initialState": "closed",
+  "content": {
+    "title": "Call Console",
+    "caller": {
+      "name": "No active caller",
+      "gender": "-",
+      "age": "-",
+      "location": "Unknown",
+      "occupation": "Unknown",
+      "motivation": "\"I need help with a strange problem.\"",
+      "personality": "-",
+      "region": "United States",
+      "queue": "Support Desk",
+      "status": "No active call"
+    }
+  },
+  "access": {
+    "mode": "catalog",
+    "productId": "phone-included"
+  }
+}

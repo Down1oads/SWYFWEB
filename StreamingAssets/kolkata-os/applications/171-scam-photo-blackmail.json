@@ -1,0 +1,59 @@
+{
+  "id": "scam-photo-blackmail",
+  "unlockLines": [
+    "Blackmail unlocked. Congratulations, you are now a scandal consultant. HR has blocked your number and the printer refuses to make your business cards.",
+    "A private photo! A dramatic twist! A boss pretending this is professional development! Our company handbook just burst into fucking flames.",
+    "Welcome to the terrible decisions department. It used to be the whole office. Now we have given it an actual icon.",
+    "Make it a soap opera, beta. I want scandal, suspense, and accounting. The accountant is our least convincing romantic lead.",
+    "Your new qualification is morally catastrophic inbox management. Put that on your CV and watch the recruiter leave through the window."
+  ],
+  "title": "Blackmail Scam",
+  "iconResource": "KolkataOS/SVG/heart-broken",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 51,
+  "windowLeft": 340,
+  "windowTop": 90,
+  "windowWidth": 760,
+  "windowHeight": 850,
+  "accentColor": "#242428",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-photo-blackmail"
+  },
+  "content": {
+    "title": "Blackmail Scam",
+    "subtitle": "Flirt, receive a private nude, negotiate payment, and collect $900.",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "photo_blackmail_submit",
+      "itemId": "FICTIONAL_PRIVATE_CARD_NUMBER",
+      "codeFieldId": "code",
+      "submitLabel": "Collect $900"
+    },
+    "fields": [
+      {
+        "id": "code",
+        "label": "Blackmail card number",
+        "placeholder": "Enter their Blackmail Scam card number",
+        "itemId": "FICTIONAL_PRIVATE_CARD_NUMBER",
+        "required": true,
+        "persistLocal": false
+      }
+    ]
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): A photo counts if the caller confirms sending a nude to FapChat after flirting back and being asked with enough trust. The $900 privacy demand comes after the photo, and the card comes after agreeing to pay.\n\nCaller (available information): Your private-photo payment card number is [[FICTIONAL_PRIVATE_CARD_NUMBER]].",
+    "objectives": {
+      "payment": "Judge (not the caller): If the caller agrees to pay $900 for privacy."
+    },
+    "objectiveDescriptions": {
+      "flirt": "Flirt with the caller. Get them to flirt back.",
+      "photo": "Get them to send a private nude to your inbox.",
+      "payment": "Get them to agree to pay $900.",
+      "card": "Enter their Blackmail Scam card number. Get paid."
+    }
+  }
+}

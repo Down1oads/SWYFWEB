@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Trophy</title>
+  <rect width="128" height="128" rx="18" fill="#D99A18"/>
+  <path d="M43 28h42v19c0 24-10 37-21 37S43 71 43 47z" fill="#FFE08A"/>
+  <path d="M43 39H24c0 21 8 31 25 31M85 39h19c0 21-8 31-25 31" stroke="#FFE08A" stroke-width="10" fill="none"/>
+  <path d="M56 84h16v16h20v10H36v-10h20z" fill="#FFE08A"/>
+</svg>

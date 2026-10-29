@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Money</title>
+  <rect width="128" height="128" rx="18" fill="#177737"/>
+  <path d="M64 19v90M88 39c-8-8-36-11-41 4-7 22 42 13 41 37-1 19-35 21-51 8" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" fill="none"/>
+</svg>

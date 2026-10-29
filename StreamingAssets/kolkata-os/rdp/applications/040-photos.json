@@ -1,0 +1,17 @@
+{
+  "id": "photos",
+  "title": "Photos",
+  "iconSvg": "svg/photo-camera.svg",
+  "iconResource": "KolkataOS/SVG/photo-camera",
+  "contentType": "rdpPhotos",
+  "pinned": false,
+  "showOnDesktop": false,
+  "desktopOrder": 2,
+  "windowLeft": 170,
+  "windowTop": 68,
+  "windowWidth": 740,
+  "windowHeight": 560,
+  "accentColor": "#8764B8",
+  "initialState": "closed",
+  "content": {}
+}

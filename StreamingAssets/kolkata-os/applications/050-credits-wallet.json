@@ -1,0 +1,54 @@
+{
+  "id": "credits-wallet",
+  "unlockLines": [
+    "Bitcoin unlocked. Magic internet money! Finally, currency as imaginary as your work ethic. Make the line go up, beta.",
+    "Welcome to crypto. Nobody understands it, everyone has an opinion, and somehow I am the only person getting a new watch.",
+    "The blockchain remembers everything. Unfortunately, so do I. Especially that fucking performance review. Mine the conversation, beta.",
+    "Digital gold! My favourite two words after unpaid overtime. Bring me the coins before somebody draws another ape on them.",
+    "Money with no physical form. Just like your promotion: technically discussed, never actually seen. Welcome to the future."
+  ],
+  "title": "Bitcoin",
+  "iconSvg": "svg/credits-currency.svg",
+  "iconResource": "KolkataOS/SVG/credits-currency",
+  "iconPath": "icons/Bitcoin.png",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 4,
+  "windowLeft": 458,
+  "windowTop": 124,
+  "windowWidth": 680,
+  "windowHeight": 690,
+  "accentColor": "#F2A900",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-bitcoin-drain"
+  },
+  "content": {
+    "title": "Bitcoin",
+    "binding": {
+      "completionSource": "crypto_wallet_drain",
+      "submitLabel": "Cash out"
+    },
+    "fields": []
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): This is a fictional Bitcoin investment round. Only explicit agreement to invest starts it. Only the player's Cash out action pays, with a maximum of $700. Reassurance delays your suspicion; it never changes the independent market crash. You must remain on the phone for the player to sell. No wallet address, purchase receipt or credentials are needed. Never claim a player cash-out occurred from dialogue alone.\n\nCaller (available information): You have not invested until you explicitly agree. Respond naturally to reassurance. BITCOIN_DOUBT means you are suspicious and want reassurance. BITCOIN_WARNING means you are close to catching the scam: warn the player. BITCOIN_CAUGHT means you caught the scam and withdrew, so the player lost this round's potential payout. BITCOIN_MARKET_CRASH means the market is falling fast, and the player may still sell for its remaining value. BITCOIN_LOST means the investment round ended without a payout. These events do not affect previously earned money. If you independently decide to withdraw, explicitly ask for your investment back. Do not invent payment codes or announce events before the game reports them.",
+    "objectives": {
+      "pitch": "Judge (not the caller): Award when the caller discusses the player's Bitcoin investment pitch.",
+      "interest": "Judge (not the caller): Award when the caller shows interest in buying the pitched coin. Merely hearing the pitch or asking what it is does not count.",
+      "wallet": "Judge (not the caller): Award only when the caller explicitly agrees to invest in this coin now. Interest, questions and hypothetical agreement do not count. No receipt or credential is required.",
+      "transfer": "Judge (not the caller): Only the server can award this objective when the player sells the active investment. Do not complete this from conversation.",
+      "withdraw": "Judge (not the caller): After investing, the caller explicitly requests their money back or says they are withdrawing now. Mere doubts or questions do not count."
+    },
+    "objectiveDescriptions": {
+      "pitch": "Pitch your Bitcoin investment.",
+      "interest": "Get the caller interested in buying it.",
+      "wallet": "Get the caller to buy the coin.",
+      "transfer": "Keep them reassured and cash out before the crash.",
+      "withdraw": "Caller requests withdrawal."
+    }
+  }
+}

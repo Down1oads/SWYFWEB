@@ -1,0 +1,17 @@
+{
+  "id": "video-player",
+  "title": "Video Player",
+  "iconSvg": "svg/video-play.svg",
+  "iconResource": "KolkataOS/SVG/video-play",
+  "contentType": "rdpVideo",
+  "pinned": false,
+  "showOnDesktop": false,
+  "desktopOrder": 4,
+  "windowLeft": 155,
+  "windowTop": 62,
+  "windowWidth": 760,
+  "windowHeight": 570,
+  "accentColor": "#D83B01",
+  "initialState": "closed",
+  "content": {}
+}

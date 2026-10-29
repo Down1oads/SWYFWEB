@@ -1,0 +1,43 @@
+{
+  "id": "scam-utility-billing",
+  "unlockLines": [
+    "Utility billing unlocked. The lights are on, but your sales brain is not. Let us finally fix one of those problems.",
+    "Sparkle Utilities! We put the power in powerful bullshit. Tell the caller to stay bright, beta. You may remain slightly dim.",
+    "You are now an electricity expert. Please do not lick the socket to demonstrate your commitment to customer service.",
+    "Every lightbulb has a bill. Every employee has a quota. Mine has a chandelier. This is what we call electrical ambition.",
+    "Keep the conversation electric. The last call had all the energy of a wet sock. I want sparks, not a fucking nap."
+  ],
+  "title": "Utility Billing",
+  "iconResource": "KolkataOS/SVG/trailer-weather-lightning",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 46,
+  "windowLeft": 372,
+  "windowTop": 160,
+  "windowWidth": 680,
+  "windowHeight": 640,
+  "accentColor": "#247FA3",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-utility-billing"
+  },
+  "content": {
+    "title": "Utility Billing",
+    "subtitle": "Convince the caller to pay their overdue Sparkle Utilities bill to restore power."
+  },
+  "prompts": {
+    "callerPrompt": "",
+    "objectives": {
+      "context": "Judge (not the caller): If the caller acknowledges their power was cut off over an overdue bill.",
+      "plan": "Judge (not the caller): If the caller accepts paying the overdue balance to restore power.",
+      "confirm": "Judge (not the caller): If the caller authorizes the overdue payment now."
+    },
+    "objectiveDescriptions": {
+      "context": "Get them to acknowledge the power cutoff is due to a late bill.",
+      "plan": "Get them to accept paying the overdue balance to restore power.",
+      "confirm": "Get them to authorize the overdue payment now."
+    }
+  }
+}

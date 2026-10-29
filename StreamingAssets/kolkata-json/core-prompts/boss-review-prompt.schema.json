@@ -1,0 +1,175 @@
+{
+  "type": "json_schema",
+  "json_schema": {
+    "name": "boss_review",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "deckTitle": {
+          "type": "string",
+          "description": "You name this day's performance review."
+        },
+        "presenterName": {
+          "type": "string",
+          "description": "You give the boss's name."
+        },
+        "presenterTitle": {
+          "type": "string",
+          "description": "You give his short job title."
+        },
+        "openingTitle": {
+          "type": "string",
+          "description": "You title the opening slide."
+        },
+        "openingQuote": {
+          "type": "string",
+          "description": "You give a short opening callout."
+        },
+        "openingNarration": {
+          "type": "string",
+          "description": "You greet the team and reluctantly approach today's unknown results."
+        },
+        "rankingTitle": {
+          "type": "string",
+          "description": "You title the rankings slide."
+        },
+        "rankingQuote": {
+          "type": "string",
+          "description": "You give a short ranking callout."
+        },
+        "rankingNarration": {
+          "type": "string",
+          "description": "You react to the supplied tier list and actual earnings."
+        },
+        "notesTitle": {
+          "type": "string",
+          "description": "You title the moments slide."
+        },
+        "notesSubtitle": {
+          "type": "string",
+          "description": "You give its short subtitle."
+        },
+        "notesQuote": {
+          "type": "string",
+          "description": "You give a short moments callout."
+        },
+        "notesNarration": {
+          "type": "string",
+          "description": "You roast one notable browser-history item, naming the player and what they searched for or visited. Use an empty string if none deserves comment."
+        },
+        "goalsTitle": {
+          "type": "string",
+          "description": "You title the goals section."
+        },
+        "goalsQuote": {
+          "type": "string",
+          "description": "You give a short goals callout."
+        },
+        "goalsNarration": {
+          "type": "string",
+          "description": "You give brief advice grounded in today's results. Leave app announcements to the game."
+        },
+        "outroTitle": {
+          "type": "string",
+          "description": "You title the closing verdict."
+        },
+        "outroQuote": {
+          "type": "string",
+          "description": "You give a short closing callout."
+        },
+        "outroNarration": {
+          "type": "string",
+          "description": "You deliver a funny back-to-work closer when quota is met, or an unmistakable firing when it is missed. Sandbox never fires anyone."
+        },
+        "selectedMomentIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 5,
+          "description": "You copy every supplied featuredQuotes id in its existing order. The game has already selected these moments; do not choose, omit or reorder them."
+        },
+        "replayIntroductions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "You return exactly one introduction per featuredQuotes entry, in supplied order, at most six words each. Return an empty array for no moments."
+        },
+        "quoteParaphrases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "You return exactly one string per featuredQuotes entry, in supplied order. Use an empty string when its quote fits 82 characters; otherwise paraphrase briefly. Return an empty array for no moments."
+        },
+        "noteNarrations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "You return exactly one reaction per featuredQuotes entry, in supplied order, at most 18 words each. Keep all punchlines about that moment in its single string. Praise tracked successes and roast tracked failures. Put general performance notes in lineNotes. Return an empty array for no moments."
+        },
+        "lineNotes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "You give at most two short notes about the strongest player moments, without repeating selected situations."
+        },
+        "coachingNotes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "You give at most one useful coaching note grounded in today's play."
+        },
+        "nextGoals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "You give brief, concrete goals for the next workday."
+        },
+        "outroBullets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "You give brief bullets supporting the closing verdict."
+        }
+      },
+      "required": [
+        "deckTitle",
+        "presenterName",
+        "presenterTitle",
+        "openingTitle",
+        "openingQuote",
+        "openingNarration",
+        "rankingTitle",
+        "rankingQuote",
+        "rankingNarration",
+        "notesTitle",
+        "notesSubtitle",
+        "notesQuote",
+        "notesNarration",
+        "goalsTitle",
+        "goalsQuote",
+        "goalsNarration",
+        "outroTitle",
+        "outroQuote",
+        "outroNarration",
+        "selectedMomentIds",
+        "replayIntroductions",
+        "quoteParaphrases",
+        "noteNarrations",
+        "lineNotes",
+        "coachingNotes",
+        "nextGoals",
+        "outroBullets"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

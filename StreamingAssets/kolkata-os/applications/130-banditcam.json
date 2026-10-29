@@ -1,0 +1,22 @@
+{
+  "id": "banditcam",
+  "title": "Banditcam",
+  "iconPath": "icons/Banditcam.png",
+  "contentType": "banditcam",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopHiddenByDefault": false,
+  "desktopOrder": 13,
+  "windowLeft": 496,
+  "windowTop": 132,
+  "windowWidth": 840,
+  "windowHeight": 620,
+  "accentColor": "#E81123",
+  "initialState": "closed",
+  "content": {},
+  "access": {
+    "mode": "catalog",
+    "productId": "banditcam-included"
+  }
+}

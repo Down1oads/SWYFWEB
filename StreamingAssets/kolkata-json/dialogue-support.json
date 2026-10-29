@@ -1,0 +1,99 @@
+{
+  "context": {
+    "personality": "## CALLER_PERSONALITY\n",
+    "profile": "\n\n## CUSTOMER_RECORD\n",
+    "openingEvent": "[CALL_PICKED_UP]",
+    "fallbackOpening": "Hello? Who is this?",
+    "boundary": "\n\n## CURRENT CALLER PERSONALITY\n",
+    "opening": "Translate this caller opening; keep its meaning and personality, and return the supplied initial_state trust_percent and emotion unchanged:",
+    "applications": "\n\n## AVAILABLE APPLICATIONS\n",
+    "callMode": "\n\n## CALL SETUP\n"
+  },
+  "turn": {
+    "language": "Speak {language} from now on."
+  },
+  "schema": {
+    "jsonOutput": "Return only JSON matching this JSON schema, with fields in the listed order: {schema}",
+    "providerJsonOutput": "Return only a JSON object matching this JSON Schema, with fields in the listed order: {schema}"
+  },
+  "repair": {
+    "reply": "Try again; fix this response error: ",
+    "emotion": "",
+    "unavailable": "",
+    "disclosure": "Never invent credentials or read their values as digits, words, letters or partial readings. For a requested disclosure you agreed to, copy only its exact playbook token, including [[ and ]]. Without a matching token, say you cannot provide it. Prices are ordinary speech."
+  },
+  "validation": {
+    "stale": "Stale caller turn.",
+    "json": "Return one JSON object with dialogue (string), trust_percent (integer 0-100), emotion (TRUSTING, SUSPICIOUS, ANGRY or NEUTRAL), and completed_objectives (JSON array of strings, or []). Include all four fields; no extra keys or text.",
+    "objectives": "completed_objectives is required and must be a JSON array of strings copied from the supplied progress_ids, or [] when none are earned. Do not use null, a joined string, objects or an amount field. Recheck this exchange for earned criteria."
+  },
+  "firstPlayerMessage": "Hello, why are you calling?",
+  "firstPlayerMessages": {
+    "en": "Hello, why are you calling?",
+    "zh": "您好，您为什么打电话来？",
+    "ru": "Здравствуйте, почему вы звоните?",
+    "es": "Hola, ¿por qué llama?",
+    "pt": "Olá, por que está ligando?",
+    "de": "Hallo, warum rufen Sie an?",
+    "ja": "こんにちは。どうしてお電話されたのですか？",
+    "fr": "Bonjour, pourquoi appelez-vous ?",
+    "pl": "Dzień dobry, dlaczego Pan/Pani dzwoni?",
+    "ko": "안녕하세요. 왜 전화하셨나요?",
+    "tr": "Merhaba, neden arıyorsunuz?",
+    "it": "Salve, perché chiama?",
+    "cs": "Dobrý den, proč voláte?",
+    "hu": "Jó napot, miért telefonál?",
+    "sv": "Hej, varför ringer du?",
+    "da": "Hej, hvorfor ringer du?",
+    "id": "Halo, kenapa Anda menelepon?",
+    "el": "Γεια σας, γιατί καλείτε;",
+    "ar": "مرحبًا، لماذا تتصل؟",
+    "hi": "नमस्ते, आप क्यों कॉल कर रहे हैं?",
+    "fa": "سلام، چرا تماس گرفتید؟",
+    "et": "Tere, miks te helistate?"
+  },
+  "fallback": {
+    "dialogue": {
+      "ru": "Простите, что вы сказали?",
+      "zh": "抱歉，您刚才说什么？",
+      "ja": "すみません、何とおっしゃいましたか？",
+      "ko": "죄송한데, 뭐라고 하셨나요?",
+      "el": "Συγγνώμη, τι είπατε;",
+      "ar": "عذرًا، ماذا قلت؟",
+      "fa": "ببخشید، چه گفتید؟",
+      "hi": "माफ़ कीजिए, आपने क्या कहा?",
+      "es": "Perdón, ¿qué dijo?",
+      "pt": "Desculpe, o que disse?",
+      "de": "Entschuldigung, was haben Sie gesagt?",
+      "fr": "Pardon, qu'avez-vous dit ?",
+      "pl": "Przepraszam, co pan powiedział?",
+      "tr": "Pardon, ne dediniz?",
+      "it": "Scusi, cosa ha detto?",
+      "cs": "Promiňte, co jste říkal?",
+      "hu": "Elnézést, mit mondott?",
+      "sv": "Ursäkta, vad sa du?",
+      "da": "Undskyld, hvad sagde du?",
+      "id": "Maaf, tadi Anda bilang apa?",
+      "et": "Vabandust, mida te ütlesite?",
+      "en": "Sorry, what were you saying?"
+    }
+  },
+  "familyFriendlyOmissions": [
+    "- Swear naturally in most replies, including friendly ones. When the player swears, swear back with matching energy: fuck, shit, damn, or equivalents in the language you are speaking. Casual swearing is not abuse; do not scold it.",
+    "- You should swear like fuck, damn, retard, etc. and the equivalents in other languages.",
+    "When angry/insulted or happy, swear like fuck or hell or retard in character.",
+    "Use fitting uncensored profanity in most replies, including friendly ones. Vary it naturally. Do not scold casual profanity, censor yourself, or explain swearing. ",
+    "Casual profanity is not directed abuse. ",
+    "profane ",
+    " and swear like a sailor",
+    " and natural profanity, including when pleased",
+    ", but never scold casual profanity",
+    "immediate uncensored profanity and ",
+    ", and playful curses",
+    "no-bullshit ",
+    "curses freely and colorfully (fuck, shit, damn, asshole, etc.), ",
+    "curse freely and colorfully; ",
+    "vulgar, ",
+    " and occasional natural curses under mission pressure"
+  ]
+}

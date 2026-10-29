@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "security-screener",
+      "title": "Security Screener",
+      "category": "Automation",
+      "family": "Airport",
+      "description": "Automatically produces cookies.",
+      "icon": "clicker/Art/Airport Security Sucks Cop Head App Icon.png",
+      "baseCost": "500",
+      "unlockAt": "1",
+      "ratePpm": 100
+    },
+    {
+      "id": "assured-inspection",
+      "title": "ASSured Inspection",
+      "category": "Click Power",
+      "family": "Airport",
+      "description": "Every 50 clicks boosts Airport 5x for 10s.",
+      "icon": "clicker/Art/Airport Security Sucks ASS Logo.png",
+      "baseCost": "100000",
+      "unlockAt": "10000",
+      "ratePpm": 0
+    },
+    {
+      "id": "security-theater",
+      "title": "Security Theater",
+      "category": "Synergies",
+      "family": "Airport",
+      "description": "2x Airport output; Inspection lasts 15s.",
+      "icon": "clicker/Art/Airport Security Sucks Full Typature.png",
+      "baseCost": "1000000000",
+      "unlockAt": "100000000",
+      "ratePpm": 0
+    },
+    {
+      "id": "legacy-spud-couriers",
+      "title": "Legacy Spud Couriers",
+      "category": "Automation",
+      "family": "Jatater",
+      "description": "Potatoes hauling cookies the hard way.",
+      "icon": "clicker/Art/Old Jatater Worldwide Icon.png",
+      "baseCost": "1000000",
+      "unlockAt": "100000",
+      "ratePpm": 600
+    },
+    {
+      "id": "cookie-air-freight",
+      "title": "Cookie Air Freight",
+      "category": "Automation",
+      "family": "Jatater",
+      "description": "Industrial cookie logistics.",
+      "icon": "clicker/Art/Jatater International Airport Logo.png",
+      "baseCost": "1000000000000000000000",
+      "unlockAt": "100000000000000000000",
+      "ratePpm": 12000
+    },
+    {
+      "id": "fresh-coat",
+      "title": "Fresh Coat",
+      "category": "Click Power",
+      "family": "Jatater",
+      "description": "+25% power per 10-click streak, up to 4 layers.",
+      "icon": "clicker/Art/Jatater Worldwide Paint App Icon.png",
+      "baseCost": "100000000",
+      "unlockAt": "10000000",
+      "ratePpm": 0
+    },
+    {
+      "id": "worldwide-rebrand",
+      "title": "Worldwide Rebrand",
+      "category": "Synergies",
+      "family": "Jatater",
+      "description": "2x Jatater output; Fresh Coat reaches 6 layers.",
+      "icon": "clicker/Art/New Jatater Worldwide Logo.png",
+      "baseCost": "1000000000000000000000000",
+      "unlockAt": "10000000000000000000000",
+      "ratePpm": 0
+    },
+    {
+      "id": "hot-potato",
+      "title": "Hot Potato",
+      "category": "Click Power",
+      "family": "Jatater",
+      "description": "Every 25th click pays 10x.",
+      "icon": "clicker/Art/Cute Smiley Baked Potato Icon.png",
+      "baseCost": "100000000000",
+      "unlockAt": "10000000000",
+      "ratePpm": 0
+    },
+    {
+      "id": "loopy-line",
+      "title": "Loopy Line",
+      "category": "Automation",
+      "family": "Cereal",
+      "description": "An overexcited cereal factory.",
+      "icon": "clicker/Art/Loopy Cereal Mascot Rabbit Icon.png",
+      "baseCost": "1000000000000",
+      "unlockAt": "100000000000",
+      "ratePpm": 3000
+    },
+    {
+      "id": "cereal-overdrive",
+      "title": "Cereal Overdrive",
+      "category": "Boosts",
+      "family": "Cereal",
+      "description": "10x production for 10s. 5m cooldown.",
+      "icon": "clicker/Art/Doop Loops Box.png",
+      "baseCost": "1000000000000000000",
+      "unlockAt": "10000000000000000",
+      "ratePpm": 0
+    },
+    {
+      "id": "click-recorder",
+      "title": "Click Recorder",
+      "category": "Click Power",
+      "family": "Scam",
+      "description": "Replays 20% of click gains over 5s.",
+      "icon": "clicker/Art/Banditcam Screen Recorder App Icon.png",
+      "baseCost": "1000000000000000000000000000000",
+      "unlockAt": "10000000000000000000000000000",
+      "ratePpm": 0
+    },
+    {
+      "id": "friend-farm",
+      "title": "Friend Farm",
+      "category": "Automation",
+      "family": "Scam",
+      "description": "Friendship, now fully automated.",
+      "icon": "clicker/Art/Scam With Your Friends App Icon.png",
+      "baseCost": "1000000000000000000000000000000000000000000000",
+      "unlockAt": "10000000000000000000000000000000000000000000",
+      "ratePpm": 50000
+    },
+    {
+      "id": "call-center-network",
+      "title": "Call-Center Network",
+      "category": "Synergies",
+      "family": "Scam",
+      "description": "+25% Scam output per automation family.",
+      "icon": "clicker/Art/Scam With Your Friends Full Typature.png",
+      "baseCost": "100000000000000000000000000000000000000000000000000",
+      "unlockAt": "1000000000000000000000000000000000000000000000000",
+      "ratePpm": 0
+    },
+    {
+      "id": "fulfillment-megacenter",
+      "title": "Fulfillment Megacenter",
+      "category": "Automation",
+      "family": "Scam",
+      "description": "Scamazon's strongest stable producer.",
+      "icon": "clicker/Art/Scamazon App Icon.png",
+      "baseCost": "1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "unlockAt": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "ratePpm": 500000
+    },
+    {
+      "id": "cookiechain-mine",
+      "title": "Cookiechain Mine",
+      "category": "Automation",
+      "family": "Crypto",
+      "description": "Cycles from 0.5x to 2x every 60s.",
+      "icon": "clicker/Art/Bitcoin Logo.png",
+      "baseCost": "1000000000000000000000000000000000000000000000000000000000000",
+      "unlockAt": "10000000000000000000000000000000000000000000000000000000000",
+      "ratePpm": 100000
+    },
+    {
+      "id": "yattys-scottie",
+      "title": "Yatty's Scottie",
+      "category": "Boosts",
+      "family": "Energy",
+      "description": "2x click power for 60s. 5m cooldown.",
+      "icon": "clicker/Art/Yatty's Scottie Energy Drink Icon For Powerup.png",
+      "baseCost": "1000000000000000",
+      "unlockAt": "10000000000000",
+      "ratePpm": 0
+    }
+  ]
+}

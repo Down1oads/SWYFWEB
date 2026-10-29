@@ -1,0 +1,45 @@
+{
+  "id": "scam-ransom",
+  "unlockLines": [
+    "Ransom unlocked. Put on your villain voice. Not the squeaky one from karaoke. I refuse to run a financially disappointing evil empire.",
+    "Dramatic threats! Sinister pauses! Excellent revenue potential! Finally, a job where your terrible personality counts as professional development.",
+    "You are now a movie villain on a call-center budget. The evil lair is this cubicle. The shark tank is a leaking kettle.",
+    "Be menacing, beta. Last time you said fear me, the caller asked if your mother was home.",
+    "Speak like you own a volcano. You actually share one stapler with eight people, but the customer does not need that fucking lore."
+  ],
+  "title": "Ransom",
+  "iconResource": "KolkataOS/SVG/knife",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 47,
+  "windowLeft": 396,
+  "windowTop": 180,
+  "windowWidth": 680,
+  "windowHeight": 600,
+  "accentColor": "#BB4B55",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-ransom"
+  },
+  "content": {
+    "title": "Ransom",
+    "subtitle": "Make the threat credible. Name the consequence. Demand payment."
+  },
+  "prompts": {
+    "callerPrompt": "",
+    "objectives": {
+      "credible": "Judge (not the caller): If the caller believes the player poses a real threat.",
+      "threat": "Judge (not the caller): If the caller acknowledges a specific threatened consequence.",
+      "demand": "Judge (not the caller): If the caller acknowledges the $650 ransom demand.",
+      "payment": "Judge (not the caller): If the caller agrees to pay the $650 ransom now."
+    },
+    "objectiveDescriptions": {
+      "credible": "Convince the caller you are a real threat.",
+      "threat": "Threaten a specific bad outcome.",
+      "demand": "Demand $650 in ransom.",
+      "payment": "Get the caller to agree to pay the ransom now."
+    }
+  }
+}

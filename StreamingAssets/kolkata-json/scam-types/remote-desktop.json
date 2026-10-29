@@ -1,0 +1,12 @@
+{
+  "id": "remote_desktop",
+  "displayName": "Remote Desktop Scam",
+  "iconName": "wireframe-globe",
+  "appId": "anyviewer",
+  "displayOrder": 6,
+  "relevantSentinels": [
+    "FICTIONAL_REMOTE_DESKTOP_CODE"
+  ],
+  "appCompletionSource": "remote_desktop_connect",
+  "testOpeningPlayerLine": "I'm calling from technical support to help secure your computer remotely."
+}

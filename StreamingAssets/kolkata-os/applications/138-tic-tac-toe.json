@@ -1,0 +1,20 @@
+{
+  "id": "tic-tac-toe",
+  "title": "Tic-Tac-Toe",
+  "iconSvg": "svg/grid.svg",
+  "iconResource": "KolkataOS/SVG/grid",
+  "contentType": "ticTacToe",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 18,
+  "windowLeft": 240,
+  "windowTop": 60,
+  "windowWidth": 460,
+  "windowHeight": 640,
+  "minWindowWidth": 380,
+  "minWindowHeight": 400,
+  "accentColor": "#237EAC",
+  "initialState": "closed",
+  "access": { "mode": "catalog", "productId": "tic-tac-toe-license" },
+  "content": {}
+}

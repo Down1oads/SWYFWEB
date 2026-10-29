@@ -1,0 +1,21 @@
+{
+  "type": "json_schema",
+  "json_schema": {
+    "name": "boss_taunt",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dialogue": {
+          "type": "string",
+          "maxLength": 160,
+          "description": "You taunt the players in one fresh, funny English line, 4 to 12 words. No quotes or stage directions."
+        }
+      },
+      "required": [
+        "dialogue"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "business_investment",
+  "displayName": "Business Investment",
+  "iconName": "stock-candles",
+  "appId": "scam-business-investment",
+  "displayOrder": 53,
+  "relevantSentinels": ["FICTIONAL_BUSINESS_EQUITY_INVOICE"],
+  "appCompletionSource": "conversation_business_investment"
+}

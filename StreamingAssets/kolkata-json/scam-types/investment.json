@@ -1,0 +1,11 @@
+{
+  "id": "investment",
+  "displayName": "Investment Scam",
+  "iconName": "stock-candles",
+  "appId": "scam-investment",
+  "displayOrder": 43,
+  "relevantSentinels": [
+    "FICTIONAL_INVESTMENT_INVOICE_NUMBER"
+  ],
+  "appCompletionSource": "conversation_investment"
+}

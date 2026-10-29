@@ -1,0 +1,25 @@
+{
+  "id": "backgrounds",
+  "title": "Backgrounds",
+  "iconSvg": "svg/image-edit.svg",
+  "iconResource": "KolkataOS/SVG/image-edit",
+  "contentType": "backgrounds",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 9,
+  "windowLeft": 612,
+  "windowTop": 104,
+  "windowWidth": 580,
+  "windowHeight": 650,
+  "accentColor": "#8764B8",
+  "initialState": "closed",
+  "content": {
+    "title": "Backgrounds",
+    "subtitle": "Add your own backgrounds using the Backgrounds folder."
+  },
+  "access": {
+    "mode": "catalog",
+    "productId": "backgrounds-included"
+  }
+}

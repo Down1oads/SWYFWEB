@@ -1,0 +1,24 @@
+{
+  "promptCooldownSeconds": 15,
+  "fileForgetSeconds": 60,
+  "activities": [
+    {
+      "tier": "normal",
+      "chance": 1.0,
+      "priority": 1,
+      "tag": "[[RDP_FILE_OPENED]]"
+    },
+    {
+      "tier": "personal",
+      "chance": 1.0,
+      "priority": 2,
+      "tag": "[[RDP_PERSONAL_FILE_OPENED]]"
+    },
+    {
+      "tier": "sensitive",
+      "chance": 1.0,
+      "priority": 3,
+      "tag": "[[RDP_SENSITIVE_FILE_OPENED]]"
+    }
+  ]
+}

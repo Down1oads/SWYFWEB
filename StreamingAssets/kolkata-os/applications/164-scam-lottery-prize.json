@@ -1,0 +1,60 @@
+{
+  "id": "scam-lottery-prize",
+  "unlockLines": [
+    "They won the lottery! What are the odds? In this office, suspiciously excellent. Celebrate like my accountant just found a tax deduction.",
+    "Lottery unlocked. Confetti for the caller, commission for the boss. You get to sweep up. Everybody wins something, beta.",
+    "Announce the jackpot with feeling. Last time you said congratulations like somebody's fucking hamster had died.",
+    "Make them feel like a millionaire. Make me feel like their much richer boss. You can feel whatever fits in the budget.",
+    "Big prize! Big smiles! Tiny little suspicion! It is like a birthday party hosted by a spreadsheet in a gold chain."
+  ],
+  "title": "Lottery Prize",
+  "iconResource": "KolkataOS/SVG/cash-check",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 44,
+  "windowLeft": 372,
+  "windowTop": 160,
+  "windowWidth": 680,
+  "windowHeight": 640,
+  "accentColor": "#C99718",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-lottery-prize"
+  },
+  "content": {
+    "title": "Lottery Prize",
+    "subtitle": "Get the ticket by email. Verify the code. Scratch to reveal your prize.",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "conversation_lottery_prize",
+      "submitLabel": "Verify"
+    },
+    "fields": [
+      {
+        "id": "lottery-numbers",
+        "label": "Emailed ticket-confirmation code",
+        "placeholder": "00-00-00-00-00-00",
+        "itemId": "FICTIONAL_LOTTERY_TICKET_NUMBERS",
+        "multiline": false,
+        "password": false,
+        "required": true,
+        "persistLocal": false
+      }
+    ]
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The player is trying to obtain a lottery ticket from the caller by email. First establish that the caller has a ticket, then persuade them to send it by email. The final player task is asking for the emailed ticket-confirmation code and entering it in the app. Do not claim a guaranteed win or charge a $350 fee. Verification only unlocks scratching. The host chooses a single prize: $1,000 with 5% probability; $500, $200, and $0 each with equal shares of the other 95%. Only scratching reveals and pays the prize; no dialogue objective pays it.\n\nCaller (available information): You have an unscratched lottery ticket. If persuaded to send it by email, its emailed ticket-confirmation code is [[FICTIONAL_LOTTERY_TICKET_NUMBERS]]. Give that code when asked after agreeing to send the ticket. You do not yet know whether it won.",
+    "objectives": {
+      "context": "Judge (not the caller): The caller confirms having a lottery ticket.",
+      "plan": "Judge (not the caller): The caller explicitly agrees to send their lottery ticket by email.",
+      "confirm": "Judge (not the caller): The server verifies the emailed ticket-confirmation code. Do not complete this from conversation."
+    },
+    "objectiveDescriptions": {
+      "context": "Ask the caller about their lottery ticket.",
+      "plan": "Convince them to send the ticket by email.",
+      "confirm": "Ask for the emailed ticket-confirmation code and enter it below."
+    }
+  }
+}

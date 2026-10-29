@@ -1,0 +1,56 @@
+{
+  "templates": [
+    {
+      "id": "female-pic-1",
+      "gender": "female",
+      "image": "female-pic-1.png",
+      "width": 1024,
+      "height": 1024,
+      "head": {
+        "x": 319.75,
+        "y": 119.5,
+        "width": 385.5,
+        "height": 358.5
+      }
+    },
+    {
+      "id": "female-pic-2",
+      "gender": "female",
+      "image": "female-pic-2.png",
+      "width": 1024,
+      "height": 1024,
+      "head": {
+        "x": 384.0,
+        "y": 26.0,
+        "width": 257.0,
+        "height": 239.0
+      }
+    },
+    {
+      "id": "male-pic-1",
+      "gender": "male",
+      "image": "male-pic-1.png",
+      "width": 1024,
+      "height": 1024,
+      "head": {
+        "x": 379.0,
+        "y": 67.0,
+        "width": 224.0,
+        "height": 209.0
+      }
+    },
+    {
+      "id": "male-pic-2",
+      "gender": "male",
+      "image": "male-pic-2.png",
+      "width": 1024,
+      "height": 1024,
+      "head": {
+        "x": 13.0,
+        "y": 362.0,
+        "width": 257.0,
+        "height": 239.0
+      }
+    }
+  ]
+}

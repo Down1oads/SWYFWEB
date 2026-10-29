@@ -1,0 +1,63 @@
+{
+  "id": "credit-card",
+  "unlockLines": [
+    "Plastic fantastic, beta. That tiny card has more earning potential than your entire desk. Try not to get outperformed by a rectangle.",
+    "Credit cards unlocked. You bring the charm; I bring the machine that goes cha-ching. Finally, office music I can tolerate.",
+    "Call it premium customer service. I call it my next gold chain wearing a little plastic disguise. Very sophisticated shit.",
+    "Congratulations on joining the plastic economy. Your employee of the month trophy is also plastic. We are vertically integrated.",
+    "Four corners. One chip. More ambition than half this office. Show the card some respect, beta. It pays my bills."
+  ],
+  "title": "Credit Card",
+  "iconSvg": "svg/swipe-card.svg",
+  "iconResource": "KolkataOS/SVG/swipe-card",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 7,
+  "windowLeft": 592,
+  "windowTop": 420,
+  "windowWidth": 680,
+  "windowHeight": 560,
+  "accentColor": "#038387",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-credit-card"
+  },
+  "content": {
+    "title": "Credit Card",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "credit_card_submit",
+      "itemId": "FICTIONAL_CREDIT_CARD_NUMBER",
+      "codeFieldId": "code",
+      "submitLabel": "Verify"
+    },
+    "fields": [
+      {
+        "id": "code",
+        "label": "Card Number (front of card)",
+        "placeholder": "Enter the number from the front of the card",
+        "itemId": "FICTIONAL_CREDIT_CARD_NUMBER",
+        "multiline": false,
+        "password": false,
+        "required": true,
+        "persistLocal": false
+      }
+    ]
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The caller may share their card number when asked after agreeing to pay.\n\nCaller (available information): Your credit card number is [[FICTIONAL_CREDIT_CARD_NUMBER]].",
+    "objectives": {
+      "service": "Judge (not the caller): If the caller accepts that they need the offered service.",
+      "price": "Judge (not the caller): If the caller agrees to a price for the service.",
+      "number": "Judge (not the caller): If the caller shares their card number to pay."
+    },
+    "objectiveDescriptions": {
+      "service": "Convince the caller they need your service.",
+      "price": "Get them to agree on a price for the service.",
+      "number": "Enter the card number from the front of the card."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "prompt-editor",
+  "title": "Prompt Editor",
+  "contentType": "promptEditor",
+  "showOnDesktop": false,
+  "pinned": false,
+  "windowLeft": 180,
+  "windowTop": 100,
+  "windowWidth": 1060,
+  "windowHeight": 720,
+  "minWindowWidth": 650,
+  "minWindowHeight": 420,
+  "initialState": "closed",
+  "content": {}
+}

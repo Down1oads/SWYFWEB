@@ -1,0 +1,25 @@
+{
+  "id": "customer-info",
+  "title": "Customer Info",
+  "iconSvg": "svg/face-agent.svg",
+  "iconResource": "KolkataOS/SVG/face-agent",
+  "contentType": "customerInfo",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 11,
+  "windowLeft": 310,
+  "windowTop": 90,
+  "windowWidth": 900,
+  "windowHeight": 650,
+  "accentColor": "#5B3FA3",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "customer-info-day-five"
+  },
+  "content": {
+    "title": "Customer Info",
+    "subtitle": "Live intelligence for the customer currently on the line."
+  }
+}

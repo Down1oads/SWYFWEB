@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Spotlight</title>
+  <rect width="128" height="128" rx="18" fill="#662FC6"/>
+  <path d="M64 12l10 28 28-12-12 28 28 8-28 8 12 28-28-12-10 28-10-28-28 12 12-28-28-8 28-8-12-28 28 12z" fill="#F5B833"/>
+</svg>

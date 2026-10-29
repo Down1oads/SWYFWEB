@@ -1,0 +1,17 @@
+{
+  "id": "audio-player",
+  "title": "Audio Player",
+  "iconSvg": "svg/record-start.svg",
+  "iconResource": "KolkataOS/SVG/record-start",
+  "contentType": "rdpAudio",
+  "pinned": false,
+  "showOnDesktop": false,
+  "desktopOrder": 3,
+  "windowLeft": 240,
+  "windowTop": 130,
+  "windowWidth": 600,
+  "windowHeight": 360,
+  "accentColor": "#00A4EF",
+  "initialState": "closed",
+  "content": {}
+}

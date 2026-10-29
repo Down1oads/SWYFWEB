@@ -1,0 +1,43 @@
+{
+  "id": "scam-tech-support",
+  "unlockLines": [
+    "Tech support unlocked. Turn the bullshit off and back on again. If that fails, tell them the vibes have a virus.",
+    "Become a certified computer doctor. Your qualification is owning a mouse. Please stop checking the laptop's pulse with a fucking thermometer.",
+    "The computer has a virus! Conveniently, your boss has a gold-chain deficiency. Two emergencies. One highly questionable business opportunity.",
+    "Say firewall like you know what it means. Last week you called the toaster a server. Confidence, beta. Confidence.",
+    "Sell protection with your serious nerd voice. If they ask for your credentials, remember: you once successfully opened a PDF."
+  ],
+  "title": "Tech Support Scam",
+  "iconResource": "KolkataOS/SVG/security-chip",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 42,
+  "windowLeft": 348,
+  "windowTop": 140,
+  "windowWidth": 680,
+  "windowHeight": 560,
+  "accentColor": "#1286A0",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "dev-scam-tech-support"
+  },
+  "content": {
+    "title": "Tech Support Scam",
+    "subtitle": "Diagnose the problem. Sell the protection."
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The caller can agree to buy virus protection without remote access or troubleshooting.",
+    "objectives": {
+      "problem": "Judge (not the caller): If the caller believes their computer has a problem.",
+      "symptom": "Judge (not the caller): If the caller describes the problem.",
+      "protection": "Judge (not the caller): If the caller agrees to pay for virus protection."
+    },
+    "objectiveDescriptions": {
+      "problem": "Convince the caller their fake computer has a problem.",
+      "symptom": "Get them to describe the problem.",
+      "protection": "Get them to agree to pay for virus protection."
+    }
+  }
+}

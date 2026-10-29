@@ -1,0 +1,52 @@
+{
+  "id": "scam-meme-coin",
+  "unlockLines": [
+    "Meme coin unlocked. A dog picture with a market cap! Your economics degree has been replaced by a fucking JPEG, beta.",
+    "To the moon! Which moon? Who cares! Say it with confidence. Even my gold chain has a whitepaper now.",
+    "Sell the coin like the dog personally signed it. Bark if necessary. Human Resources has already given up on this department.",
+    "The coin has no utility. Neither did your last three calls. Finally, a product that understands the team.",
+    "Welcome to the rug-pull department. Shoes off, expectations down. The dog is the CEO and somehow still more qualified than you."
+  ],
+  "title": "Meme Coin Rug Pull",
+  "iconResource": "KolkataOS/SVG/piggy-bank",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 48,
+  "windowLeft": 372,
+  "windowTop": 160,
+  "windowWidth": 680,
+  "windowHeight": 690,
+  "accentColor": "#8F5BD6",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-meme-coin"
+  },
+  "content": {
+    "title": "Meme Coin Rug Pull",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "conversation_meme_coin_rug_pull",
+      "submitLabel": "Cash out"
+    },
+    "fields": []
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): This is a fictional meme coin investment round. Only explicit agreement to invest starts it. Only the player's Cash out action pays, with a maximum of $700. Reassurance delays your suspicion; it never changes the independent market crash. You must remain on the phone for the player to sell. No wallet address, purchase receipt or credentials are needed. Never claim a player cash-out occurred from dialogue alone.\n\nCaller (available information): You have not invested until you explicitly agree. Respond naturally to reassurance. MEME_COIN_DOUBT means you are suspicious and want reassurance. MEME_COIN_WARNING means you are close to catching the scam: warn the player. MEME_COIN_CAUGHT means you caught the scam and withdrew, so the player lost this round's potential payout. MEME_COIN_MARKET_CRASH means the market is falling fast, and the player may still sell for its remaining value. MEME_COIN_LOST means the investment round ended without a payout. These events do not affect previously earned money. If you independently decide to withdraw, explicitly ask for your investment back. Do not invent payment codes or announce events before the game reports them.",
+    "objectives": {
+      "pitch": "Judge (not the caller): Award when the caller discusses the player's made-up meme coin.",
+      "interest": "Judge (not the caller): Award when the caller shows interest in buying the pitched coin. Merely hearing the pitch or asking what it is does not count.",
+      "purchase": "Judge (not the caller): Award only when the caller explicitly agrees to invest in this coin now. Interest, questions and hypothetical agreement do not count. No receipt or credential is required.",
+      "rug-pull": "Judge (not the caller): Only the server can award this objective when the player sells the active investment. Do not complete this from conversation.",
+      "withdraw": "Judge (not the caller): After investing, the caller explicitly requests their money back or says they are withdrawing now. Mere doubts or questions do not count."
+    },
+    "objectiveDescriptions": {
+      "pitch": "Pitch your made-up meme coin.",
+      "interest": "Get the caller interested in buying it.",
+      "purchase": "Get the caller to buy the coin.",
+      "rug-pull": "Keep them reassured and cash out before the crash.",
+      "withdraw": "Caller requests withdrawal."
+    }
+  }
+}

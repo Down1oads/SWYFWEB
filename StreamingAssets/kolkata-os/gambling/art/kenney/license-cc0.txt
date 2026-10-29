@@ -1,0 +1,17 @@
+Selected assets are from Kenney Game Assets All-in-1 3.7.0.
+
+Created and distributed by Kenney: https://www.kenney.nl/
+
+License: Creative Commons Zero (CC0 1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+
+This content is free to use in personal, educational, and commercial projects.
+Written permission is not required. Crediting Kenney is appreciated but not mandatory.
+
+Source packs used:
+- Board Game Icons
+- Boardgame Pack
+- Particle Pack
+- Physics Assets
+- Puzzle Pack 1
+- Space Shooter Extension

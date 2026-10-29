@@ -1,0 +1,63 @@
+{
+  "id": "identity",
+  "unlockLines": [
+    "Welcome to Social Security, where nobody is secure and I am barely social. Untangle their identity, beta. Your own remains a disappointment.",
+    "Become the department of Who The Hell Are You. Very prestigious. We printed the badge on the back of a lunch receipt.",
+    "An identity crisis! Finally, a customer with something in common with our management team. Be official. Try remembering your own name first.",
+    "Tell them everything is under control. Your chair is broken, your boss is sweating, and the government is apparently you. Beautiful system.",
+    "Social Security unlocked. You now have bureaucratic authority and absolutely no pension. Congratulations on this remarkable fucking promotion."
+  ],
+  "title": "Social Security",
+  "iconSvg": "svg/card-account-details.svg",
+  "iconResource": "KolkataOS/SVG/card-account-details",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 6,
+  "windowLeft": 592,
+  "windowTop": 96,
+  "windowWidth": 760,
+  "windowHeight": 640,
+  "accentColor": "#B22234",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-social-security"
+  },
+  "content": {
+    "title": "Social Security",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "identity_record_submit",
+      "itemId": "FICTIONAL_SSN",
+      "codeFieldId": "number",
+      "submitLabel": "File correction"
+    },
+    "fields": [
+      {
+        "id": "number",
+        "label": "Social Security number",
+        "placeholder": "Enter the caller's 9-digit number",
+        "itemId": "FICTIONAL_SSN",
+        "multiline": false,
+        "password": false,
+        "required": true,
+        "persistLocal": false
+      }
+    ]
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The caller may share their Social Security number when asked after being persuaded it will fix the record.\n\nCaller (available information): Your Social Security number is [[FICTIONAL_SSN]].",
+    "objectives": {
+      "authority": "Judge (not the caller): If the caller believes the player works for the government.",
+      "mixup": "Judge (not the caller): If the caller explains why the mistaken identity cannot be them.",
+      "number": "Judge (not the caller): If the caller shares their Social Security number to fix the record."
+    },
+    "objectiveDescriptions": {
+      "authority": "Convince them you work for the government.",
+      "mixup": "Explain an identity mix-up.",
+      "number": "Enter their Social Security number to fix the record."
+    }
+  }
+}

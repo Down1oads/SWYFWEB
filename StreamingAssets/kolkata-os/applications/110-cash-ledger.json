@@ -1,0 +1,24 @@
+{
+  "id": "cash-ledger",
+  "title": "Ledger",
+  "iconSvg": "svg/money-stack.svg",
+  "iconResource": "KolkataOS/SVG/money-stack",
+  "contentType": "ledger",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 10,
+  "windowLeft": 286,
+  "windowTop": 188,
+  "windowWidth": 940,
+  "windowHeight": 650,
+  "accentColor": "#00A86B",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "ledger-business-license"
+  },
+  "content": {
+    "title": "Ledger"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "files": [
+    {
+      "id": "appointments",
+      "kind": "decoy",
+      "weight": 3,
+      "fileNames": ["appointments.txt", "things coming up.txt", "calendar notes.txt"],
+      "contents": [
+        "Upcoming\n\n{DATE} at {TIME} - dentist cleaning\nTuesday at 6:00 PM - dinner with Carol\nFriday morning - call the plumber\nSaturday - library book sale",
+        "Calendar reminders\n\n{DATE} - oil change\n{TIME} - pick up prescription\nNext Thursday - lunch with Sam\nFirst Monday next month - neighborhood meeting"
+      ]
+    },
+    {
+      "id": "shopping_list",
+      "kind": "decoy",
+      "weight": 3,
+      "fileNames": ["shopping list.txt", "groceries.txt", "store list.txt"],
+      "contents": [
+        "Milk\nEggs\nCoffee\nDish soap\nApples\nCat food\nLight bulbs\nBirthday card for Linda\n\nCheck whether we still need paper towels.",
+        "Grocery list\n\n- bread\n- cheddar cheese\n- tomatoes\n- bananas\n- laundry detergent\n- tea\n- frozen peas\n\nUse the coupon for coffee."
+      ]
+    },
+    {
+      "id": "garden_notes",
+      "kind": "decoy",
+      "weight": 2,
+      "fileNames": ["garden notes.txt", "planting plan.txt", "back yard ideas.txt"],
+      "contents": [
+        "Garden plan\n\nTomatoes along the south fence. Basil between them. Move the hostas away from the sunny corner. Ask Ray if he still has extra marigold seeds.",
+        "Plants that survived last year\n\nLavender - did well\nRosemary - bring inside before frost\nTomatoes - needed more water\nZucchini - far too many\n\nTry snap peas this spring."
+      ]
+    },
+    {
+      "id": "home_repairs",
+      "kind": "decoy",
+      "weight": 2,
+      "fileNames": ["house jobs.txt", "weekend repairs.txt", "fix this stuff.txt"],
+      "contents": [
+        "House jobs\n\n[ ] tighten kitchen cabinet handle\n[ ] replace porch bulb\n[ ] measure guest-room window\n[ ] clean dryer vent\n[ ] find matching paint for hallway",
+        "Weekend repair list\n\nThe bathroom faucet still drips. Garage shelf needs another bracket. Weather stripping is loose by the back door. Take photos before going to the hardware store."
+      ]
+    },
+    {
+      "id": "book_list",
+      "kind": "decoy",
+      "weight": 2,
+      "fileNames": ["books to read.txt", "library list.txt", "book club ideas.txt"],
+      "contents": [
+        "Books to read\n\nThe Thursday Murder Club\nA Gentleman in Moscow\nThe Secret Garden (reread)\nThe library's new local-history book\n\nAsk June what the mystery with the lighthouse was called.",
+        "Book club possibilities\n\nSomething funny this time. No books over 500 pages. Ruth suggested a travel memoir and Carol wants another mystery. Decide by {DATE}."
+      ]
+    },
+    {
+      "id": "vacation_ideas",
+      "kind": "decoy",
+      "weight": 1,
+      "fileNames": ["vacation ideas.txt", "places to visit.txt", "trip maybe.txt"],
+      "contents": [
+        "Possible fall trip\n\nDrive instead of fly. Find a place near hiking but not too remote. Check museum hours. Bring the good camera and the blue raincoat.",
+        "Places we talked about\n\n- the lake cabins\n- train trip through the mountains\n- three days in the old coastal town\n\nNeed somewhere with easy walking and a decent breakfast."
+      ]
+    },
+    {
+      "id": "phone_call_notes",
+      "kind": "decoy",
+      "weight": 2,
+      "fileNames": ["call notes.txt", "people to call.txt", "phone reminders.txt"],
+      "contents": [
+        "People to call\n\nCarol - confirm Sunday dinner\nDr. Lee's office - move appointment\nRay - return ladder\nInsurance office - ask about the new form",
+        "Phone notes\n\nThe pharmacy said the refill will be ready after {TIME}. Call the vet tomorrow morning. Ask Ellen whether she wants the extra concert ticket."
+      ]
+    },
+    {
+      "id": "computer_reminders",
+      "kind": "decoy",
+      "weight": 1,
+      "fileNames": ["computer reminders.txt", "things to ask about computer.txt", "computer problems.txt"],
+      "contents": [
+        "Computer questions\n\nWhy does the printer say offline?\nMove family photos to the new folder.\nMake the text bigger in the email program.\nAsk Peter how to stop the weather popups.",
+        "Things the computer keeps doing\n\nPrinter disappears after restart. The recipe website opens too many advertisements. Camera light did not turn on during last video call."
+      ]
+    },
+    {
+      "id": "pet_schedule",
+      "kind": "decoy",
+      "weight": 2,
+      "fileNames": ["dog schedule.txt", "notes for pet sitter.txt", "Milo instructions.txt"],
+      "contents": [
+        "Milo's schedule\n\nBreakfast at 7\nShort walk after breakfast\nOne scoop for dinner at 5\nEvening walk before dark\n\nHe will pretend he has not eaten. Do not believe him.",
+        "Pet sitter notes\n\nFood is in the pantry. Fresh water every morning. The back gate sticks, so pull it toward you before latching it. Emergency treats are on top of the refrigerator."
+      ]
+    }
+  ]
+}

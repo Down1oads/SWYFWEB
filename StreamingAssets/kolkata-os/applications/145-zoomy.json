@@ -1,0 +1,22 @@
+{
+  "id": "zoomy",
+  "title": "Zoomy",
+  "iconPath": "icons/Zoomy.png",
+  "contentType": "zoomy",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopHiddenByDefault": false,
+  "desktopOrder": 17,
+  "windowLeft": 190,
+  "windowTop": 62,
+  "windowWidth": 1100,
+  "windowHeight": 740,
+  "accentColor": "#00000000",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "zoomy-license"
+  },
+  "content": {}
+}

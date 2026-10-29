@@ -1,0 +1,1158 @@
+{
+  "sentinels": [
+    {
+      "tag": "FICTIONAL_LOTTERY_TICKET_NUMBERS",
+      "label": "Lottery ticket numbers",
+      "valueEach": 0,
+      "appCompletionSource": "conversation_lottery_prize",
+      "generator": {
+        "type": "numeric_groups",
+        "groups": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_INVESTMENT_INVOICE_NUMBER",
+      "label": "Investment invoice number",
+      "valueEach": 0,
+      "appCompletionSource": "conversation_investment",
+      "generator": {
+        "type": "numeric_groups",
+        "groups": [
+          3,
+          3
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_BOOK_PUBLISHING_CARD_NUMBER",
+      "label": "Book Publishing Card Number",
+      "valueEach": 0,
+      "appCompletionSource": "conversation_book_publishing",
+      "generator": {
+        "type": "numeric_groups",
+        "groups": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_PRIVATE_CARD_NUMBER",
+      "label": "Blackmail Scam Card Number",
+      "valueEach": 0,
+      "appCompletionSource": "photo_blackmail_submit",
+      "generator": { "type": "numeric_groups", "groups": [4, 4, 4, 4], "separator": "-" },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_LAUNCH_CODE",
+      "label": "Launch Code",
+      "valueEach": 0,
+      "appCompletionSource": "dump_dial_abort",
+      "generator": { "type": "numeric_digits", "digits": 6 },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_SPOOF_CARD_NUMBER",
+      "label": "Credit Card Number",
+      "valueEach": 0,
+      "appCompletionSource": "spoofbook_card",
+      "generator": { "type": "numeric_groups", "groups": [4, 4, 4, 4], "separator": "-" },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_ARREST_FEE_RECEIPT",
+      "label": "Police Fine Payment Confirmation",
+      "valueEach": 0,
+      "appCompletionSource": "conversation_police",
+      "generator": {
+        "type": "alphanumeric_groups",
+        "groups": [
+          3,
+          3
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "char_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_SUPPORT_VERIFICATION_CODE",
+      "label": "Support Device Verification Code",
+      "valueEach": 0,
+      "appCompletionSource": "conversation_tech_support",
+      "generator": {
+        "type": "numeric_groups",
+        "groups": [
+          3,
+          3
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_BANK_USERNAME",
+      "label": "Bank Username",
+      "valueEach": 200,
+      "appCompletionSource": "bank_login_submit",
+      "generator": {
+        "type": "alphanumeric_groups",
+        "groups": [
+          2,
+          2
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "char_groups",
+      "rdpFileNames": [
+        "bank user.txt",
+        "online banking login.txt",
+        "bank website name.txt",
+        "account login note.txt",
+        "mum bank user.txt",
+        "money site username.txt",
+        "DO NOT DELETE bank.txt",
+        "bank details old.txt",
+        "login reminder.txt",
+        "bank info FINAL.txt",
+        "personal banking id.txt",
+        "secure login creds.txt",
+        "main account user.txt",
+        "bank portal username.txt",
+        "finance login saved.txt",
+        "private bank access.txt",
+        "user id banking.txt",
+        "money manager login.txt",
+        "hidden bank note.txt",
+        "account holder name.txt",
+        "banking secret user.txt",
+        "urgent login info.txt",
+        "my bank handle.txt",
+        "protected username.txt",
+        "financial login backup.txt",
+        "dont open bank.txt",
+        "super secret login.txt",
+        "banking creds v2.txt",
+        "access code username.txt",
+        "vault user details.txt",
+        "login master file.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_BANK_PASSWORD",
+      "label": "Bank Password",
+      "valueEach": 150,
+      "appCompletionSource": "bank_login_submit",
+      "generator": {
+        "type": "alphanumeric_groups",
+        "groups": [
+          2,
+          1,
+          2
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "char_groups",
+      "rdpFileNames": [
+        "bank pw.txt",
+        "password for bank.txt",
+        "banking password new.txt",
+        "secret bank word.txt",
+        "money login password.txt",
+        "bank password backup.txt",
+        "DO NOT SHARE.txt",
+        "passwords maybe.txt",
+        "bank pass final.txt",
+        "login code personal.txt",
+        "secure bank key.txt",
+        "money gate password.txt",
+        "private access word.txt",
+        "bank vault code.txt",
+        "hidden banking pass.txt",
+        "finance unlock.txt",
+        "important pw backup.txt",
+        "never share this.txt",
+        "banking master key.txt",
+        "account guardian.txt",
+        "pw for big money.txt",
+        "secret money spell.txt",
+        "bank login shield.txt",
+        "protected password.txt",
+        "emergency bank code.txt",
+        "funny money pass.txt",
+        "dont look pw.txt",
+        "banking ninja code.txt",
+        "safe deposit word.txt",
+        "ultimate bank secret.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_ACCOUNT_NUMBER",
+      "label": "Account Number",
+      "valueEach": 250,
+      "appCompletionSource": "bank_login_submit",
+      "generator": {
+        "type": "numeric_groups",
+        "groups": [
+          4,
+          4
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": [
+        "account number.txt",
+        "bank acct no.txt",
+        "deposit account.txt",
+        "checking info.txt",
+        "account digits.txt",
+        "bank numbers old.txt",
+        "money account ref.txt",
+        "acct number FINAL.txt",
+        "statement reference.txt",
+        "important bank number.txt",
+        "savings account id.txt",
+        "primary acct digits.txt",
+        "funds transfer ref.txt",
+        "secure account code.txt",
+        "banking reference.txt",
+        "money trail number.txt",
+        "private acct note.txt",
+        "financial id file.txt",
+        "core banking number.txt",
+        "account master.txt",
+        "hidden balance key.txt",
+        "bank records core.txt",
+        "critical acct info.txt",
+        "wealth account num.txt",
+        "protected digits.txt",
+        "my money identifier.txt",
+        "banking holy grail.txt",
+        "account skeleton key.txt",
+        "finance core number.txt",
+        "do not lose acct.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_ROUTING_NUMBER",
+      "label": "Routing Number",
+      "valueEach": 200,
+      "appCompletionSource": "bank_login_submit",
+      "generator": {
+        "type": "numeric_digits",
+        "digits": 6
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": [
+        "routing number.txt",
+        "bank routing.txt",
+        "transfer route.txt",
+        "routing digits.txt",
+        "wire details.txt",
+        "bank branch no.txt",
+        "money transfer info.txt",
+        "route number backup.txt",
+        "ACH notes.txt",
+        "routing FINAL.txt",
+        "wire transfer key.txt",
+        "bank transit code.txt",
+        "secure routing path.txt",
+        "funds route number.txt",
+        "payment routing.txt",
+        "bank highway code.txt",
+        "private transfer route.txt",
+        "money movement id.txt",
+        "routing guardian.txt",
+        "ACH secret digits.txt",
+        "bank connector code.txt",
+        "swift route backup.txt",
+        "critical routing.txt",
+        "transfer master key.txt",
+        "banking direction.txt",
+        "hidden route info.txt",
+        "finance pathway.txt",
+        "do not share route.txt",
+        "routing vault.txt",
+        "ultimate transfer code.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_WALLET_ADDRESS",
+      "label": "Crypto Wallet Address",
+      "valueEach": 300,
+      "appCompletionSource": "crypto_wallet_drain",
+      "generator": {
+        "type": "alphanumeric_groups",
+        "groups": [
+          4,
+          4,
+          4
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "char_groups",
+      "rdpFileNames": [
+        "wallet address.txt",
+        "crypto place.txt",
+        "coin wallet.txt",
+        "wallet destination.txt",
+        "digital money address.txt",
+        "crypto wallet backup.txt",
+        "coins IMPORTANT.txt",
+        "wallet string.txt",
+        "block chain details.txt",
+        "my crypto final.txt",
+        "btc receive addr.txt",
+        "ethereum home.txt",
+        "crypto vault target.txt",
+        "coin drop address.txt",
+        "secure wallet loc.txt",
+        "digital fortune spot.txt",
+        "hidden crypto key.txt",
+        "moon wallet addr.txt",
+        "private chain address.txt",
+        "asset holder.txt",
+        "crypto safe house.txt",
+        "block riches addr.txt",
+        "wallet lifeline.txt",
+        "fortune string.txt",
+        "dont lose wallet.txt",
+        "crypto treasure map.txt",
+        "digital gold spot.txt",
+        "wallet skeleton.txt",
+        "secret coin base.txt",
+        "ultimate crypto addr.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_SEED_PHRASE_PART_1",
+      "label": "Seed Phrase Part 1",
+      "valueEach": 250,
+      "appCompletionSource": "crypto_wallet_drain",
+      "generator": {
+        "type": "alphanumeric_groups",
+        "groups": [
+          3
+        ],
+        "separator": ""
+      },
+      "spokenFormat": "char_groups",
+      "rdpFileNames": [
+        "seed words 1.txt",
+        "crypto backup part 1.txt",
+        "wallet words first.txt",
+        "seed phrase A.txt",
+        "coins recovery one.txt",
+        "first three words.txt",
+        "wallet backup top.txt",
+        "phrase half 1.txt",
+        "crypto recovery start.txt",
+        "seed note one.txt",
+        "magic words start.txt",
+        "recovery beginning.txt",
+        "wallet opener 1.txt",
+        "phrase prefix.txt",
+        "crypto key start.txt",
+        "seed guardian 1.txt",
+        "fortune words head.txt",
+        "backup slice one.txt",
+        "initial seed part.txt",
+        "crypto unlock head.txt",
+        "hidden phrase top.txt",
+        "treasure words 1.txt",
+        "wallet genesis.txt",
+        "seed shield part1.txt",
+        "first recovery set.txt",
+        "crypto spell start.txt",
+        "vault code head.txt",
+        "phrase protector 1.txt",
+        "dont read part one.txt",
+        "seed emergency 1.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_SEED_PHRASE_PART_2",
+      "label": "Seed Phrase Part 2",
+      "valueEach": 200,
+      "appCompletionSource": "crypto_wallet_drain",
+      "generator": {
+        "type": "alphanumeric_groups",
+        "groups": [
+          3
+        ],
+        "separator": ""
+      },
+      "spokenFormat": "char_groups",
+      "rdpFileNames": [
+        "seed words 2.txt",
+        "crypto backup part 2.txt",
+        "wallet words last.txt",
+        "seed phrase B.txt",
+        "coins recovery two.txt",
+        "last three words.txt",
+        "wallet backup bottom.txt",
+        "phrase half 2.txt",
+        "crypto recovery end.txt",
+        "seed note two.txt",
+        "magic words finish.txt",
+        "recovery ending.txt",
+        "wallet closer 2.txt",
+        "phrase suffix.txt",
+        "crypto key tail.txt",
+        "seed guardian 2.txt",
+        "fortune words tail.txt",
+        "backup slice two.txt",
+        "final seed part.txt",
+        "crypto unlock tail.txt",
+        "hidden phrase bottom.txt",
+        "treasure words 2.txt",
+        "wallet conclusion.txt",
+        "seed shield part2.txt",
+        "last recovery set.txt",
+        "crypto spell end.txt",
+        "vault code tail.txt",
+        "phrase protector 2.txt",
+        "dont read part two.txt",
+        "seed emergency 2.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_GIFT_CARD_CODE",
+      "label": "Gift Card Code",
+      "valueEach": 200,
+      "appCompletionSource": "gift_card_claim",
+      "generator": {
+        "type": "numeric_groups",
+        "groups": [
+          4,
+          4
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": [
+        "gift card code.txt",
+        "birthday card number.txt",
+        "store voucher.txt",
+        "gift receipt secret.txt",
+        "card claim digits.txt",
+        "present code.txt",
+        "voucher FINAL.txt",
+        "gift card backup.txt",
+        "shop card number.txt",
+        "DO NOT LOSE gift.txt",
+        "free stuff code.txt",
+        "surprise balance.txt",
+        "retail magic number.txt",
+        "shopping secret.txt",
+        "bonus claim digits.txt",
+        "holiday voucher.txt",
+        "treat yourself code.txt",
+        "hidden gift value.txt",
+        "store credit key.txt",
+        "special offer pin.txt",
+        "redeemable treasure.txt",
+        "fun money digits.txt",
+        "gift fortune code.txt",
+        "dont spend yet.txt",
+        "secret santa code.txt",
+        "voucher guardian.txt",
+        "present unlock.txt",
+        "cash equivalent.txt",
+        "gift vault number.txt",
+        "ultimate freebie.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_REMOTE_DESKTOP_CODE",
+      "label": "AnyViewer Connection Code",
+      "valueEach": 100,
+      "appCompletionSource": "remote_desktop_connect",
+      "generator": {
+        "type": "numeric_groups",
+        "groups": [
+          3,
+          3
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": [
+        "AnyViewer number.txt",
+        "remote help code.txt",
+        "computer helper digits.txt",
+        "support connection.txt",
+        "remote desktop no.txt",
+        "technician code.txt",
+        "screen share password.txt",
+        "Any Viewer FINAL.txt",
+        "computer access note.txt",
+        "helpdesk digits.txt",
+        "pc takeover code.txt",
+        "home computer link.txt",
+        "remote control key.txt",
+        "secure desktop pin.txt",
+        "anyview access.txt",
+        "tech support secret.txt",
+        "machine connect.txt",
+        "private screen code.txt",
+        "remote master.txt",
+        "desktop guardian.txt",
+        "urgent access digits.txt",
+        "hidden pc entry.txt",
+        "computer lifeline.txt",
+        "view my screen.txt",
+        "control code backup.txt",
+        "dont lose remote.txt",
+        "admin connect no.txt",
+        "screen portal.txt",
+        "remote vault code.txt",
+        "ultimate pc key.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_CAR_REGISTRATION_NUMBER",
+      "label": "Car Registration Number",
+      "valueEach": 300,
+      "appCompletionSource": "car_registration_submit",
+      "generator": {
+        "type": "alphanumeric_groups",
+        "groups": [
+          4,
+          4
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "char_groups",
+      "rdpFileNames": [
+        "car registration.txt",
+        "vehicle registration number.txt",
+        "registration renewal.txt",
+        "car paperwork.txt",
+        "registration backup.txt",
+        "glovebox documents.txt",
+        "vehicle record.txt",
+        "car registration FINAL.txt",
+        "registration reminder.txt",
+        "my car details.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_SSN",
+      "label": "Social Security Number",
+      "valueEach": 250,
+      "appCompletionSource": "identity_record_submit",
+      "generator": {
+        "type": "numeric_groups",
+        "groups": [
+          3,
+          2,
+          4
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": [
+        "social security.txt",
+        "SS number.txt",
+        "tax identity.txt",
+        "government digits.txt",
+        "retirement account id.txt",
+        "personal number PRIVATE.txt",
+        "SSN backup.txt",
+        "identity no.txt",
+        "benefits info.txt",
+        "social no FINAL.txt",
+        "taxpayer secret.txt",
+        "federal id code.txt",
+        "citizen key.txt",
+        "gov records core.txt",
+        "private identity.txt",
+        "ss master file.txt",
+        "important life number.txt",
+        "benefits access.txt",
+        "official digits.txt",
+        "hidden ss info.txt",
+        "my gov number.txt",
+        "do not share ssn.txt",
+        "identity vault.txt",
+        "tax id guardian.txt",
+        "personal security no.txt",
+        "eternal id backup.txt",
+        "ssn emergency.txt",
+        "federal lifeline.txt",
+        "secret citizen code.txt",
+        "ultimate identity.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_CREDIT_CARD_NUMBER",
+      "label": "Credit Card Number",
+      "valueEach": 120,
+      "appCompletionSource": "credit_card_submit",
+      "generator": {
+        "type": "luhn_numeric_groups",
+        "groups": [
+          4,
+          4,
+          4
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": [
+        "credit card number.txt",
+        "card front.txt",
+        "visa digits.txt",
+        "shopping card.txt",
+        "payment card number.txt",
+        "card backup.txt",
+        "plastic money info.txt",
+        "online purchase card.txt",
+        "credit no FINAL.txt",
+        "card digits personal.txt",
+        "spending power.txt",
+        "limit holder.txt",
+        "money plastic.txt",
+        "secure card id.txt",
+        "bill pay number.txt",
+        "finance plastic.txt",
+        "hidden card core.txt",
+        "purchase master.txt",
+        "credit vault digits.txt",
+        "shopping secret.txt",
+        "card skeleton key.txt",
+        "dont max this.txt",
+        "premium card info.txt",
+        "private charge code.txt",
+        "wealth plastic.txt",
+        "card emergency.txt",
+        "online money tool.txt",
+        "credit lifeline.txt",
+        "ultimate spend key.txt",
+        "protected card.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_CVV",
+      "label": "CVV",
+      "valueEach": 120,
+      "appCompletionSource": "credit_card_submit",
+      "generator": {
+        "type": "numeric_digits",
+        "digits": 3
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": [
+        "card back number.txt",
+        "CVV.txt",
+        "three card digits.txt",
+        "security code.txt",
+        "card small number.txt",
+        "payment verification.txt",
+        "back of card.txt",
+        "card secret 3.txt",
+        "credit security.txt",
+        "CVV FINAL.txt",
+        "magic three.txt",
+        "verify code.txt",
+        "safe purchase pin.txt",
+        "card guard number.txt",
+        "hidden security.txt",
+        "checkout secret.txt",
+        "plastic shield.txt",
+        "cvv protector.txt",
+        "dont lose these 3.txt",
+        "verification key.txt",
+        "backside code.txt",
+        "secure checkout.txt",
+        "card safety digits.txt",
+        "payment armor.txt",
+        "tiny but mighty.txt",
+        "cvv vault.txt",
+        "final check code.txt",
+        "credit lock number.txt",
+        "secret triplet.txt",
+        "ultimate verify.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_EXPIRATION_DATE",
+      "label": "Expiration Date",
+      "valueEach": 160,
+      "appCompletionSource": "credit_card_submit",
+      "generator": {
+        "type": "date_mm_yy",
+        "yearsAhead": 3
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": [
+        "card expiry.txt",
+        "expiration date.txt",
+        "valid thru.txt",
+        "card month year.txt",
+        "payment expiry.txt",
+        "credit date.txt",
+        "card good until.txt",
+        "exp date backup.txt",
+        "plastic expiration.txt",
+        "card date FINAL.txt",
+        "use by date.txt",
+        "card alive until.txt",
+        "valid period.txt",
+        "money until when.txt",
+        "expiry guardian.txt",
+        "credit lifespan.txt",
+        "dont use after.txt",
+        "card death date.txt",
+        "renewal reminder.txt",
+        "plastic timeline.txt",
+        "safe until date.txt",
+        "billing end date.txt",
+        "hidden expiry.txt",
+        "card calendar.txt",
+        "final valid month.txt",
+        "emergency expiry.txt",
+        "credit clock.txt",
+        "validity key.txt",
+        "last chance date.txt",
+        "protected until.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_EMAIL",
+      "label": "Email Address",
+      "valueEach": 180,
+      "appCompletionSource": "password_recovery_submit",
+      "generator": {
+        "type": "choice",
+        "choices": [
+          {
+            "value": "goofy.penguin@waddlemail.com"
+          },
+          {
+            "value": "banana.slippers@clownshoe.net"
+          },
+          {
+            "value": "pizza.lover@cheesedreams.org"
+          },
+          {
+            "value": "ninja.turtle@soupybowl.com"
+          },
+          {
+            "value": "dancing.llama@fluffypajamas.com"
+          },
+          {
+            "value": "toaster.hero@breakfastclub.net"
+          },
+          {
+            "value": "silly.monkey@bananaphone.org"
+          },
+          {
+            "value": "captain.crumbs@cookiecrumbs.com"
+          },
+          {
+            "value": "wacky.taco@tacotuesday.net"
+          },
+          {
+            "value": "bouncy.cactus@desertdance.com"
+          },
+          {
+            "value": "muffin.thief@bakerysneak.net"
+          },
+          {
+            "value": "jellybean.king@sweetkingdom.org"
+          },
+          {
+            "value": "pickle.pirate@seacucumber.com"
+          },
+          {
+            "value": "fuzzy.slipper@bedtimehero.net"
+          }
+        ]
+      },
+      "spokenFormat": "email",
+      "rdpFileNames": [
+        "password recovery email.txt",
+        "email for reset.txt",
+        "account email maybe.txt",
+        "forgot password inbox.txt",
+        "recovery address.txt",
+        "email important.txt",
+        "login email note.txt",
+        "my email address.txt",
+        "account contact.txt",
+        "reset goes here.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_PASSWORD_RECOVERY_QUESTION",
+      "label": "Recovery Question",
+      "valueEach": 100,
+      "appCompletionSource": "password_recovery_submit",
+      "generator": {
+        "type": "choice",
+        "choiceGroup": "password_recovery_question",
+        "choices": [
+          {
+            "choiceKey": "mothers_maiden_name",
+            "label": "Mother's maiden name",
+            "value": "mother's maiden name",
+            "spokenValue": "mother's maiden name",
+            "acceptedValues": [
+              "mothers maiden name",
+              "mother maiden name",
+              "moms maiden name",
+              "maiden name",
+              "mothers last name"
+            ]
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name",
+            "value": "pets name",
+            "spokenValue": "first pet name",
+            "acceptedValues": [
+              "pet name",
+              "first pet name",
+              "name of first pet",
+              "pets name",
+              "first pets name"
+            ]
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color",
+            "value": "color",
+            "spokenValue": "favorite color",
+            "acceptedValues": [
+              "favorite color",
+              "favourite color",
+              "fav color",
+              "favorite colour",
+              "favourite colour",
+              "fav colour"
+            ]
+          }
+        ]
+      },
+      "spokenFormat": "choice",
+      "rdpFileNames": [
+        "security question.txt",
+        "password question note.txt",
+        "recovery prompt.txt",
+        "account question backup.txt",
+        "forgotten question.txt",
+        "login question.txt",
+        "security prompt old.txt",
+        "account unlock question.txt",
+        "question for password.txt",
+        "recovery question backup.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_PASSWORD_RECOVERY_ANSWER",
+      "label": "Recovery Answer",
+      "valueEach": 320,
+      "appCompletionSource": "password_recovery_submit",
+      "generator": {
+        "type": "choice",
+        "choiceGroup": "password_recovery_question",
+        "choices": [
+          {
+            "choiceKey": "mothers_maiden_name",
+            "label": "Mother's maiden name answer - Smith",
+            "value": "SMITH",
+            "spokenValue": "Smith"
+          },
+          {
+            "choiceKey": "mothers_maiden_name",
+            "label": "Mother's maiden name answer - Jones",
+            "value": "JONES",
+            "spokenValue": "Jones"
+          },
+          {
+            "choiceKey": "mothers_maiden_name",
+            "label": "Mother's maiden name answer - Patel",
+            "value": "PATEL",
+            "spokenValue": "Patel"
+          },
+          {
+            "choiceKey": "mothers_maiden_name",
+            "label": "Mother's maiden name answer - Garcia",
+            "value": "GARCIA",
+            "spokenValue": "Garcia"
+          },
+          {
+            "choiceKey": "mothers_maiden_name",
+            "label": "Mother's maiden name answer - Bumble",
+            "value": "BUMBLE",
+            "spokenValue": "Bumble"
+          },
+          {
+            "choiceKey": "mothers_maiden_name",
+            "label": "Mother's maiden name answer - Pickle",
+            "value": "PICKLE",
+            "spokenValue": "Pickle"
+          },
+          {
+            "choiceKey": "mothers_maiden_name",
+            "label": "Mother's maiden name answer - Wiggles",
+            "value": "WIGGLES",
+            "spokenValue": "Wiggles"
+          },
+          {
+            "choiceKey": "mothers_maiden_name",
+            "label": "Mother's maiden name answer - Thompson",
+            "value": "THOMPSON",
+            "spokenValue": "Thompson"
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name answer - Max",
+            "value": "MAX",
+            "spokenValue": "Max"
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name answer - Buddy",
+            "value": "BUDDY",
+            "spokenValue": "Buddy"
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name answer - Fluffy",
+            "value": "FLUFFY",
+            "spokenValue": "Fluffy"
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name answer - Whiskers",
+            "value": "WHISKERS",
+            "spokenValue": "Whiskers"
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name answer - Spot",
+            "value": "SPOT",
+            "spokenValue": "Spot"
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name answer - Luna",
+            "value": "LUNA",
+            "spokenValue": "Luna"
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name answer - Rocky",
+            "value": "ROCKY",
+            "spokenValue": "Rocky"
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name answer - Coco",
+            "value": "COCO",
+            "spokenValue": "Coco"
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name answer - Bella",
+            "value": "BELLA",
+            "spokenValue": "Bella"
+          },
+          {
+            "choiceKey": "first_pet_name",
+            "label": "First pet name answer - Milo",
+            "value": "MILO",
+            "spokenValue": "Milo"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Red",
+            "value": "RED",
+            "spokenValue": "Red"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Blue",
+            "value": "BLUE",
+            "spokenValue": "Blue"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Green",
+            "value": "GREEN",
+            "spokenValue": "Green"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Purple",
+            "value": "PURPLE",
+            "spokenValue": "Purple"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Yellow",
+            "value": "YELLOW",
+            "spokenValue": "Yellow"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Orange",
+            "value": "ORANGE",
+            "spokenValue": "Orange"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Pink",
+            "value": "PINK",
+            "spokenValue": "Pink"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Black",
+            "value": "BLACK",
+            "spokenValue": "Black"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - White",
+            "value": "WHITE",
+            "spokenValue": "White"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Rainbow",
+            "value": "RAINBOW",
+            "spokenValue": "Rainbow"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Teal",
+            "value": "TEAL",
+            "spokenValue": "Teal"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Gold",
+            "value": "GOLD",
+            "spokenValue": "Gold"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Silver",
+            "value": "SILVER",
+            "spokenValue": "Silver"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Brown",
+            "value": "BROWN",
+            "spokenValue": "Brown"
+          },
+          {
+            "choiceKey": "favorite_color",
+            "label": "Favorite color answer - Indigo",
+            "value": "INDIGO",
+            "spokenValue": "Indigo"
+          }
+        ]
+      },
+      "spokenFormat": "choice",
+      "rdpFileNames": [
+        "recovery answer.txt",
+        "security answer secret.txt",
+        "password question answer.txt",
+        "account unlock answer.txt",
+        "pet answer backup.txt",
+        "forgotten answer.txt",
+        "login answer note.txt",
+        "security response.txt",
+        "account question response.txt",
+        "recovery answer backup.txt"
+      ]
+    },
+    {
+      "tag": "FICTIONAL_CARD_PAYMENT_RECEIPT",
+      "label": "Card Payment Confirmation",
+      "valueEach": 0,
+      "appCompletionSource": "conversation_credit_card",
+      "generator": {
+        "type": "alphanumeric_groups",
+        "groups": [
+          3,
+          3
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "char_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_MEME_COIN_PURCHASE_RECEIPT",
+      "label": "Meme Coin Purchase Confirmation",
+      "valueEach": 0,
+      "appCompletionSource": "conversation_meme_coin_rug_pull",
+      "generator": {
+        "type": "alphanumeric_groups",
+        "groups": [3, 3],
+        "separator": "-"
+      },
+      "spokenFormat": "char_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_BUSINESS_EQUITY_INVOICE",
+      "label": "Business Equity Invoice",
+      "valueEach": 0,
+      "appCompletionSource": "conversation_business_investment",
+      "generator": {
+        "type": "numeric_groups",
+        "groups": [3, 3],
+        "separator": "-"
+      },
+      "spokenFormat": "digit_groups",
+      "rdpFileNames": []
+    },
+    {
+      "tag": "FICTIONAL_BITCOIN_TRANSFER_RECEIPT",
+      "label": "Bitcoin Transfer Confirmation",
+      "valueEach": 0,
+      "appCompletionSource": "conversation_bitcoin_recovery",
+      "generator": {
+        "type": "alphanumeric_groups",
+        "groups": [
+          3,
+          3
+        ],
+        "separator": "-"
+      },
+      "spokenFormat": "char_groups",
+      "rdpFileNames": []
+    }
+  ]
+}

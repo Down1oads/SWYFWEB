@@ -1,0 +1,14 @@
+{
+  "actions": [
+    {
+      "id": "power",
+      "title": "Power",
+      "tooltip": "Power",
+      "action": "power-off",
+      "iconSvg": "svg/power-button.svg",
+      "iconResource": "KolkataOS/SVG/power-button",
+      "accentColor": "#0078D7",
+      "order": 0
+    }
+  ]
+}

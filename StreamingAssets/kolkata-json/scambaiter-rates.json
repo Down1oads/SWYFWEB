@@ -1,0 +1,9 @@
+{
+  "days": [
+    { "day": 1, "chancePercent": 0 },
+    { "day": 2, "chancePercent": 0 },
+    { "day": 3, "chancePercent": 5 },
+    { "day": 4, "chancePercent": 10 },
+    { "day": 5, "chancePercent": 15 }
+  ]
+}

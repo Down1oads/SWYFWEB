@@ -1,0 +1,26 @@
+{
+  "id": "character-creator",
+  "title": "Character Creator",
+  "iconResource": "KolkataOS/SVG/mdi-account-circle",
+  "iconSvg": "svg/mdi-account-circle.svg",
+  "contentType": "characterCreator",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 17,
+  "desktopAnchor": "bottomRight",
+  "lobbyOnly": false,
+  "windowLeft": 18,
+  "windowTop": 8,
+  "windowWidth": 1480,
+  "windowHeight": 880,
+  "minWindowWidth": 1100,
+  "minWindowHeight": 700,
+  "accentColor": "#8B5CF6",
+  "initialState": "closed",
+  "content": {},
+  "access": {
+    "mode": "catalog",
+    "productId": "character-creator-included"
+  }
+}

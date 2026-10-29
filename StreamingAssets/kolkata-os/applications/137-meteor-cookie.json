@@ -1,0 +1,21 @@
+{
+  "id": "meteor-cookie",
+  "title": "Meteor Cookie",
+  "iconPath": "icons/MeteorCookie.png",
+  "contentType": "meteorCookie",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 17,
+  "windowLeft": 170,
+  "windowTop": 54,
+  "windowWidth": 1100,
+  "windowHeight": 760,
+  "accentColor": "#A56C2C",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "meteor-cookie-license"
+  },
+  "content": {}
+}

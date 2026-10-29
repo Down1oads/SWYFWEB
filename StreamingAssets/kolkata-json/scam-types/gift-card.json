@@ -1,0 +1,12 @@
+{
+  "id": "gift_card",
+  "displayName": "Gift Card Scam",
+  "iconName": "swipe-card",
+  "appId": "gift-card",
+  "displayOrder": 2,
+  "relevantSentinels": [
+    "FICTIONAL_GIFT_CARD_CODE"
+  ],
+  "appCompletionSource": "gift_card_claim",
+  "testOpeningPlayerLine": "I'm calling about the refund we can issue through a store gift card."
+}

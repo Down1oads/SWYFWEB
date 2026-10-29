@@ -1,0 +1,11 @@
+{
+  "id": "police_impersonation",
+  "displayName": "Police Impersonation",
+  "iconName": "police-badge",
+  "appId": "scam-police-impersonation",
+  "displayOrder": 41,
+  "relevantSentinels": [
+    "FICTIONAL_ARREST_FEE_RECEIPT"
+  ],
+  "appCompletionSource": "conversation_police"
+}

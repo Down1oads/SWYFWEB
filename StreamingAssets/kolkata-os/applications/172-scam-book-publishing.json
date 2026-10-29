@@ -1,0 +1,65 @@
+{
+  "id": "scam-book-publishing",
+  "unlockLines": [
+    "Book publishing unlocked. Every caller is a future bestseller. Every employee is a future disappointment. I believe equally in both markets.",
+    "Sell the literary dream, beta. If their book is as boring as your calls, we will market it as a fucking sleep aid.",
+    "You are now a publisher. Your last published work was a misspelled lunch order. I expect tremendous artistic growth.",
+    "Find the next great novel. I want plot twists, rich characters, and my name on the cheque. Especially the last chapter.",
+    "Shakespeare had talent. You have a phone and a quota. Different tools, same crippling pressure from management."
+  ],
+  "title": "Book Publishing",
+  "iconResource": "KolkataOS/SVG/notebook",
+  "iconSvg": "svg/notebook.svg",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 52,
+  "windowLeft": 340,
+  "windowTop": 100,
+  "windowWidth": 680,
+  "windowHeight": 600,
+  "accentColor": "#C89560",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-book-publishing"
+  },
+  "content": {
+    "title": "Book Publishing",
+    "subtitle": "Their life. Your book pitch. An $800 publishing deal.",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "conversation_book_publishing",
+      "submitLabel": "Charge $800"
+    },
+    "fields": [
+      {
+        "id": "publishing-card",
+        "label": "Book publishing card number",
+        "placeholder": "0000-0000-0000-0000",
+        "itemId": "FICTIONAL_BOOK_PUBLISHING_CARD_NUMBER",
+        "multiline": false,
+        "password": false,
+        "required": true,
+        "persistLocal": false
+      }
+    ]
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The player pitches a book about the caller's life, its title, and its cover. Payment is $800, with the card available on request after agreement.\n\nCaller (available information): Your book publishing card number is [[FICTIONAL_BOOK_PUBLISHING_CARD_NUMBER]].",
+    "objectives": {
+      "idea": "Judge (not the caller): If the caller accepts the player's book idea.",
+      "hype": "Judge (not the caller): If the caller accepts the player's cover design.",
+      "package": "Judge (not the caller): If the caller agrees to pay $800 to produce the book.",
+      "title": "Judge (not the caller): If the caller accepts the player's book title.",
+      "card": "Judge (not the caller): If the game confirms the player entered the caller's card number; do not complete this from conversation."
+    },
+    "objectiveDescriptions": {
+      "idea": "Pitch a book idea about the caller's life and get them to agree.",
+      "hype": "Pitch a cover design for their book and get them to agree.",
+      "package": "Get them to pay $800 to have the book produced.",
+      "title": "Pitch a title for their book and get them to agree.",
+      "card": "Ask for their book publishing card number and enter it below."
+    }
+  }
+}

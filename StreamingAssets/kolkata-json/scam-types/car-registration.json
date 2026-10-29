@@ -1,0 +1,12 @@
+{
+  "id": "car_registration",
+  "displayName": "Car's Extended Warranty",
+  "iconName": "car-side-white",
+  "appId": "car-registration",
+  "displayOrder": 7,
+  "relevantSentinels": [
+    "FICTIONAL_CAR_REGISTRATION_NUMBER"
+  ],
+  "appCompletionSource": "car_registration_submit",
+  "testOpeningPlayerLine": "We're calling about your car's extended warranty."
+}

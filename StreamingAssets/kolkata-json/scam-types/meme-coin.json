@@ -1,0 +1,9 @@
+{
+  "id": "meme_coin",
+  "displayName": "Meme Coin Rug Pull",
+  "iconName": "stock-candles",
+  "appId": "scam-meme-coin",
+  "displayOrder": 48,
+  "relevantSentinels": ["FICTIONAL_MEME_COIN_PURCHASE_RECEIPT"],
+  "appCompletionSource": "conversation_meme_coin_rug_pull"
+}

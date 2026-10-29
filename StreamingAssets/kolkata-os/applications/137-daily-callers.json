@@ -1,0 +1,24 @@
+{
+  "id": "daily-callers",
+  "title": "Caller Manager",
+  "iconResource": "KolkataOS/SVG/mdi-account-circle",
+  "iconSvg": "svg/mdi-account-circle.svg",
+  "contentType": "dailyCallers",
+  "pinned": false,
+  "showOnDesktop": true,
+  "desktopOrder": 18,
+  "lobbyOnly": false,
+  "windowLeft": 40,
+  "windowTop": 20,
+  "windowWidth": 1240,
+  "windowHeight": 820,
+  "minWindowWidth": 960,
+  "minWindowHeight": 620,
+  "accentColor": "#FFB852",
+  "initialState": "closed",
+  "content": {},
+  "access": {
+    "mode": "catalog",
+    "productId": "daily-callers-included"
+  }
+}

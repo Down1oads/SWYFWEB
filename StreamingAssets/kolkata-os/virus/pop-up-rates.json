@@ -1,0 +1,46 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "windowSeconds": 600,
+      "minPopups": 0,
+      "maxPopups": 0,
+      "answerSeconds": 20
+    },
+    {
+      "day": 2,
+      "windowSeconds": 600,
+      "minPopups": 0,
+      "maxPopups": 1,
+      "answerSeconds": 19
+    },
+    {
+      "day": 3,
+      "windowSeconds": 600,
+      "minPopups": 0,
+      "maxPopups": 1,
+      "answerSeconds": 18
+    },
+    {
+      "day": 4,
+      "windowSeconds": 600,
+      "minPopups": 1,
+      "maxPopups": 2,
+      "answerSeconds": 17
+    },
+    {
+      "day": 5,
+      "windowSeconds": 600,
+      "minPopups": 1,
+      "maxPopups": 3,
+      "answerSeconds": 16
+    },
+    {
+      "day": 6,
+      "windowSeconds": 600,
+      "minPopups": 2,
+      "maxPopups": 4,
+      "answerSeconds": 15
+    }
+  ]
+}

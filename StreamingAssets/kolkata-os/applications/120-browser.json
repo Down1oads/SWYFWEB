@@ -1,0 +1,30 @@
+{
+  "id": "browser",
+  "title": "Browser",
+  "iconSvg": "svg/web.svg",
+  "iconResource": "KolkataOS/SVG/web",
+  "contentType": "browser",
+  "pinned": true,
+  "pinnedOrder": 6,
+  "showOnDesktop": true,
+  "desktopHiddenByDefault": false,
+  "desktopOrder": 10,
+  "windowLeft": 220,
+  "windowTop": 84,
+  "windowWidth": 860,
+  "windowHeight": 620,
+  "accentColor": "#74B983",
+  "initialState": "closed",
+  "content": {
+    "title": "Browser",
+    "browser": {
+      "homeUrl": "https://www.google.com",
+      "targetAppId": "browser",
+      "defaultShortcuts": []
+    }
+  },
+  "access": {
+    "mode": "catalog",
+    "productId": "browser-business-license"
+  }
+}

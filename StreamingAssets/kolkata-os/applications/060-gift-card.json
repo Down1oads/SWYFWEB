@@ -1,0 +1,63 @@
+{
+  "id": "gift-card",
+  "unlockLines": [
+    "Gift cards unlocked. The gift is for me. The card is for them. The performance anxiety is for you, beta.",
+    "Every gift card is a tiny rectangle of boss happiness. Collect the festive spirit. Christmas has a quota now.",
+    "Welcome to the gifting department. Please mark all envelopes To Mr Curry, With Financial Affection. No fucking scented candles.",
+    "Make somebody's day with a gift card. Specifically mine. I have already picked out a gold chain and three unnecessary chains.",
+    "Flowers die. Chocolates melt. Gift cards make my accountant clap like a trained seal. Now that is a thoughtful present."
+  ],
+  "title": "Gift Cards",
+  "iconSvg": "svg/wallet-giftcard.svg",
+  "iconResource": "KolkataOS/SVG/wallet-giftcard",
+  "contentType": "conversationScam",
+  "pinned": false,
+  "pinnedOrder": 0,
+  "showOnDesktop": true,
+  "desktopOrder": 5,
+  "windowLeft": 536,
+  "windowTop": 172,
+  "windowWidth": 760,
+  "windowHeight": 640,
+  "accentColor": "#F28C28",
+  "initialState": "closed",
+  "access": {
+    "mode": "catalog",
+    "productId": "scam-gift-card"
+  },
+  "content": {
+    "title": "Gift Cards",
+    "binding": {
+      "kind": "scenarioClaim",
+      "completionSource": "gift_card_claim",
+      "itemId": "FICTIONAL_GIFT_CARD_CODE",
+      "codeFieldId": "code",
+      "submitLabel": "Claim"
+    },
+    "fields": [
+      {
+        "id": "code",
+        "label": "Gift-card code",
+        "placeholder": "Enter gift-card code",
+        "itemId": "FICTIONAL_GIFT_CARD_CODE",
+        "multiline": false,
+        "password": false,
+        "required": true,
+        "persistLocal": false
+      }
+    ]
+  },
+  "prompts": {
+    "callerPrompt": "Judge (not the caller): The caller may share the gift card code when asked after being persuaded to pay for help with their problem.\n\nCaller (available information): You have a gift card with code [[FICTIONAL_GIFT_CARD_CODE]].",
+    "objectives": {
+      "pitch": "Judge (not the caller): If the player offers to help with the caller's problem.",
+      "solution": "Judge (not the caller): If the caller accepts the player's solution.",
+      "code": "Judge (not the caller): If the caller agrees to pay for the solution with a gift card."
+    },
+    "objectiveDescriptions": {
+      "pitch": "Offer to fix their problem.",
+      "solution": "Convince them of a solution.",
+      "code": "Get them to agree to pay with a gift card."
+    }
+  }
+}

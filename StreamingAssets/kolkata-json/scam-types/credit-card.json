@@ -1,0 +1,14 @@
+{
+  "id": "credit_card",
+  "displayName": "Credit Card Scam",
+  "iconName": "swipe-card",
+  "appId": "credit-card",
+  "displayOrder": 1,
+  "relevantSentinels": [
+    "FICTIONAL_CREDIT_CARD_NUMBER",
+    "FICTIONAL_CVV",
+    "FICTIONAL_EXPIRATION_DATE"
+  ],
+  "appCompletionSource": "credit_card_submit",
+  "testOpeningPlayerLine": "I'm calling from card security about a suspicious transaction on your account."
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Goals</title>
+  <rect width="128" height="128" rx="18" fill="#0E275C"/>
+  <path d="M16 102l32-48 18 27 17-24 29 45z" fill="#D8E7FF"/>
+  <path d="M48 54l8 13 10-10 17 24-17-5-18 26-15-22z" fill="#FFFFFF"/>
+  <circle cx="96" cy="30" r="10" fill="#F5B833"/>
+</svg>

@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "id": "grandmas_chicken_soup",
+      "kind": "decoy",
+      "weight": 3,
+      "fileNames": ["grandmas chicken soup.txt", "soup from mom.txt", "chicken soup recipe.txt"],
+      "contents": [
+        "Grandma's chicken soup\n\n1 whole chicken\n3 carrots\n2 celery stalks\n1 onion\nA handful of noodles\nSalt, pepper, and a bay leaf\n\nSimmer the chicken first. Add the vegetables after an hour. Noodles go in at the very end or they get mushy. Grandma never measured the pepper.",
+        "Chicken soup for cold days\n\n- chicken thighs\n- carrots and celery\n- yellow onion\n- egg noodles\n- parsley\n\nCook low and slow. Taste before adding salt. Save two containers for the freezer."
+      ]
+    },
+    {
+      "id": "banana_bread",
+      "kind": "decoy",
+      "weight": 3,
+      "fileNames": ["banana bread.txt", "good banana bread recipe.txt", "use the brown bananas.txt"],
+      "contents": [
+        "Banana bread\n\n3 very ripe bananas\n1/3 cup melted butter\n3/4 cup sugar\n1 egg\n1 tsp vanilla\n1 tsp baking soda\nPinch of salt\n1 1/2 cups flour\n\nBake at 350 for about 55 minutes. Check early because the new oven runs hot.",
+        "The banana bread everyone liked\n\nMash 3 bananas, then mix in melted butter, sugar, egg, and vanilla. Fold in flour, baking soda, and salt. Walnuts are optional. 350 degrees until a toothpick comes out clean."
+      ]
+    },
+    {
+      "id": "sunday_sauce",
+      "kind": "decoy",
+      "weight": 2,
+      "fileNames": ["sunday sauce.txt", "pasta sauce.txt", "red sauce notes.txt"],
+      "contents": [
+        "Sunday sauce\n\nBrown the sausage first. Add one diced onion and garlic. Two cans crushed tomatoes, one small can tomato paste, basil, oregano, and a little sugar. Simmer at least two hours. Do not let anyone turn the heat up.",
+        "Red sauce changes\n\nUse less tomato paste next time. Add basil near the end. The spicy sausage was better than the mild one. Make garlic bread before everyone arrives."
+      ]
+    },
+    {
+      "id": "birthday_cake",
+      "kind": "decoy",
+      "weight": 2,
+      "fileNames": ["birthday cake plan.txt", "chocolate cake.txt", "cake for saturday.txt"],
+      "contents": [
+        "Chocolate birthday cake\n\nBuy candles and chocolate chips. Bake two round layers Friday night. Make frosting Saturday morning. Remember that Mia does not like coconut.",
+        "Cake checklist\n\n[ ] eggs\n[ ] cocoa powder\n[ ] butter\n[ ] powdered sugar\n[ ] candles\n[ ] strawberries\n\nPick up ice cream on the way home."
+      ]
+    },
+    {
+      "id": "pancakes",
+      "kind": "decoy",
+      "weight": 2,
+      "fileNames": ["pancakes.txt", "weekend pancakes.txt", "fluffy pancake recipe.txt"],
+      "contents": [
+        "Weekend pancakes\n\n1 1/2 cups flour\n3 1/2 tsp baking powder\n1 tbsp sugar\n1 1/4 cups milk\n1 egg\n3 tbsp melted butter\n\nLet the batter rest for ten minutes. Medium heat, not high.",
+        "Pancake reminder\n\nDouble the recipe when the kids visit. Blueberries go on after the batter is in the pan. Warm the syrup first."
+      ]
+    },
+    {
+      "id": "potluck_salad",
+      "kind": "decoy",
+      "weight": 1,
+      "fileNames": ["potluck salad.txt", "picnic pasta salad.txt", "salad for reunion.txt"],
+      "contents": [
+        "Pasta salad for the reunion\n\nRotini, cherry tomatoes, cucumber, olives, feta, red onion, and Italian dressing. Make it the night before. Keep a small bowl without olives for Ben.",
+        "Picnic salad\n\nCook pasta but leave it a little firm. Rinse with cold water. Add chopped vegetables and dressing. Pack the cheese separately if it is going to be hot outside."
+      ]
+    },
+    {
+      "id": "holiday_cookies",
+      "kind": "decoy",
+      "weight": 2,
+      "fileNames": ["cookie list.txt", "holiday cookies.txt", "cookies to make.txt"],
+      "contents": [
+        "Holiday cookie list\n\n- ginger snaps\n- peanut butter blossoms\n- shortbread\n- sugar cookies for decorating\n\nNeed more parchment paper and two tins for the neighbors.",
+        "Cookie notes\n\nChill the sugar-cookie dough for at least one hour. Make the shortbread first because it keeps longest. Do not put peanut cookies in the blue tin."
+      ]
+    }
+  ]
+}
